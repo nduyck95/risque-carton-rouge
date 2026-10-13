@@ -1,0 +1,52 @@
+name: Mise à jour des matchs
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'      # toutes les 30 minutes (passage léger)
+    - cron: '23 5 * * *'        # chaque jour vers 7 h (heure de Paris en été) : passage complet
+  workflow_dispatch:            # bouton « Run workflow » à la main
+    inputs:
+      complet:
+        description: 'Passage complet (les 3 championnats en entier)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mise-a-jour
+  cancel-in-progress: false
+
+jobs:
+  maj:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Mise à jour
+        run: |
+          if [ "${{ github.event.schedule }}" = "23 5 * * *" ] || [ "${{ inputs.complet }}" = "true" ]; then
+            node auto.js complet
+          else
+            node auto.js
+          fi
+      - name: Enregistrer la mémoire
+        run: |
+          git config user.name "mise-a-jour-auto"
+          git config user.email "mise-a-jour-auto@users.noreply.github.com"
+          git add donnees/saison-courante.json
+          git diff --cached --quiet || (git commit -m "Mise à jour automatique $(date -u +%F\ %H:%M)" && git pull --rebase -q && git push)
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploiement
+        uses: actions/deploy-pages@v4

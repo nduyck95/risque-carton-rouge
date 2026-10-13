@@ -1,0 +1,506 @@
+[
+ {
+  "nom": "Premier League",
+  "coeffs": {
+   "c0": -3.84531,
+   "c1": 0.41163,
+   "taux": 0.11122,
+   "pval": 0.0026
+  },
+  "moyEquipe": 1.9952,
+  "promu": {
+   "agg": 2.0497,
+   "matchs": 342
+  },
+  "equipes": [
+   {
+    "nom": "Arsenal",
+    "agg": 1.5883,
+    "brut": 1.5526,
+    "matchs": 114
+   },
+   {
+    "nom": "Aston Villa",
+    "agg": 1.9674,
+    "brut": 1.9649,
+    "matchs": 114
+   },
+   {
+    "nom": "Bournemouth",
+    "agg": 2.298,
+    "brut": 2.3246,
+    "matchs": 114
+   },
+   {
+    "nom": "Brentford",
+    "agg": 1.927,
+    "brut": 1.9211,
+    "matchs": 114
+   },
+   {
+    "nom": "Brighton",
+    "agg": 2.1528,
+    "brut": 2.1667,
+    "matchs": 114
+   },
+   {
+    "nom": "Burnley",
+    "agg": 1.8018,
+    "brut": 1.7763,
+    "matchs": 76
+   },
+   {
+    "nom": "Chelsea",
+    "agg": 2.5077,
+    "brut": 2.5526,
+    "matchs": 114
+   },
+   {
+    "nom": "Crystal Palace",
+    "agg": 1.919,
+    "brut": 1.9123,
+    "matchs": 114
+   },
+   {
+    "nom": "Everton",
+    "agg": 2.0319,
+    "brut": 2.0351,
+    "matchs": 114
+   },
+   {
+    "nom": "Fulham",
+    "agg": 2.0319,
+    "brut": 2.0351,
+    "matchs": 114
+   },
+   {
+    "nom": "Ipswich Town",
+    "agg": 2.1657,
+    "brut": 2.2105,
+    "matchs": 38
+   },
+   {
+    "nom": "Leeds United",
+    "agg": 1.7073,
+    "brut": 1.6316,
+    "matchs": 38
+   },
+   {
+    "nom": "Leicester City",
+    "agg": 2.2282,
+    "brut": 2.2895,
+    "matchs": 38
+   },
+   {
+    "nom": "Liverpool",
+    "agg": 1.6609,
+    "brut": 1.6316,
+    "matchs": 114
+   },
+   {
+    "nom": "Luton Town",
+    "agg": 1.8948,
+    "brut": 1.8684,
+    "matchs": 38
+   },
+   {
+    "nom": "Manchester City",
+    "agg": 1.5722,
+    "brut": 1.5351,
+    "matchs": 114
+   },
+   {
+    "nom": "Manchester United",
+    "agg": 1.9754,
+    "brut": 1.9737,
+    "matchs": 114
+   },
+   {
+    "nom": "Newcastle",
+    "agg": 1.8303,
+    "brut": 1.8158,
+    "matchs": 114
+   },
+   {
+    "nom": "Nottingham Forest",
+    "agg": 1.9351,
+    "brut": 1.9298,
+    "matchs": 114
+   },
+   {
+    "nom": "Sheffield United",
+    "agg": 2.3532,
+    "brut": 2.4474,
+    "matchs": 38
+   },
+   {
+    "nom": "Southampton",
+    "agg": 2.2698,
+    "brut": 2.3421,
+    "matchs": 38
+   },
+   {
+    "nom": "Sunderland",
+    "agg": 2.0823,
+    "brut": 2.1053,
+    "matchs": 38
+   },
+   {
+    "nom": "Tottenham",
+    "agg": 2.2496,
+    "brut": 2.2719,
+    "matchs": 114
+   },
+   {
+    "nom": "West Ham",
+    "agg": 1.9432,
+    "brut": 1.9386,
+    "matchs": 114
+   },
+   {
+    "nom": "Wolverhampton",
+    "agg": 2.177,
+    "brut": 2.193,
+    "matchs": 114
+   }
+  ]
+ },
+ {
+  "nom": "Liga",
+  "coeffs": {
+   "c0": -2.23198,
+   "c1": 0.1822,
+   "taux": 0.20142,
+   "pval": 0.0953
+  },
+  "moyEquipe": 2.2772,
+  "promu": {
+   "agg": 2.2485,
+   "matchs": 342
+  },
+  "equipes": [
+   {
+    "nom": "Alavés",
+    "agg": 2.482,
+    "brut": 2.5,
+    "matchs": 114
+   },
+   {
+    "nom": "Almería",
+    "agg": 2.3702,
+    "brut": 2.3947,
+    "matchs": 38
+   },
+   {
+    "nom": "Athletic Bilbao",
+    "agg": 1.9982,
+    "brut": 1.9737,
+    "matchs": 114
+   },
+   {
+    "nom": "Atlético Madrid",
+    "agg": 2.1595,
+    "brut": 2.1491,
+    "matchs": 114
+   },
+   {
+    "nom": "Barcelona",
+    "agg": 1.8853,
+    "brut": 1.8509,
+    "matchs": 114
+   },
+   {
+    "nom": "Cadix",
+    "agg": 2.7036,
+    "brut": 2.8158,
+    "matchs": 38
+   },
+   {
+    "nom": "Celta Vigo",
+    "agg": 1.974,
+    "brut": 1.9474,
+    "matchs": 114
+   },
+   {
+    "nom": "Elche",
+    "agg": 2.1619,
+    "brut": 2.1316,
+    "matchs": 38
+   },
+   {
+    "nom": "Espanyol",
+    "agg": 2.3229,
+    "brut": 2.3289,
+    "matchs": 76
+   },
+   {
+    "nom": "Getafe",
+    "agg": 3.0465,
+    "brut": 3.114,
+    "matchs": 114
+   },
+   {
+    "nom": "Girona",
+    "agg": 2.0224,
+    "brut": 2,
+    "matchs": 114
+   },
+   {
+    "nom": "Grenade",
+    "agg": 2.4744,
+    "brut": 2.5263,
+    "matchs": 38
+   },
+   {
+    "nom": "Las Palmas",
+    "agg": 2.4625,
+    "brut": 2.4868,
+    "matchs": 76
+   },
+   {
+    "nom": "Leganés",
+    "agg": 2.1827,
+    "brut": 2.1579,
+    "matchs": 38
+   },
+   {
+    "nom": "Levante",
+    "agg": 2.2244,
+    "brut": 2.2105,
+    "matchs": 38
+   },
+   {
+    "nom": "Majorque",
+    "agg": 2.3127,
+    "brut": 2.3158,
+    "matchs": 114
+   },
+   {
+    "nom": "Osasuna",
+    "agg": 2.232,
+    "brut": 2.2281,
+    "matchs": 114
+   },
+   {
+    "nom": "Rayo Vallecano",
+    "agg": 2.6353,
+    "brut": 2.6667,
+    "matchs": 114
+   },
+   {
+    "nom": "Real Betis",
+    "agg": 2.0707,
+    "brut": 2.0526,
+    "matchs": 114
+   },
+   {
+    "nom": "Real Madrid",
+    "agg": 1.7562,
+    "brut": 1.7105,
+    "matchs": 114
+   },
+   {
+    "nom": "Real Oviedo",
+    "agg": 2.1619,
+    "brut": 2.1316,
+    "matchs": 38
+   },
+   {
+    "nom": "Real Sociedad",
+    "agg": 2.3611,
+    "brut": 2.3684,
+    "matchs": 114
+   },
+   {
+    "nom": "Séville",
+    "agg": 2.7159,
+    "brut": 2.7544,
+    "matchs": 114
+   },
+   {
+    "nom": "Valence",
+    "agg": 1.9578,
+    "brut": 1.9298,
+    "matchs": 114
+   },
+   {
+    "nom": "Valladolid",
+    "agg": 2.4119,
+    "brut": 2.4474,
+    "matchs": 38
+   },
+   {
+    "nom": "Villarreal",
+    "agg": 2.482,
+    "brut": 2.5,
+    "matchs": 114
+   }
+  ]
+ },
+ {
+  "nom": "Serie A",
+  "coeffs": {
+   "c0": -3.2798,
+   "c1": 0.38786,
+   "taux": 0.15657,
+   "pval": 0.0086
+  },
+  "moyEquipe": 1.9732,
+  "promu": {
+   "agg": 2.0409,
+   "matchs": 342
+  },
+  "equipes": [
+   {
+    "nom": "AC Milan",
+    "agg": 1.8849,
+    "brut": 1.8772,
+    "matchs": 114
+   },
+   {
+    "nom": "AS Roma",
+    "agg": 2.0059,
+    "brut": 2.0088,
+    "matchs": 114
+   },
+   {
+    "nom": "Atalanta",
+    "agg": 1.7882,
+    "brut": 1.7719,
+    "matchs": 114
+   },
+   {
+    "nom": "Bologne",
+    "agg": 1.8769,
+    "brut": 1.8684,
+    "matchs": 114
+   },
+   {
+    "nom": "Cagliari",
+    "agg": 1.9898,
+    "brut": 1.9912,
+    "matchs": 114
+   },
+   {
+    "nom": "Como",
+    "agg": 2.1713,
+    "brut": 2.1974,
+    "matchs": 76
+   },
+   {
+    "nom": "Cremonese",
+    "agg": 1.9319,
+    "brut": 1.9211,
+    "matchs": 38
+   },
+   {
+    "nom": "Empoli",
+    "agg": 2.0318,
+    "brut": 2.0395,
+    "matchs": 76
+   },
+   {
+    "nom": "Fiorentina",
+    "agg": 2.1188,
+    "brut": 2.1316,
+    "matchs": 114
+   },
+   {
+    "nom": "Frosinone",
+    "agg": 1.8278,
+    "brut": 1.7895,
+    "matchs": 38
+   },
+   {
+    "nom": "Genoa",
+    "agg": 1.8849,
+    "brut": 1.8772,
+    "matchs": 114
+   },
+   {
+    "nom": "Hellas Vérone",
+    "agg": 2.3446,
+    "brut": 2.3772,
+    "matchs": 114
+   },
+   {
+    "nom": "Inter",
+    "agg": 1.4978,
+    "brut": 1.4561,
+    "matchs": 114
+   },
+   {
+    "nom": "Juventus",
+    "agg": 1.8043,
+    "brut": 1.7895,
+    "matchs": 114
+   },
+   {
+    "nom": "Lazio",
+    "agg": 2.3446,
+    "brut": 2.3772,
+    "matchs": 114
+   },
+   {
+    "nom": "Lecce",
+    "agg": 1.9172,
+    "brut": 1.9123,
+    "matchs": 114
+   },
+   {
+    "nom": "Monza",
+    "agg": 2.2992,
+    "brut": 2.3421,
+    "matchs": 76
+   },
+   {
+    "nom": "Naples",
+    "agg": 1.5543,
+    "brut": 1.5175,
+    "matchs": 114
+   },
+   {
+    "nom": "Parme",
+    "agg": 1.8341,
+    "brut": 1.8158,
+    "matchs": 76
+   },
+   {
+    "nom": "Pise",
+    "agg": 2.0361,
+    "brut": 2.0526,
+    "matchs": 38
+   },
+   {
+    "nom": "Salernitana",
+    "agg": 2.3069,
+    "brut": 2.3947,
+    "matchs": 38
+   },
+   {
+    "nom": "Sassuolo",
+    "agg": 2.0318,
+    "brut": 2.0395,
+    "matchs": 76
+   },
+   {
+    "nom": "Torino",
+    "agg": 1.9817,
+    "brut": 1.9825,
+    "matchs": 114
+   },
+   {
+    "nom": "Udinese",
+    "agg": 2.1672,
+    "brut": 2.1842,
+    "matchs": 114
+   },
+   {
+    "nom": "Venise",
+    "agg": 1.9944,
+    "brut": 2,
+    "matchs": 38
+   }
+  ]
+ }
+]

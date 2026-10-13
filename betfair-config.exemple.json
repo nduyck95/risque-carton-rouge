@@ -1,0 +1,10 @@
+{
+  "_lisez_moi": "Recopie ce fichier sous le nom betfair-config.json et remplis-le TOI-MEME. Ne le partage jamais.",
+  "appKey": "colle ici ta cle applicative Betfair (App Key)",
+  "username": "ton identifiant Betfair",
+  "password": "ton mot de passe Betfair",
+  "certFile": "",
+  "keyFile": "",
+  "commission": 0.05,
+  "_note_cert": "Si ton compte a la double authentification, la connexion login/mot de passe est refusee : il faut alors un certificat (certFile / keyFile). On verra ensemble si necessaire."
+}

@@ -1,0 +1,397 @@
+<meta charset="utf-8">
+<title>Matchs de la saison — carton rouge</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f8f5; --surface: #fcfdfb; --surface-2: #f0f3ee;
+    --ink: #0c0e0c; --ink-2: #50554f; --ink-3: #8a8f88;
+    --grid: #e2e5e0; --ring: rgba(12, 14, 12, 0.10);
+    --accent: #0e6b2f; --accent-ink: #0e6b2f;
+    --bleu: #2a78d6; --jaune: #f2c437; --jaune-ink: #6b5200;
+    --rouge: #d03b3b; --vert: #1a8f47;
+    --wash: rgba(14, 107, 47, 0.07); --vert-wash: rgba(26, 143, 71, 0.12);
+    --rouge-wash: rgba(208, 59, 59, 0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0f0d; --surface: #171a17; --surface-2: #1f231e;
+      --ink: #f2f4f1; --ink-2: #b9c0b7; --ink-3: #838a81;
+      --grid: #272b26; --ring: rgba(255, 255, 255, 0.10);
+      --accent: #4cbf74; --accent-ink: #4cbf74;
+      --bleu: #3987e5; --jaune: #e6b929; --jaune-ink: #3d2f00;
+      --rouge: #e05252; --vert: #4cbf74;
+      --wash: rgba(76, 191, 116, 0.09); --vert-wash: rgba(76, 191, 116, 0.14);
+      --rouge-wash: rgba(224, 82, 82, 0.14);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .cadre { max-width: 1180px; margin: 0 auto; padding: 30px 18px 64px; display: flex; flex-direction: column; gap: 18px; }
+  a { color: var(--accent-ink); }
+
+  header .surtitre { text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; font-weight: 600; color: var(--accent); display: flex; align-items: center; gap: 8px; }
+  header .surtitre::before { content: ""; width: 14px; height: 19px; border-radius: 2.5px; background: var(--rouge); display: inline-block; transform: rotate(-8deg); }
+  header h1 { margin: 8px 0 4px; font-size: clamp(23px, 4vw, 32px); font-weight: 700; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--ink-2); max-width: 74ch; }
+  .lien-retour { font-size: 14px; font-weight: 600; text-decoration: none; }
+
+  .barre { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+  .onglets { display: flex; gap: 8px; flex-wrap: wrap; }
+  .onglets button, .filtre button, .bouton {
+    padding: 9px 16px; border-radius: 999px; border: 1px solid var(--ring); background: var(--surface);
+    color: var(--ink-2); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .onglets button:hover, .filtre button:hover { background: var(--wash); }
+  .onglets button.actif { background: var(--accent); border-color: var(--accent); color: var(--page); }
+  .filtre button.actif { border-color: var(--accent); color: var(--accent-ink); background: var(--wash); }
+  .grandi { flex: 1; }
+
+  .bouton-maj { background: var(--accent); border-color: var(--accent); color: var(--page); display: inline-flex; align-items: center; gap: 8px; }
+  .bouton-maj:disabled { opacity: 0.6; cursor: progress; }
+  .bouton-2 { background: var(--surface); }
+  .statut-maj { font-size: 13px; color: var(--ink-3); min-width: 0; }
+
+  .cartes-stat { display: flex; flex-wrap: wrap; gap: 10px; }
+  .stat { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 10px 14px; min-width: 120px; }
+  .stat b { display: block; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+  .stat span { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.06em; }
+
+  details.aide { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 4px 16px; }
+  details.aide summary { cursor: pointer; font-weight: 600; padding: 10px 0; font-size: 14.5px; }
+  details.aide ul { margin: 4px 0 14px; padding-left: 18px; color: var(--ink-2); font-size: 14px; }
+  details.aide li { margin: 5px 0; }
+
+  .tableau-enveloppe { overflow-x: auto; border: 1px solid var(--ring); border-radius: 14px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 860px; }
+  thead th { position: sticky; top: 0; background: var(--surface-2); text-align: left; font-weight: 600; color: var(--ink-2);
+    font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; padding: 11px 12px; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+  tbody td { padding: 11px 12px; border-bottom: 1px solid var(--grid); vertical-align: middle; }
+  tbody tr:hover { background: var(--wash); }
+  tr.groupe td { background: var(--surface-2); font-weight: 700; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); padding: 8px 12px; }
+  .date-c { color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .date-c .h { color: var(--ink-3); font-size: 12.5px; }
+  .match-c b { font-weight: 600; }
+  .match-c .court { color: var(--ink-3); font-size: 12px; }
+  .tag { display: inline-block; font-size: 10.5px; font-weight: 700; padding: 1px 6px; border-radius: 6px; margin-left: 5px; text-transform: uppercase; letter-spacing: 0.04em; vertical-align: middle; }
+  .tag-promu { background: var(--jaune); color: var(--jaune-ink); }
+  .tag-derby { background: var(--rouge-wash); color: var(--rouge); border: 1px solid var(--rouge); }
+  .vb-cell { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+
+  .pred { display: flex; align-items: baseline; gap: 8px; }
+  .pred b { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .pred .cote { color: var(--ink-3); font-size: 12.5px; }
+  .barre-p { height: 5px; border-radius: 3px; background: var(--grid); margin-top: 4px; overflow: hidden; }
+  .barre-p i { display: block; height: 100%; background: var(--accent); }
+
+  .arb .nom { font-weight: 500; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 6px; }
+  .b-ok { background: var(--vert-wash); color: var(--vert); }
+  .b-att { background: rgba(242,196,55,0.2); color: var(--jaune-ink); }
+  .b-non { background: var(--surface-2); color: var(--ink-3); }
+
+  .cote-book b { font-variant-numeric: tabular-nums; }
+  .cote-book .src { font-size: 11px; color: var(--ink-3); }
+  .cote-book .paire { color: var(--ink-2); font-size: 12.5px; }
+
+  .vb-oui { background: var(--vert-wash); color: var(--vert); border-radius: 8px; padding: 6px 10px; display: inline-block; font-weight: 600; font-size: 13px; }
+  .vb-oui b { font-variant-numeric: tabular-nums; }
+  .vb-non { color: var(--ink-3); font-size: 12.5px; }
+
+  .res-rouge { color: var(--rouge); font-weight: 700; }
+  .res-sans { color: var(--vert); font-weight: 700; }
+  .res-pastille { font-size: 11px; color: var(--ink-3); }
+  .gagne { color: var(--vert); font-weight: 700; }
+  .perdu { color: var(--rouge); }
+
+  .vide { padding: 40px 20px; text-align: center; color: var(--ink-3); }
+  .erreur { background: var(--rouge-wash); color: var(--rouge); border: 1px solid var(--rouge); border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+  .note { font-size: 12.5px; color: var(--ink-3); }
+  .journal { font-size: 12px; color: var(--ink-3); font-family: ui-monospace, monospace; white-space: pre-wrap; max-height: 0; overflow: hidden; transition: none; }
+  .journal.ouvert { max-height: 300px; overflow: auto; margin-top: 6px; }
+</style>
+
+<div class="cadre">
+  <header>
+    <div class="surtitre" id="surtitre">Saison —</div>
+    <h1>Tous les matchs de la saison</h1>
+    <p>Pour chaque match des trois championnats : la probabilité <b>maison</b> qu'il se joue <b>sans carton rouge</b>
+       (même méthode que l'outil live, mais avant le coup d'envoi), l'arbitre désigné, la cote du bookmaker,
+       et le repérage d'un éventuel <b>pari de valeur</b> (« value bet »).
+       <a href="/" class="lien-retour">← Revenir à l'outil live</a>
+       &nbsp;·&nbsp; <a href="/paris" class="lien-retour">Bot de paris simulés →</a></p>
+  </header>
+
+  <div class="barre">
+    <div class="onglets" id="onglets"></div>
+    <div class="grandi"></div>
+    <button class="bouton bouton-maj" id="btn-maj" onclick="rafraichir(false)">⟳ Rafraîchir ce championnat</button>
+    <button class="bouton bouton-2" id="btn-maj-all" onclick="rafraichir(true)">Les 3</button>
+  </div>
+  <div class="statut-maj" id="statut">Chargement…</div>
+  <div class="journal" id="journal"></div>
+
+  <div class="cartes-stat" id="stats"></div>
+
+  <div class="barre">
+    <div class="filtre" id="filtres"></div>
+    <label style="font-size:14px; display:flex; align-items:center; gap:6px; cursor:pointer;">
+      <input type="checkbox" id="chk-vb" onchange="rendre()"> Seulement les value bets ★
+    </label>
+  </div>
+
+  <details class="aide">
+    <summary>Comment lire ce tableau ? (clique)</summary>
+    <ul>
+      <li><b>Pas de rouge (prédiction)</b> : ma probabilité que le match finisse sans carton rouge, avant le coup d'envoi.
+          C'est le taux de base du championnat, ajusté par l'<b>agressivité des deux équipes</b>, par l'<b>arbitre</b>
+          (quand il est connu — sauf en Serie A où il ne prédit rien), et par l'<b>écart de classement</b> (à partir de la journée 6).
+          La <b>cote juste</b> = 1 ÷ probabilité : c'est le prix « équitable », sans marge.</li>
+      <li><b>Arbitre</b> : <span class="badge b-ok">✓</span> désigné et pris en compte ·
+          <span class="badge b-att">?</span> désigné mais inconnu de mes données ·
+          <span class="badge b-non">—</span> pas encore désigné (souvent publié la veille).</li>
+      <li><b>Cote bookmaker</b> : le prix réel « pas de rouge » / « rouge ». J'essaie d'abord <b>Pinnacle</b> ;
+          comme il ne cote pas ce marché pour ces ligues, je prends le meilleur book disponible (souvent <b>Unibet</b>) et j'indique son nom.</li>
+      <li><b>Value bet (pari de valeur)</b> : quand le bookmaker paie <b>plus</b> que ma cote juste, il y a un avantage théorique (★).
+          ⚠️ C'est une <b>estimation</b>, pas un gain garanti : l'écart est souvent à l'intérieur de la marge du book. À jouer avec prudence.</li>
+      <li><b>🔥 Derby</b> : match rival à fort enjeu. Mesuré sur 3 saisons, les derbies génèrent plus de cartons rouges
+          (Premier League ×1,4 · Serie A ×1,4 · Liga ≈ ×1, quasi aucun effet). C'est déjà <b>intégré à la prédiction</b>, et rappelé par le tag « 🔥 Derby » dans la colonne value bet.</li>
+      <li><b>Résultat</b> (matchs passés) : <span class="res-rouge">🟥 Rouge</span> ou <span class="res-sans">✅ Pas de rouge</span>,
+          mémorisé une fois le match joué. Si un value bet était affiché, j'indique s'il aurait été gagnant.</li>
+    </ul>
+  </details>
+
+  <div id="contenu"></div>
+</div>
+
+<script>
+  const LIGUES = [
+    { il: 0, nom: 'Premier League', code: 'eng.1' },
+    { il: 1, nom: 'Liga', code: 'esp.1' },
+    { il: 2, nom: 'Serie A', code: 'ita.1' },
+  ];
+  const FILTRES = [
+    { id: 'avenir', label: 'À venir' },
+    { id: 'passes', label: 'Passés' },
+    { id: 'tous', label: 'Tous' },
+  ];
+  let etat = null;         // la mémoire renvoyée par le serveur
+  let ligueActive = 0;
+  let filtreActif = 'avenir';
+
+  const fmtPct = p => (p * 100).toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
+  const fmtCote = c => c == null ? '—' : c.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const fmtEdge = e => (e >= 0 ? '+' : '') + (e * 100).toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    const j = d.toLocaleDateString('fr-FR', { weekday: 'short', day: '2-digit', month: 'short' });
+    const h = d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+    return { j, h };
+  }
+
+  // ---- Barre d'onglets et de filtres ----
+  function construitBarres() {
+    document.getElementById('onglets').innerHTML = LIGUES.map(l =>
+      `<button class="${l.il === ligueActive ? 'actif' : ''}" onclick="choisirLigue(${l.il})">${l.nom}</button>`).join('');
+    document.getElementById('filtres').innerHTML = FILTRES.map(f =>
+      `<button class="${f.id === filtreActif ? 'actif' : ''}" onclick="choisirFiltre('${f.id}')">${f.label}</button>`).join('');
+  }
+  function choisirLigue(il) { ligueActive = il; construitBarres(); rendre(); }
+  function choisirFiltre(id) { filtreActif = id; construitBarres(); rendre(); }
+
+  // ---- Lecture de la mémoire : serveur local si présent, sinon le fichier etat.json publié en ligne ----
+  const EN_LIGNE = /github.io$/.test(location.hostname);
+  if (EN_LIGNE) {
+    document.getElementById('btn-maj').style.display = 'none';
+    document.getElementById('btn-maj-all').style.display = 'none';
+  }
+  async function lisEtat() {
+    if (!EN_LIGNE) {
+      try { const r = await fetch('/api/etat'); if (r.ok) return await r.json(); } catch (e) { /* pas de serveur local */ }
+    }
+    const r = await fetch('etat.json?t=' + Date.now());
+    return await r.json();
+  }
+
+  // ---- Chargement initial de la mémoire ----
+  async function charger() {
+    try {
+      const j = await lisEtat();
+      etat = j && !j.vide ? j : null;
+    } catch (e) { etat = null; }
+    majEntete();
+    rendre();
+  }
+  function majEntete() {
+    if (etat && etat.saison) document.getElementById('surtitre').textContent = 'Saison ' + etat.saison;
+    const s = document.getElementById('statut');
+    if (!etat) { s.textContent = 'Aucune donnée encore. Clique sur « Rafraîchir » pour aller chercher les matchs.'; return; }
+    const d = etat.misAJour ? new Date(etat.misAJour).toLocaleString('fr-FR') : '—';
+    s.textContent = 'Dernière mise à jour : ' + d;
+  }
+
+  // ---- Le bouton : va chercher matchs + arbitres + cotes sur internet ----
+  async function rafraichir(toutes) {
+    const btn = document.getElementById('btn-maj'), btn2 = document.getElementById('btn-maj-all');
+    btn.disabled = true; btn2.disabled = true;
+    const s = document.getElementById('statut');
+    const cible = toutes ? 'all' : LIGUES[ligueActive].code;
+    const quoi = toutes ? 'les 3 championnats' : LIGUES[ligueActive].nom;
+    let sec = 0; s.textContent = `⏳ Récupération de ${quoi} en cours… (0 s)`;
+    const t0 = Date.now();
+    const minu = setInterval(() => { sec = Math.round((Date.now() - t0) / 1000); s.textContent = `⏳ Récupération de ${quoi} en cours… (${sec} s)`; }, 1000);
+    try {
+      const r = await fetch('/api/rafraichir?ligue=' + encodeURIComponent(cible));
+      const j = await r.json();
+      clearInterval(minu);
+      if (j.erreur) { s.innerHTML = `<span class="erreur">Erreur : ${j.erreur}</span>`; }
+      else {
+        etat = j.etat;
+        const jr = document.getElementById('journal');
+        jr.textContent = (j.journal || []).join('\n');
+        jr.classList.add('ouvert');
+        majEntete();
+        rendre();
+      }
+    } catch (e) {
+      clearInterval(minu);
+      s.innerHTML = `<span class="erreur">Impossible de rafraîchir : ${e.message}. Le serveur local (serveur.js) est-il bien lancé ?</span>`;
+    } finally {
+      btn.disabled = false; btn2.disabled = false;
+    }
+  }
+
+  // ---- Rendu du tableau ----
+  function ligueCourante() { return etat && etat.ligues ? etat.ligues.find(l => l.il === ligueActive) : null; }
+
+  function badgeArbitre(m) {
+    if (!m.arbitreActif) {
+      const n = m.arbitre ? m.arbitre : '—';
+      return `<span class="nom">${n}</span> <span class="badge b-non" title="En Serie A, l'arbitre n'améliore pas la prédiction (validé par backtest) : il n'est pas pris en compte.">non prédictif</span>`;
+    }
+    if (m.arbitre && m.arbitreConnu) return `<span class="nom">${m.arbitre}</span> <span class="badge b-ok" title="Arbitre désigné et pris en compte dans la prédiction.">✓</span>`;
+    if (m.arbitre && !m.arbitreConnu) return `<span class="nom">${m.arbitre}</span> <span class="badge b-att" title="Arbitre désigné mais absent de mes données : non pris en compte.">?</span>`;
+    return `<span class="badge b-non" title="Arbitre pas encore désigné (souvent publié la veille du match).">—</span>`;
+  }
+
+  function celluleCote(m) {
+    if (!m.cotes) return '<span class="vb-non">—</span>';
+    const c = m.cotes;
+    const marge = c.marge != null ? ` · marge ${(c.marge * 100).toFixed(1)} %` : '';
+    return `<div class="cote-book">
+      <div class="paire">non <b>${fmtCote(c.coteNon)}</b> / rouge <b>${fmtCote(c.coteOui)}</b></div>
+      <div class="src">${c.source}${marge}</div></div>`;
+  }
+
+  function celluleValueBet(m) {
+    const derby = (m.derby && m.derby.est)
+      ? `<span class="tag tag-derby" title="${m.derby.label} — risque de rouge relevé, déjà intégré à la prédiction.">🔥 Derby</span>` : '';
+    const vb = m.valueBet;
+    let corps;
+    if (!vb) corps = '<span class="vb-non">—</span>';
+    else if (vb.interessant) corps = `<span class="vb-oui" title="Le book paie plus que ma cote juste. Estimation, pas une garantie.">★ ${vb.mise} · <b>${fmtCote(vb.cote)}</b> · ${fmtEdge(vb.edge)}</span>`;
+    else corps = `<span class="vb-non">pas de valeur (${fmtEdge(vb.edge)})</span>`;
+    return derby ? `<div class="vb-cell">${derby}${corps}</div>` : corps;
+  }
+
+  function celluleResultat(m) {
+    if (!m.resultat || m.resultat.termine !== true) return '<span class="vb-non">—</span>';
+    if (m.resultat.aRouge === null || m.resultat.aRouge === undefined) return '<span class="res-pastille">résultat indisponible</span>';
+    const base = m.resultat.aRouge ? '<span class="res-rouge">🟥 Rouge</span>' : '<span class="res-sans">✅ Pas de rouge</span>';
+    // Le value bet affiché aurait-il gagné ?
+    if (m.valueBet && m.valueBet.interessant) {
+      const gagne = (m.valueBet.mise === 'Rouge') === (m.resultat.aRouge === true);
+      const txt = gagne ? `<span class="gagne">pari ★ gagné</span>` : `<span class="perdu">pari ★ perdu</span>`;
+      return `${base} <div class="res-pastille">${txt}</div>`;
+    }
+    return base;
+  }
+
+  function ligneMatch(m) {
+    const d = fmtDate(m.date);
+    const promo = (nom, court, promu) => `<b>${nom}</b>${promu ? '<span class="tag tag-promu">promu</span>' : ''}`;
+    const derbyTag = (m.derby && m.derby.est)
+      ? `<span class="tag tag-derby" title="${m.derby.label} — les derbies génèrent plus de cartons, c'est intégré à la prédiction.">🔥 ${m.derby.label}</span>` : '';
+    const pct = m.prediction.pNo;
+    return `<tr>
+      <td class="date-c">${d.j}<br><span class="h">${d.h}</span></td>
+      <td class="match-c">${promo(m.home, m.homeCourt, m.homePromu)} <span class="court">—</span> ${promo(m.away, m.awayCourt, m.awayPromu)}${derbyTag}
+        ${m.score ? `<div class="court">score ${m.score}</div>` : ''}</td>
+      <td class="arb">${badgeArbitre(m)}</td>
+      <td>
+        <div class="pred"><b>${fmtPct(pct)}</b><span class="cote">cote ${fmtCote(m.prediction.cote)}</span></div>
+        <div class="barre-p"><i style="width:${(pct * 100).toFixed(0)}%"></i></div>
+      </td>
+      <td>${celluleCote(m)}</td>
+      <td>${celluleValueBet(m)}</td>
+      <td>${celluleResultat(m)}</td>
+    </tr>`;
+  }
+
+  function rendre() {
+    const L = ligueCourante();
+    const contenu = document.getElementById('contenu');
+    document.getElementById('stats').innerHTML = '';
+    if (!L) {
+      contenu.innerHTML = `<div class="tableau-enveloppe"><div class="vide">Aucun match chargé pour l'instant.<br>Clique sur « Rafraîchir ce championnat ».</div></div>`;
+      return;
+    }
+    const seulVB = document.getElementById('chk-vb').checked;
+    let matchs = L.matchs.slice();
+    if (seulVB) matchs = matchs.filter(m => m.valueBet && m.valueBet.interessant);
+
+    const avenir = matchs.filter(m => m.statut !== 'termine').sort((a, b) => new Date(a.date) - new Date(b.date));
+    const passes = matchs.filter(m => m.statut === 'termine').sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // --- Cartes de stats + bilan de suivi ---
+    const tousL = L.matchs;
+    const nbVB = tousL.filter(m => m.valueBet && m.valueBet.interessant && m.statut !== 'termine').length;
+    // bilan des value bets ★ sur matchs passés (avec cote mémorisée + résultat connu)
+    const regles = tousL.filter(m => m.fige && m.valueBet && m.valueBet.interessant && m.resultat && (m.resultat.aRouge === true || m.resultat.aRouge === false));
+    let gagnes = 0, profit = 0;
+    for (const m of regles) {
+      const ok = (m.valueBet.mise === 'Rouge') === (m.resultat.aRouge === true);
+      if (ok) { gagnes++; profit += (m.valueBet.cote - 1); } else { profit -= 1; }
+    }
+    const roi = regles.length ? (profit / regles.length) * 100 : null;
+    const cartes = [
+      ['Matchs', tousL.length],
+      ['À venir', tousL.filter(m => m.statut !== 'termine').length],
+      ['Value bets ★ à venir', nbVB],
+      ['Matchs joués mémorisés', tousL.filter(m => m.fige).length],
+    ];
+    if (regles.length) cartes.push(['Suivi value bets ★', `${gagnes}/${regles.length}` + (roi != null ? ` · ROI ${roi >= 0 ? '+' : ''}${roi.toFixed(0)} %` : '')]);
+    document.getElementById('stats').innerHTML = cartes.map(([lab, v]) => `<div class="stat"><b>${v}</b><span>${lab}</span></div>`).join('');
+
+    // --- Tableau ---
+    const enTete = `<thead><tr>
+      <th>Date</th><th>Match</th><th>Arbitre</th><th>Pas de rouge (prédiction)</th>
+      <th>Cote bookmaker</th><th>Value bet</th><th>Résultat</th></tr></thead>`;
+    let corps = '';
+    const bloc = (titre, arr) => arr.length ? `<tr class="groupe"><td colspan="7">${titre} — ${arr.length}</td></tr>` + arr.map(ligneMatch).join('') : '';
+    if (filtreActif === 'avenir') corps = bloc('À venir', avenir);
+    else if (filtreActif === 'passes') corps = bloc('Matchs joués (mémorisés)', passes);
+    else corps = bloc('À venir', avenir) + bloc('Matchs joués (mémorisés)', passes);
+
+    if (!corps) { contenu.innerHTML = `<div class="tableau-enveloppe"><div class="vide">Aucun match à afficher avec ce filtre.</div></div>`; return; }
+    contenu.innerHTML = `<div class="tableau-enveloppe"><table>${enTete}<tbody>${corps}</tbody></table></div>`;
+  }
+
+  // Actualisation automatique de l'AFFICHAGE : toutes les 60 s, on relit l'état du serveur
+  // (mis à jour en arrière-plan) et on ré-affiche seulement s'il a changé. Ainsi les arbitres,
+  // cotes et résultats qui arrivent tout seuls apparaissent sans recharger la page.
+  async function sonder() {
+    if (document.getElementById('btn-maj').disabled) return; // un rafraîchissement manuel est en cours
+    try {
+      const j = await lisEtat();
+      if (j && !j.vide && j.misAJour && j.misAJour !== (etat && etat.misAJour)) {
+        etat = j; majEntete(); rendre();
+      }
+    } catch (e) { /* serveur momentanément indisponible : on réessaiera */ }
+  }
+  setInterval(sonder, 60000);
+
+  construitBarres();
+  charger();
+</script>

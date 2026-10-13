@@ -1,0 +1,60 @@
+{
+  "_lisez_moi": "Toutes les conditions du bot. Tu peux modifier ces valeurs, puis redemarrer le serveur (LANCER.bat).",
+
+  "mode": "simulation",
+  "_mode": "simulation = aucun argent engage, on note seulement les paris qu'on aurait pris. C'est le SEUL mode implemente aujourd'hui.",
+
+  "capital": 200,
+  "_capital": "Capital de reference pour calculer les mises (en euros). En simulation, c'est de l'argent fictif.",
+
+  "kellyFraction": 0.25,
+  "_kellyFraction": "Fraction de Kelly. 0,25 = un quart de Kelly (prudent). 1 = Kelly plein (tres agressif, deconseille).",
+
+  "commission": 0.05,
+  "_commission": "Commission Betfair sur les gains nets (5 % par defaut).",
+
+  "edgeMini": 0.03,
+  "_edgeMini": "Avantage minimum apres commission pour parier. 0,03 = +3 % d'esperance. En dessous de 0,02, on parie du bruit.",
+
+  "coteMini": 1.08,
+  "coteMaxi": 12,
+  "_cotes": "Fourchette de cotes acceptees. Sous 1,08 on ramasse des centimes ; au-dessus de 12 l'estimation du modele est trop imprecise.",
+
+  "miseMini": 2,
+  "miseMaxi": 20,
+  "_mises": "Bornes dures de la mise, quoi que dise Kelly.",
+
+  "liquiditeMini": 20,
+  "_liquiditeMini": "Montant minimum disponible a la cote visee (en euros). En dessous, le marche est trop mince : le prix affiche est illusoire.",
+
+  "spreadMaxi": 0.15,
+  "_spreadMaxi": "Ecart maxi accepte entre acheteurs et vendeurs, en proportion de la cote. Un ecart large = prix pas fiable.",
+
+  "minuteMini": 10,
+  "minuteMaxi": 80,
+  "_minutes": "Fenetre de jeu ou le bot travaille. Avant 10' l'echantillon bouge peu ; apres 80' les cotes deviennent extremes.",
+
+  "echantillonMini": 60,
+  "_echantillonMini": "Nombre minimum de matchs historiques comparables (le n du modele). En dessous, l'estimation est trop fragile.",
+
+  "fraicheurMaxSec": 120,
+  "_fraicheurMaxSec": "Age maxi des donnees ESPN au moment de la decision. C'est LE garde-fou anti-retard : au-dela, on ne parie pas.",
+
+  "attenteApresCarteMin": 3,
+  "_attenteApresCarteMin": "Minutes d'attente apres un carton avant de parier a nouveau sur ce match. Juste apres un carton, le marche a deja bouge et nous, non : c'est la que l'on se fait ramasser.",
+
+  "maxParisParMatch": 2,
+  "maxParisParJour": 10,
+  "cooldownMin": 10,
+  "_limites": "cooldownMin = minutes d'attente entre deux paris sur le MEME match.",
+
+  "perteMaxJour": 30,
+  "perteMaxTotale": 100,
+  "_pertes": "Arret automatique du bot si ces pertes cumulees sont atteintes (en euros).",
+
+  "ligues": [0, 1, 2],
+  "_ligues": "0 = Premier League, 1 = Liga, 2 = Serie A.",
+
+  "sens": "les_deux",
+  "_sens": "les_deux | pas_de_rouge | rouge"
+}

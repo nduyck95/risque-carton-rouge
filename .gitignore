@@ -1,0 +1,8 @@
+scratch-*
+site/
+node_modules/
+betfair-config.json
+*.sauvegarde-*
+donnees/paris-simules.json
+donnees/live-saison-courante.json
+STOP*

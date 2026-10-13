@@ -1,0 +1,978 @@
+<meta charset="utf-8">
+<title>Risque de carton rouge — Premier League, Liga, Serie A</title>
+<script>window.addEventListener('error', function (e) { document.documentElement.setAttribute('data-erreur', e.message + ' | ligne ' + e.lineno + ':' + e.colno); });</script>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f8f5;
+    --surface: #fcfdfb;
+    --ink: #0c0e0c;
+    --ink-2: #50554f;
+    --ink-3: #8a8f88;
+    --grid: #e2e5e0;
+    --axis: #c2c6c0;
+    --ring: rgba(12, 14, 12, 0.10);
+    --accent: #0e6b2f;
+    --serie: #008300;
+    --serie2: #2a78d6;
+    --jaune: #f2c437;
+    --jaune-ink: #6b5200;
+    --rouge: #d03b3b;
+    --wash: rgba(14, 107, 47, 0.07);
+    --wash2: rgba(42, 120, 214, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0f0d;
+      --surface: #171a17;
+      --ink: #f2f4f1;
+      --ink-2: #b9c0b7;
+      --ink-3: #838a81;
+      --grid: #272b26;
+      --axis: #3a3f39;
+      --ring: rgba(255, 255, 255, 0.10);
+      --accent: #4cbf74;
+      --serie: #2ca02c;
+      --serie2: #3987e5;
+      --jaune: #e6b929;
+      --jaune-ink: #3d2f00;
+      --rouge: #e05252;
+      --wash: rgba(76, 191, 116, 0.09);
+      --wash2: rgba(57, 135, 229, 0.10);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0f0d;
+    --surface: #171a17;
+    --ink: #f2f4f1;
+    --ink-2: #b9c0b7;
+    --ink-3: #838a81;
+    --grid: #272b26;
+    --axis: #3a3f39;
+    --ring: rgba(255, 255, 255, 0.10);
+    --accent: #4cbf74;
+    --serie: #2ca02c;
+    --serie2: #3987e5;
+    --jaune: #e6b929;
+    --jaune-ink: #3d2f00;
+    --rouge: #e05252;
+    --wash: rgba(76, 191, 116, 0.09);
+    --wash2: rgba(57, 135, 229, 0.10);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .cadre { max-width: 980px; margin: 0 auto; padding: 32px 20px 56px; display: flex; flex-direction: column; gap: 20px; }
+
+  header .surtitre {
+    text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; font-weight: 600; color: var(--accent);
+    display: flex; align-items: center; gap: 8px;
+  }
+  header .surtitre::before { content: ""; width: 14px; height: 19px; border-radius: 2.5px; background: var(--rouge); display: inline-block; transform: rotate(-8deg); }
+  header h1 { margin: 8px 0 4px; font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+  header p { margin: 0; color: var(--ink-2); max-width: 62ch; }
+
+  /* --- Sélecteur de championnat --- */
+  .onglets-ligues { display: flex; gap: 8px; flex-wrap: wrap; }
+  .onglets-ligues button {
+    padding: 10px 18px; border-radius: 999px; border: 1px solid var(--ring); background: var(--surface);
+    color: var(--ink-2); font: inherit; font-size: 14.5px; font-weight: 600; cursor: pointer;
+  }
+  .onglets-ligues button:hover { background: var(--wash); }
+  .onglets-ligues button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .onglets-ligues button.actif { background: var(--accent); border-color: var(--accent); color: var(--page); }
+
+  .grille { display: grid; grid-template-columns: 5fr 4fr; gap: 20px; align-items: stretch; }
+  @media (max-width: 760px) { .grille { grid-template-columns: 1fr; } }
+
+  .carte {
+    background: var(--surface); border: 1px solid var(--ring); border-radius: 14px; padding: 22px;
+    display: flex; flex-direction: column; gap: 18px;
+  }
+  .etiquette { text-transform: uppercase; letter-spacing: 0.12em; font-size: 11.5px; font-weight: 600; color: var(--ink-3); }
+
+  /* --- Réglages --- */
+  .bloc-reglage { display: flex; flex-direction: column; gap: 10px; }
+  .ligne-valeur { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .valeur-minute { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
+  .valeur-minute small { font-size: 15px; font-weight: 500; color: var(--ink-2); }
+
+  input[type="range"] {
+    width: 100%; appearance: none; -webkit-appearance: none; height: 28px; background: transparent; cursor: pointer; margin: 0;
+  }
+  input[type="range"]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: linear-gradient(to right, var(--accent) 0%, var(--accent) var(--pct, 50%), var(--grid) var(--pct, 50%)); }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--surface);
+    border: 3px solid var(--accent); margin-top: -8px; box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  }
+  input[type="range"]::-moz-range-track { height: 6px; border-radius: 3px; background: var(--grid); }
+  input[type="range"]::-moz-range-progress { height: 6px; border-radius: 3px; background: var(--accent); }
+  input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--surface); border: 3px solid var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,0.25); }
+  input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 6px; }
+  .reperes { display: flex; justify-content: space-between; font-size: 11px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  .stepper { display: flex; align-items: center; gap: 14px; }
+  .stepper button {
+    width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--ring); background: var(--page);
+    color: var(--ink); font-size: 22px; font-weight: 600; cursor: pointer; line-height: 1;
+  }
+  .stepper button:hover { background: var(--wash); }
+  .stepper button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .stepper button:disabled { opacity: 0.35; cursor: default; }
+  .valeur-jaunes { font-size: 34px; font-weight: 700; min-width: 40px; text-align: center; font-variant-numeric: tabular-nums; }
+  .chips { display: flex; gap: 5px; flex-wrap: wrap; min-height: 26px; align-items: center; }
+  .chip-jaune { width: 15px; height: 21px; border-radius: 3px; background: var(--jaune); border: 1px solid rgba(0,0,0,0.18); transform: rotate(-6deg); }
+  .chips .aucun { font-size: 13px; color: var(--ink-3); font-style: italic; }
+
+  select {
+    width: 100%; padding: 11px 12px; border-radius: 10px; border: 1px solid var(--ring);
+    background: var(--page); color: var(--ink); font: inherit; font-size: 15px; cursor: pointer;
+  }
+  select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .duo-classement { display: flex; gap: 10px; }
+  .duo-classement > div { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  .duo-classement .sous-label { font-size: 12px; color: var(--ink-3); }
+  .note-reglage { font-size: 12px; color: var(--ink-3); margin: 0; }
+
+  /* --- Résultat --- */
+  .carte-resultat { justify-content: space-between; }
+  .hero { font-size: clamp(48px, 8vw, 68px); font-weight: 750; letter-spacing: -0.03em; line-height: 1.05; color: var(--accent); }
+  .hero-libelle { color: var(--ink-2); margin-top: 2px; max-width: 34ch; }
+  .sous-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .tuile { background: var(--page); border: 1px solid var(--ring); border-radius: 10px; padding: 12px 14px; }
+  .tuile .valeur { font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+  .tuile .valeur.rouge { color: var(--rouge); }
+  .tuile .legende { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; }
+  .echantillon { font-size: 13px; color: var(--ink-3); }
+  .echantillon strong { color: var(--ink-2); font-weight: 600; }
+  .badge-elargi {
+    display: inline-block; font-size: 11.5px; font-weight: 600; color: var(--jaune-ink); background: var(--jaune);
+    border-radius: 999px; padding: 2px 9px; margin-left: 6px; vertical-align: 1px;
+  }
+  .impact-arbitre {
+    font-size: 13.5px; color: var(--ink-2); border-left: 3px solid var(--serie2);
+    padding: 2px 0 2px 12px; margin-top: -6px;
+  }
+  .impact-arbitre strong { color: var(--ink); }
+
+  /* --- Graphiques --- */
+  .carte-graph h2 { margin: 0; font-size: 16px; font-weight: 650; letter-spacing: -0.01em; }
+  .carte-graph .sous-titre { margin: 2px 0 0; font-size: 13px; color: var(--ink-2); }
+  .legende-series { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); }
+  .legende-series .item { display: inline-flex; align-items: center; gap: 7px; }
+  .legende-series .pastille { width: 10px; height: 10px; border-radius: 50%; }
+  .zone-graph { position: relative; }
+  .zone-graph svg { display: block; width: 100%; height: auto; }
+  .infobulle {
+    position: absolute; pointer-events: none; background: var(--ink); color: var(--page);
+    border-radius: 8px; padding: 7px 10px; font-size: 12.5px; line-height: 1.45; white-space: nowrap;
+    transform: translate(-50%, calc(-100% - 12px)); opacity: 0; transition: opacity 0.1s;
+    font-variant-numeric: tabular-nums; box-shadow: 0 2px 10px rgba(0,0,0,0.25); z-index: 2;
+  }
+  .infobulle .titre-bulle { font-weight: 650; }
+  @media (prefers-reduced-motion: reduce) { .infobulle { transition: none; } }
+
+  /* --- Table des arbitres --- */
+  .defileur { overflow: auto; max-height: 420px; border: 1px solid var(--ring); border-radius: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  thead th {
+    position: sticky; top: 0; background: var(--page); text-align: right; padding: 10px 12px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ink-3);
+    border-bottom: 1px solid var(--ring); z-index: 1; white-space: nowrap;
+  }
+  thead th:first-child { text-align: left; }
+  tbody td { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; }
+  tbody td:first-child { text-align: left; font-weight: 550; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover { background: var(--wash2); }
+  tbody tr.choisi { background: var(--wash2); box-shadow: inset 3px 0 0 var(--serie2); }
+  tbody tr:last-child td { border-bottom: none; }
+  .note-table { font-size: 12.5px; color: var(--ink-3); }
+
+  /* --- Explications --- */
+  .explication { color: var(--ink-2); font-size: 14.5px; }
+  .explication h2 { color: var(--ink); font-size: 16px; margin: 0 0 6px; }
+  .explication p { margin: 6px 0; max-width: 72ch; }
+  .avertissement {
+    border-left: 3px solid var(--jaune); padding: 2px 0 2px 12px; font-size: 13.5px; color: var(--ink-3); margin-top: 10px;
+  }
+  footer { font-size: 12.5px; color: var(--ink-3); }
+</style>
+
+<div class="cadre">
+  <header>
+    <div class="surtitre">Premier League · Liga · Serie A — 3 saisons</div>
+    <h1>Risque de carton rouge en cours de match</h1>
+    <p>Choisissez le championnat, la minute du match, le nombre de cartons jaunes déjà distribués et,
+      si vous le souhaitez, l'arbitre : l'outil estime la probabilité que le match se termine
+      <strong>sans carton rouge</strong>, à partir de <span id="matchsLigue">…</span> matchs réels de
+      <span id="nomLigue">…</span> (saisons 2023-24 à 2025-26).</p>
+  </header>
+
+  <nav class="onglets-ligues" id="ongletsLigues" aria-label="Choix du championnat"></nav>
+
+  <div class="grille">
+    <section class="carte" aria-label="Réglages">
+      <div class="bloc-reglage">
+        <div class="ligne-valeur">
+          <span class="etiquette">Minute du match</span>
+          <span class="valeur-minute" id="afficheMinute">60<small>e</small></span>
+        </div>
+        <input type="range" id="curseurMinute" min="0" max="90" step="1" value="60" aria-label="Minute du match">
+        <div class="reperes"><span>0'</span><span>15'</span><span>30'</span><span>45'</span><span>60'</span><span>75'</span><span>90'</span></div>
+      </div>
+
+      <div class="bloc-reglage">
+        <span class="etiquette">Cartons jaunes déjà distribués (les deux équipes)</span>
+        <div class="stepper">
+          <button id="moinsJaune" aria-label="Un carton jaune de moins">−</button>
+          <span class="valeur-jaunes" id="afficheJaunes">3</span>
+          <button id="plusJaune" aria-label="Un carton jaune de plus">+</button>
+          <div class="chips" id="chipsJaunes"></div>
+        </div>
+      </div>
+
+      <div class="bloc-reglage">
+        <label class="etiquette" for="choixArbitre">Arbitre de la rencontre (optionnel)</label>
+        <select id="choixArbitre"></select>
+      </div>
+
+      <div class="bloc-reglage">
+        <span class="etiquette">Équipes du match (optionnel)</span>
+        <div class="duo-classement">
+          <div>
+            <label class="sous-label" for="eqEquipeA">Équipe A</label>
+            <select id="eqEquipeA"></select>
+          </div>
+          <div>
+            <label class="sous-label" for="eqEquipeB">Équipe B</label>
+            <select id="eqEquipeB"></select>
+          </div>
+        </div>
+        <p class="note-reglage">Équipe absente de la liste (montée cette saison) : choisissez « Équipe promue ».</p>
+      </div>
+
+      <div class="bloc-reglage">
+        <span class="etiquette">Classement des deux équipes (optionnel)</span>
+        <div class="duo-classement">
+          <div>
+            <label class="sous-label" for="posEquipeA">Position équipe A</label>
+            <select id="posEquipeA"></select>
+          </div>
+          <div>
+            <label class="sous-label" for="posEquipeB">Position équipe B</label>
+            <select id="posEquipeB"></select>
+          </div>
+        </div>
+        <p class="note-reglage">Laissez vide en tout début de saison : avant la 6<sup>e</sup> journée, le classement n'est pas assez fiable.</p>
+      </div>
+
+      <div class="bloc-reglage">
+        <span class="etiquette">Score actuel (optionnel)</span>
+        <div class="duo-classement">
+          <div>
+            <label class="sous-label" for="butsA">Buts équipe A</label>
+            <select id="butsA"></select>
+          </div>
+          <div>
+            <label class="sous-label" for="butsB">Buts équipe B</label>
+            <select id="butsB"></select>
+          </div>
+        </div>
+        <p class="note-reglage">Un match serré (égalité ou 1 but d'écart) reste sous tension ; un score large calme le jeu.</p>
+      </div>
+
+      <p class="explication" style="margin:0">L'outil suppose qu'<strong>aucun carton rouge</strong> n'a encore été montré à cet instant du match.</p>
+    </section>
+
+    <section class="carte carte-resultat" aria-label="Résultat">
+      <div>
+        <span class="etiquette">Chance de finir sans carton rouge</span>
+        <div class="hero" id="heroPourcent">—</div>
+        <div class="hero-libelle" id="heroLibelle">des matchs dans cette situation se sont terminés sans aucun carton rouge.</div>
+      </div>
+      <div class="impact-arbitre" id="impactArbitre" hidden></div>
+      <div class="impact-arbitre" id="impactEquipes" hidden></div>
+      <div class="impact-arbitre" id="impactClassement" hidden></div>
+      <div class="impact-arbitre" id="impactScore" hidden></div>
+      <div class="sous-stats">
+        <div class="tuile">
+          <div class="valeur" id="coteSans">—</div>
+          <div class="legende">Cote équitable « sans carton rouge » (1 ÷ probabilité)</div>
+        </div>
+        <div class="tuile">
+          <div class="valeur rouge" id="risqueRouge">—</div>
+          <div class="legende">Risque qu'un carton rouge soit encore distribué</div>
+        </div>
+      </div>
+      <div class="echantillon" id="echantillon">…</div>
+    </section>
+  </div>
+
+  <section class="carte carte-graph" aria-label="Évolution du risque">
+    <div>
+      <h2 id="titreGraph">Évolution du risque minute par minute</h2>
+      <p class="sous-titre">Probabilité de finir sans carton rouge, selon la minute, à nombre de jaunes constant. Cliquez sur la courbe pour changer la minute.</p>
+    </div>
+    <div class="legende-series" id="legendeEvolution"></div>
+    <div class="zone-graph" id="zoneGraph">
+      <div class="infobulle" id="infobulle"></div>
+    </div>
+  </section>
+
+  <section class="carte carte-graph" aria-label="Les arbitres à la loupe">
+    <div>
+      <h2 id="titreArbitres">Les arbitres à la loupe</h2>
+      <p class="sous-titre" id="sousTitreArbitres">Cartons jaunes distribués par tranche de 15 minutes (moyenne par match), et sévérité de chaque arbitre.</p>
+    </div>
+    <div class="legende-series" id="legendeHisto"></div>
+    <div class="zone-graph" id="zoneHisto">
+      <div class="infobulle" id="infobulleHisto"></div>
+    </div>
+    <div class="defileur" role="region" aria-label="Statistiques par arbitre" tabindex="0">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Arbitre</th>
+            <th scope="col">Matchs</th>
+            <th scope="col">Jaunes / match</th>
+            <th scope="col">Rouges</th>
+            <th scope="col">% matchs avec rouge</th>
+          </tr>
+        </thead>
+        <tbody id="corpsTableArbitres"></tbody>
+      </table>
+    </div>
+    <p class="note-table">Cliquez sur un arbitre pour le sélectionner. Trié du plus grand nombre de matchs dirigés au plus petit.</p>
+  </section>
+
+  <section class="carte explication" aria-label="Explications">
+    <div>
+      <h2>Comment ça marche ?</h2>
+      <p>Pour chaque match de Premier League, de Liga et de Serie A des 3 dernières saisons, on connaît la minute
+        exacte de chaque carton et le nom de l'arbitre. Quand vous choisissez « 60<sup>e</sup> minute, 3 jaunes »,
+        l'outil retrouve tous les matchs du championnat sélectionné qui étaient <em>exactement dans cette situation</em>
+        à la 60<sup>e</sup> minute (3 jaunes, pas de rouge), puis regarde combien d'entre eux se sont finalement
+        terminés sans carton rouge. Le pourcentage affiché, c'est simplement cette proportion observée dans la réalité.</p>
+      <p><strong>Et l'arbitre ?</strong> Chaque arbitre a sa sévérité, mais un backtest (modèle entraîné sur
+        2023-25 puis testé à l'aveugle sur 2025-26) a montré que les écarts entre arbitres sont en grande partie
+        du hasard : l'arbitre « sévère » d'une saison ne l'est souvent plus la suivante. L'outil applique donc ce
+        facteur avec une forte dose de prudence — le profil de chaque arbitre est largement ramené vers la moyenne
+        de son championnat, et seuls les profils extrêmes et bien établis déplacent sensiblement le risque.
+        C'est le réglage qui prédit le mieux l'avenir dans nos tests.</p>
+      <p><strong>Et les équipes ?</strong> Certaines équipes prennent structurellement beaucoup plus de cartons
+        que d'autres (Getafe : 3,0 jaunes par match, Manchester City : 1,6). C'est le facteur le plus puissant
+        après le championnat lui-même : les affiches entre équipes « chaudes » finissent presque deux fois plus
+        souvent avec un rouge que les affiches entre équipes calmes. Si vous choisissez les deux équipes, l'outil
+        applique leur profil « cartons » des 3 dernières saisons, avec des coefficients propres à chaque championnat.
+        Pour une équipe <em>promue cette saison</em> (absente de la liste), choisissez « Équipe promue » : l'outil
+        utilise alors le profil moyen observé chez les 9 promus de ce championnat sur les 3 dernières saisons.</p>
+      <p><strong>Et le classement ?</strong> L'analyse de 2 967 matchs (classements reconstitués au moment
+        de chaque rencontre) montre que plus les deux équipes sont <em>proches au classement</em>, plus le risque
+        de carton rouge est élevé — sans doute parce que l'enjeu direct rend le match plus tendu. Si vous indiquez
+        la position des deux équipes, l'outil applique ce facteur, propre à chaque championnat : net en Liga et
+        en Serie A, quasi inexistant en Premier League (l'ajustement y reste donc proche de 1).</p>
+      <p><strong>Et le score ?</strong> En Liga, l'effet est net et vérifié : un score large (2 buts d'écart ou plus)
+        « endort » le match — le risque de rouge chute d'un tiers — tandis qu'un match serré reste sous tension,
+        surtout en seconde période. En Premier League et en Serie A, le backtest ne trouve pas d'effet fiable :
+        l'outil n'y applique donc pas ce facteur (il vous le dit si vous saisissez un score). Ce facteur est calibré
+        pour ne pas compter deux fois le signal des cartons jaunes (un match serré a déjà, en général, plus de jaunes).</p>
+      <p><strong>Chaque championnat a ses propres réglages.</strong> Tous les facteurs sont mesurés et pondérés
+        championnat par championnat, puis vérifiés par backtest (modèle construit sur 2023-25, testé à l'aveugle
+        sur 2025-26) : l'effet classement est fort en Liga et quasi nul en Premier League ; le facteur arbitre est
+        fortement amorti en Angleterre et en Espagne et désactivé en Serie A, où il ne prédit rien ; le facteur
+        score n'est actif qu'en Liga. Un facteur qui ne prédit pas mieux que la moyenne est désactivé plutôt
+        qu'affiché pour faire joli.</p>
+      <p>La <strong>cote équitable</strong> est la cote « juste » qui correspond à la probabilité affichée :
+        1 divisé par la probabilité. Exemple : 80 % de chances → cote de 1,25.</p>
+      <p>Quand trop peu de matchs correspondent à la situation exacte (situations rares), l'outil élargit un peu la
+        recherche aux situations très proches et l'indique par la mention
+        <span class="badge-elargi" style="margin-left:0">estimation élargie</span>.</p>
+      <div class="avertissement">Outil statistique basé sur le passé : il ne prédit pas l'avenir et ne constitue pas
+        un conseil de pari. Les cotes réelles des bookmakers incluent leur marge et seront donc plus basses.</div>
+    </div>
+  </section>
+
+  <footer>Données : minutes des cartons et arbitres de <span id="totalMatchs2">…</span> matchs
+    (Premier League, Liga et Serie A, saisons 2023-24 à 2025-26 — sources ESPN et football-data.co.uk).
+    Second carton jaune entraînant un rouge : compté comme carton rouge.</footer>
+</div>
+
+<script>
+  // ============ DONNÉES ============
+  // LIGUES : [{nom, arbitres: [noms], matchs: [[indexArbitre, [[minute, estRouge], ...]], ...]}, ...]
+  // minute : 45.02 = 45'+2' (arrêts de jeu), 90.05 = 90'+5'. indexArbitre -1 = inconnu.
+  const LIGUES = __LIGUES__;
+  // Effet de l'écart de classement, par ligue : régression logistique P(rouge) ~ écart,
+  // calculée sur les classements reconstitués match par match (journées 6+, 3 saisons).
+  const CLASSEMENT = __CLASSEMENT__;
+  // Agressivité des équipes, par ligue : jaunes/match de chaque équipe (2023-26, avec prudence
+  // statistique), profil moyen des promus, et logistique P(rouge) ~ agressivité cumulée des 2 équipes.
+  const EQUIPES = __EQUIPES__;
+  // Pondération par championnat validée par backtest (validation croisée 2023-25, test aveugle 2025-26) :
+  // arbP = amortissement du facteur arbitre (0 = facteur désactivé dans ce championnat).
+  const REGLAGES = __REGLAGES__;
+  // Facteur score en cours de match, par ligue : multiplicateurs par [mi-temps][écart au score 0/1/2+],
+  // ratios observé/attendu calibrés contre le modèle de base (minute + jaunes), backtestés sur 2025-26.
+  const SCORE = __SCORE__;
+
+  // ============ CONTEXTE PAR CHAMPIONNAT (calculé une fois, mis en cache) ============
+  const NB_TRANCHES = 6; // 1-15, 16-30, 31-45(+), 46-60, 61-75, 76-90(+)
+  function trancheDe(t) {
+    const tf = Math.floor(t);
+    return tf <= 15 ? 0 : tf <= 30 ? 1 : tf <= 45 ? 2 : tf <= 60 ? 3 : tf <= 75 ? 4 : 5;
+  }
+  const cacheCtx = [];
+  function contexte(il) {
+    if (cacheCtx[il]) return cacheCtx[il];
+    const L = LIGUES[il];
+    const stats = L.arbitres.map(nom => ({ nom, matchs: 0, jaunes: 0, rouges: 0, matchsRouge: 0, tranches: new Array(NB_TRANCHES).fill(0) }));
+    const global = { matchs: L.matchs.length, jaunes: 0, matchsRouge: 0, tranches: new Array(NB_TRANCHES).fill(0) };
+    for (const [ia, evts] of L.matchs) {
+      const s = ia >= 0 ? stats[ia] : null;
+      if (s) s.matchs++;
+      let rouge = false;
+      for (const [t, estRouge] of evts) {
+        if (estRouge) { rouge = true; if (s) s.rouges++; }
+        else {
+          global.jaunes++; global.tranches[trancheDe(t)]++;
+          if (s) { s.jaunes++; s.tranches[trancheDe(t)]++; }
+        }
+      }
+      if (rouge) { global.matchsRouge++; if (s) s.matchsRouge++; }
+    }
+    const ctx = {
+      nom: L.nom,
+      matchs: L.matchs,
+      stats,
+      global,
+      taux: global.matchsRouge / global.matchs,
+      ordre: stats.map((s, i) => i).sort((a, b) => stats[b].matchs - stats[a].matchs)
+    };
+    cacheCtx[il] = ctx;
+    return ctx;
+  }
+
+  // Sévérité de l'arbitre, fortement ramenée vers la moyenne (les taux de rouges par arbitre sont
+  // surtout du bruit) — amortissement propre à chaque championnat, choisi par validation croisée.
+  function facteurArbitre(ctx, ia) {
+    if (ia < 0) return 1;
+    const arbP = REGLAGES[ligue].arbP;
+    if (arbP === 0) return 1; // championnat où le facteur arbitre ne prédit rien
+    const s = ctx.stats[ia];
+    const taux = (s.matchsRouge + arbP * ctx.taux) / (s.matchs + arbP);
+    return taux / ctx.taux;
+  }
+
+  // ============ MODÈLE ============
+  function etatALaMinute(evts, t) {
+    let jaunes = 0, rouge = false;
+    for (const [tm, estRouge] of evts) {
+      if (tm <= t) { if (estRouge) rouge = true; else jaunes++; }
+    }
+    return { jaunes, rouge };
+  }
+  function aUnRouge(evts) {
+    for (const ev of evts) { if (ev[1]) return true; }
+    return false;
+  }
+  function estime(ctx, t, k) {
+    let n = 0, sans = 0;
+    for (const m of ctx.matchs) {
+      const s = etatALaMinute(m[1], t);
+      if (!s.rouge && s.jaunes === k) { n++; if (!aUnRouge(m[1])) sans++; }
+    }
+    return { n, sans };
+  }
+  const SEUIL = 40;
+  function estimeRobuste(ctx, t, k) {
+    const exact = estime(ctx, t, k);
+    if (exact.n >= SEUIL) return { p: exact.sans / exact.n, n: exact.n, elargi: false };
+    let n = 0, sans = 0;
+    for (let kk = Math.max(0, k - 1); kk <= k + 1; kk++) {
+      const e = estime(ctx, t, kk); n += e.n; sans += e.sans;
+    }
+    if (n >= SEUIL) return { p: sans / n, n, elargi: true };
+    n = 0; sans = 0;
+    for (let tt = Math.max(0, t - 3); tt <= Math.min(90, t + 3); tt++) {
+      for (let kk = Math.max(0, k - 1); kk <= k + 1; kk++) {
+        const e = estime(ctx, tt, kk); n += e.n; sans += e.sans;
+      }
+    }
+    if (n > 0) return { p: sans / n, n, elargi: true };
+    return { p: null, n: 0, elargi: true };
+  }
+  // Multiplicateur lié à l'écart de classement (courbe logistique lissée, par ligue)
+  function facteurClassement(gap) {
+    if (gap === null) return 1;
+    const c = CLASSEMENT[ligue];
+    const p = 1 / (1 + Math.exp(-(c.b0 + c.b1 * gap)));
+    return p / c.taux;
+  }
+  // Multiplicateur lié au profil « cartons » des deux équipes (logistique lissée, par ligue)
+  function facteurEquipes(aggX) {
+    if (aggX === null) return 1;
+    const c = EQUIPES[ligue].coeffs;
+    const p = 1 / (1 + Math.exp(-(c.c0 + c.c1 * aggX)));
+    return p / c.taux;
+  }
+  // Multiplicateur lié au score en cours (dépend de la mi-temps où l'on se trouve).
+  // Actif uniquement dans les championnats où le backtest le valide (voir REGLAGES).
+  function facteurScore(marge, t) {
+    if (marge === null || !REGLAGES[ligue].scoreActif) return 1;
+    return SCORE[ligue].periodes[t <= 45 ? 0 : 1][Math.min(2, marge)];
+  }
+  // Produit de tous les facteurs actifs, pour la minute t
+  function facteurTotal(ctx, t) {
+    return facteurArbitre(ctx, arbitre) * facteurClassement(gapActuel())
+      * facteurEquipes(aggActuel()) * facteurScore(margeActuelle(), t);
+  }
+  function ajuste(ctx, pBase, t) {
+    if (pBase === null) return pBase;
+    const f = facteurTotal(ctx, t);
+    if (f === 1) return pBase;
+    const risque = Math.min(0.97, (1 - pBase) * f);
+    return 1 - risque;
+  }
+
+  // ============ ÉTAT DE LA PAGE ============
+  let ligue = 0, minute = 60, jaunes = 3, arbitre = -1, posA = 0, posB = 0, eqA = '', eqB = '', scA = '', scB = '';
+  function margeActuelle() { return (scA !== '' && scB !== '') ? Math.abs(parseInt(scA, 10) - parseInt(scB, 10)) : null; }
+  function gapActuel() { return (posA > 0 && posB > 0 && posA !== posB) ? Math.abs(posA - posB) : null; }
+  function aggActuel() {
+    if (!eqA || !eqB) return null;
+    if (eqA === eqB && eqA !== 'promu') return null; // même équipe choisie deux fois
+    const L = EQUIPES[ligue];
+    const v = (c) => c === 'promu' ? L.promu.agg : L.equipes[+c].agg;
+    return v(eqA) + v(eqB);
+  }
+  const MAX_JAUNES = 12;
+
+  const fmtPct = (p) => (p * 100).toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
+  const fmtCote = (c) => c.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const fmtDec = (x) => x.toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
+  function majTout() {
+    const ctx = contexte(ligue);
+
+    // Onglets
+    [...document.getElementById('ongletsLigues').children].forEach((b, i) => b.classList.toggle('actif', i === ligue));
+    document.getElementById('nomLigue').textContent = ctx.nom;
+    document.getElementById('matchsLigue').textContent = ctx.global.matchs.toLocaleString('fr-FR');
+    document.getElementById('titreArbitres').textContent = 'Les arbitres de ' + ctx.nom + ' à la loupe';
+
+    // Réglages
+    const curseur = document.getElementById('curseurMinute');
+    curseur.value = minute;
+    curseur.style.setProperty('--pct', (minute / 90 * 100) + '%');
+    document.getElementById('afficheMinute').innerHTML = minute + '<small>e</small>';
+    document.getElementById('afficheJaunes').textContent = jaunes;
+    document.getElementById('moinsJaune').disabled = jaunes <= 0;
+    document.getElementById('plusJaune').disabled = jaunes >= MAX_JAUNES;
+    const chips = document.getElementById('chipsJaunes');
+    chips.innerHTML = jaunes === 0
+      ? '<span class="aucun">aucun carton</span>'
+      : Array.from({ length: jaunes }, () => '<span class="chip-jaune"></span>').join('');
+    majSelectArbitre(ctx);
+    majSelectEquipes();
+
+    // Résultat
+    const gap = gapActuel();
+    const aggX = aggActuel();
+    const marge = margeActuelle();
+    const base = estimeRobuste(ctx, minute, jaunes);
+    const p = ajuste(ctx, base.p, minute);
+    const hero = document.getElementById('heroPourcent');
+    const libelle = document.getElementById('heroLibelle');
+    const cote = document.getElementById('coteSans');
+    const risque = document.getElementById('risqueRouge');
+    const ech = document.getElementById('echantillon');
+    const impact = document.getElementById('impactArbitre');
+    const impactCl = document.getElementById('impactClassement');
+    const impactEq = document.getElementById('impactEquipes');
+    const impactSc = document.getElementById('impactScore');
+    if (p === null) {
+      hero.textContent = '—'; cote.textContent = '—'; risque.textContent = '—';
+      ech.textContent = 'Situation jamais observée dans les données.';
+      impact.hidden = true;
+      impactCl.hidden = true;
+      impactEq.hidden = true;
+      impactSc.hidden = true;
+    } else {
+      hero.textContent = fmtPct(p);
+      cote.textContent = p > 0 ? fmtCote(1 / p) : '∞';
+      risque.textContent = fmtPct(1 - p);
+      const ajustements = [];
+      if (arbitre >= 0) ajustements.push('la sévérité de l’arbitre');
+      if (aggX !== null) ajustements.push('le profil des équipes');
+      if (gap !== null) ajustements.push('l’écart de classement');
+      if (marge !== null && REGLAGES[ligue].scoreActif) ajustements.push('le score actuel');
+      if (marge !== null) {
+        impactSc.hidden = false;
+        const libMarge = marge === 0 ? 'égalité' : marge + ' but' + (marge > 1 ? 's' : '') + ' d’écart';
+        if (REGLAGES[ligue].scoreActif) {
+          const fs2 = facteurScore(marge, minute);
+          impactSc.innerHTML = '<strong>Score : ' + libMarge + '</strong> à la ' + minute
+            + '<sup>e</sup> minute : risque ajusté <strong>× '
+            + fs2.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</strong>.';
+        } else {
+          impactSc.innerHTML = '<strong>Score : ' + libMarge + '</strong> — en ' + ctx.nom
+            + ', le backtest ne montre pas d’effet fiable du score sur le risque de rouge : facteur non appliqué (<strong>× 1,00</strong>).';
+        }
+      } else {
+        impactSc.hidden = true;
+      }
+      const enumere = ajustements.length > 1
+        ? ajustements.slice(0, -1).join(', ') + ' et ' + ajustements[ajustements.length - 1]
+        : ajustements[0];
+      libelle.textContent = ajustements.length === 0
+        ? 'des matchs de ' + ctx.nom + ' dans cette situation se sont terminés sans aucun carton rouge.'
+        : 'estimation pour cette situation, ajustée selon ' + enumere + '.';
+      if (aggX !== null) {
+        const fe = facteurEquipes(aggX);
+        const cE = EQUIPES[ligue];
+        impactEq.hidden = false;
+        impactEq.innerHTML = '<strong>Profil des équipes</strong> : '
+          + aggX.toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+          + ' jaunes/match à elles deux (moyenne ' + ctx.nom + ' : '
+          + (2 * cE.moyEquipe).toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+          + '). Risque ajusté <strong>× ' + fe.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</strong>.'
+          + (cE.coeffs.pval < 0.05 ? '' : ' Effet présent mais moins marqué dans ce championnat.');
+      } else {
+        impactEq.hidden = true;
+      }
+      if (gap !== null) {
+        const fc = facteurClassement(gap);
+        impactCl.hidden = false;
+        impactCl.innerHTML = '<strong>Écart de ' + gap + ' place' + (gap > 1 ? 's' : '') + '</strong> au classement : risque ajusté <strong>× '
+          + fc.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '</strong>. '
+          + (CLASSEMENT[ligue].pval < 0.12
+              ? 'Dans ce championnat, plus les équipes sont proches, plus le risque de rouge est élevé.'
+              : 'Effet quasi nul dans ce championnat : l’ajustement reste proche de 1.');
+      } else {
+        impactCl.hidden = true;
+      }
+      ech.innerHTML = 'Basé sur <strong>' + base.n.toLocaleString('fr-FR') + ' matchs</strong> dans cette situation'
+        + (base.elargi ? ' <span class="badge-elargi">estimation élargie</span>' : '') + '.';
+      if (arbitre >= 0) {
+        const s = ctx.stats[arbitre];
+        const f = facteurArbitre(ctx, arbitre);
+        impact.hidden = false;
+        impact.innerHTML = '<strong>' + s.nom + '</strong> : ' + s.rouges + ' rouge' + (s.rouges > 1 ? 's' : '') + ' en '
+          + s.matchs + ' matchs, soit ' + fmtPct(s.matchsRouge / s.matchs) + ' de ses matchs avec un rouge '
+          + '(moyenne ' + ctx.nom + ' : ' + fmtPct(ctx.taux) + '). '
+          + (REGLAGES[ligue].arbP === 0
+              ? 'En ' + ctx.nom + ', le backtest montre que la sévérité passée d’un arbitre ne prédit pas ses rouges futurs : facteur non appliqué (<strong>× 1,00</strong>).'
+              : 'Risque ajusté <strong>× ' + f.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+                + '</strong> — profil fortement ramené vers la moyenne (réglage validé par backtest).');
+      } else {
+        impact.hidden = true;
+      }
+    }
+
+    document.getElementById('titreGraph').textContent =
+      'Évolution du risque minute par minute — à ' + jaunes + ' carton' + (jaunes > 1 ? 's' : '') + ' jaune' + (jaunes > 1 ? 's' : '');
+    dessineEvolution(ctx);
+    dessineHistogramme(ctx);
+    majTableArbitres(ctx);
+  }
+
+  function majSelectEquipes() {
+    const L = EQUIPES[ligue];
+    const cle = 'ligue-' + ligue;
+    for (const [id, val] of [['eqEquipeA', eqA], ['eqEquipeB', eqB]]) {
+      const sel = document.getElementById(id);
+      if (sel.dataset.pour !== cle) {
+        sel.innerHTML = '<option value="">—</option>'
+          + '<option value="promu">Équipe promue (profil moyen)</option>'
+          + L.equipes.map((e, i) => '<option value="' + i + '">' + e.nom + ' ('
+              + e.agg.toLocaleString('fr-FR', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' j/m)</option>').join('');
+        sel.dataset.pour = cle;
+      }
+      sel.value = val;
+    }
+  }
+
+  function majSelectArbitre(ctx) {
+    const select = document.getElementById('choixArbitre');
+    const cle = 'ligue-' + ligue;
+    if (select.dataset.pour !== cle) {
+      select.innerHTML = '<option value="-1">Tous les arbitres (moyenne ' + ctx.nom + ')</option>'
+        + ctx.ordre.filter(ia => ctx.stats[ia].matchs > 0)
+            .map(ia => '<option value="' + ia + '">' + ctx.stats[ia].nom + ' (' + ctx.stats[ia].matchs + ' matchs)</option>').join('');
+      select.dataset.pour = cle;
+    }
+    select.value = String(arbitre);
+  }
+
+  // ============ GRAPHIQUE 1 : ÉVOLUTION ============
+  const SVG_NS = 'http://www.w3.org/2000/svg';
+  function el(nom, attrs) {
+    const e = document.createElementNS(SVG_NS, nom);
+    for (const c in attrs) e.setAttribute(c, attrs[c]);
+    return e;
+  }
+
+  function dessineEvolution(ctx) {
+    const zone = document.getElementById('zoneGraph');
+    const ancien = zone.querySelector('svg');
+    if (ancien) ancien.remove();
+
+    const W = 900, H = 320, m = { haut: 16, droite: 16, bas: 30, gauche: 46 };
+    const largeur = W - m.gauche - m.droite, hauteur = H - m.haut - m.bas;
+
+    const gap = gapActuel();
+    const aggX = aggActuel();
+    const marge = margeActuelle();
+    const scoreActif = marge !== null && REGLAGES[ligue].scoreActif;
+    const ajusteActif = arbitre >= 0 || gap !== null || aggX !== null || scoreActif;
+    const points = [];
+    for (let t = 0; t <= 90; t++) {
+      const e = estimeRobuste(ctx, t, jaunes);
+      if (e.p !== null && e.n >= 20) points.push({ t, p: e.p, pa: ajuste(ctx, e.p, t), n: e.n });
+    }
+
+    const partiesAjust = [];
+    if (arbitre >= 0) partiesAjust.push(ctx.stats[arbitre].nom);
+    if (aggX !== null) partiesAjust.push('profil des équipes');
+    if (gap !== null) partiesAjust.push('écart de ' + gap + ' place' + (gap > 1 ? 's' : ''));
+    if (scoreActif) partiesAjust.push(marge === 0 ? 'score : égalité' : 'score : ' + marge + ' but' + (marge > 1 ? 's' : '') + ' d’écart');
+    const libAjust = 'Ajusté (' + partiesAjust.join(' + ') + ')';
+    const leg = document.getElementById('legendeEvolution');
+    leg.innerHTML = '<span class="item"><span class="pastille" style="background:var(--serie)"></span>Moyenne ' + ctx.nom + '</span>'
+      + (ajusteActif ? '<span class="item"><span class="pastille" style="background:var(--serie2)"></span>' + libAjust + '</span>' : '');
+
+    const svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Courbe de la probabilité de finir sans carton rouge selon la minute' });
+
+    if (points.length < 2) {
+      const txt = el('text', { x: W / 2, y: H / 2, 'text-anchor': 'middle', fill: 'var(--ink-3)', 'font-size': '14' });
+      txt.textContent = 'Pas assez de données pour tracer une courbe dans cette situation.';
+      svg.appendChild(txt);
+      zone.appendChild(svg);
+      return;
+    }
+
+    let pMin = Math.min(...points.map(d => Math.min(d.p, d.pa)));
+    pMin = Math.max(0, Math.floor(pMin * 10) / 10 - 0.05);
+    const pMax = 1;
+    const x = (t) => m.gauche + t / 90 * largeur;
+    const y = (p) => m.haut + (pMax - p) / (pMax - pMin) * hauteur;
+
+    const pas = (pMax - pMin) > 0.5 ? 0.1 : 0.05;
+    for (let p = Math.ceil(pMin / pas) * pas; p <= pMax + 1e-9; p += pas) {
+      svg.appendChild(el('line', { x1: m.gauche, x2: W - m.droite, y1: y(p), y2: y(p), stroke: 'var(--grid)', 'stroke-width': 1 }));
+      const et = el('text', { x: m.gauche - 8, y: y(p) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--ink-3)' });
+      et.style.fontVariantNumeric = 'tabular-nums';
+      et.textContent = Math.round(p * 100) + ' %';
+      svg.appendChild(et);
+    }
+    svg.appendChild(el('line', { x1: m.gauche, x2: W - m.droite, y1: m.haut + hauteur, y2: m.haut + hauteur, stroke: 'var(--axis)', 'stroke-width': 1 }));
+    for (let t = 0; t <= 90; t += 15) {
+      const et = el('text', { x: x(t), y: m.haut + hauteur + 20, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--ink-3)' });
+      et.style.fontVariantNumeric = 'tabular-nums';
+      et.textContent = t + "'";
+      svg.appendChild(et);
+    }
+
+    const chemin = (cle) => points.map((pt, i) => (i === 0 ? 'M' : 'L') + x(pt.t).toFixed(1) + ',' + y(pt[cle]).toFixed(1)).join(' ');
+    const dBase = chemin('p');
+    svg.appendChild(el('path', {
+      d: dBase + ' L' + x(points[points.length - 1].t).toFixed(1) + ',' + (m.haut + hauteur) + ' L' + x(points[0].t).toFixed(1) + ',' + (m.haut + hauteur) + ' Z',
+      fill: 'var(--wash)'
+    }));
+    svg.appendChild(el('path', { d: dBase, fill: 'none', stroke: 'var(--serie)', 'stroke-width': 2, 'stroke-linejoin': 'round' }));
+    if (ajusteActif) {
+      svg.appendChild(el('path', { d: chemin('pa'), fill: 'none', stroke: 'var(--serie2)', 'stroke-width': 2, 'stroke-linejoin': 'round' }));
+    }
+
+    const ptCourant = points.find(pt => pt.t === minute);
+    if (ptCourant) {
+      const cle = ajusteActif ? 'pa' : 'p';
+      svg.appendChild(el('circle', {
+        cx: x(ptCourant.t), cy: y(ptCourant[cle]), r: 5.5,
+        fill: ajusteActif ? 'var(--serie2)' : 'var(--serie)', stroke: 'var(--surface)', 'stroke-width': 2
+      }));
+    }
+
+    const reticule = el('line', { y1: m.haut, y2: m.haut + hauteur, stroke: 'var(--axis)', 'stroke-width': 1, 'stroke-dasharray': '3,3', opacity: 0 });
+    svg.appendChild(reticule);
+    const survolBase = el('circle', { r: 4.5, fill: 'var(--serie)', stroke: 'var(--surface)', 'stroke-width': 2, opacity: 0 });
+    svg.appendChild(survolBase);
+    const survolArb = el('circle', { r: 4.5, fill: 'var(--serie2)', stroke: 'var(--surface)', 'stroke-width': 2, opacity: 0 });
+    svg.appendChild(survolArb);
+
+    const bulle = document.getElementById('infobulle');
+    function minuteDepuisEvt(evt) {
+      const rect = svg.getBoundingClientRect();
+      const px = (evt.clientX - rect.left) / rect.width * W;
+      return { rect, t: Math.round(Math.min(90, Math.max(0, (px - m.gauche) / largeur * 90))) };
+    }
+    svg.addEventListener('pointermove', (evt) => {
+      const { rect, t } = minuteDepuisEvt(evt);
+      const pt = points.reduce((a, b) => Math.abs(b.t - t) < Math.abs(a.t - t) ? b : a);
+      reticule.setAttribute('x1', x(pt.t)); reticule.setAttribute('x2', x(pt.t));
+      reticule.setAttribute('opacity', '1');
+      survolBase.setAttribute('cx', x(pt.t)); survolBase.setAttribute('cy', y(pt.p)); survolBase.setAttribute('opacity', '1');
+      let html = '<span class="titre-bulle">' + pt.t + '<sup>e</sup> minute</span><br>Moyenne : ' + fmtPct(pt.p) + ' · cote ' + fmtCote(1 / pt.p);
+      if (ajusteActif) {
+        survolArb.setAttribute('cx', x(pt.t)); survolArb.setAttribute('cy', y(pt.pa)); survolArb.setAttribute('opacity', '1');
+        html += '<br>Ajusté : ' + fmtPct(pt.pa) + ' · cote ' + fmtCote(1 / pt.pa);
+      }
+      html += '<br>' + pt.n.toLocaleString('fr-FR') + ' matchs';
+      bulle.innerHTML = html;
+      bulle.style.left = (x(pt.t) / W * rect.width) + 'px';
+      bulle.style.top = (y(ajusteActif ? Math.max(pt.p, pt.pa) : pt.p) / H * rect.height) + 'px';
+      bulle.style.opacity = '1';
+    });
+    svg.addEventListener('pointerleave', () => {
+      reticule.setAttribute('opacity', '0');
+      survolBase.setAttribute('opacity', '0');
+      survolArb.setAttribute('opacity', '0');
+      bulle.style.opacity = '0';
+    });
+    svg.addEventListener('click', (evt) => {
+      minute = minuteDepuisEvt(evt).t;
+      majTout();
+    });
+
+    zone.appendChild(svg);
+  }
+
+  // ============ GRAPHIQUE 2 : CARTONS PAR TRANCHE DE 15 MIN ============
+  const NOMS_TRANCHES = ["1-15'", "16-30'", "31-45'+", "46-60'", "61-75'", "76-90'+"];
+
+  function dessineHistogramme(ctx) {
+    const zone = document.getElementById('zoneHisto');
+    const ancien = zone.querySelector('svg');
+    if (ancien) ancien.remove();
+
+    const leg = document.getElementById('legendeHisto');
+    leg.innerHTML = '<span class="item"><span class="pastille" style="background:var(--serie)"></span>Moyenne ' + ctx.nom + '</span>'
+      + (arbitre >= 0 ? '<span class="item"><span class="pastille" style="background:var(--serie2)"></span>' + ctx.stats[arbitre].nom + '</span>' : '');
+    document.getElementById('sousTitreArbitres').textContent = arbitre >= 0
+      ? 'Cartons jaunes par tranche de 15 minutes (moyenne par match) : ' + ctx.stats[arbitre].nom + ' comparé à la moyenne de ' + ctx.nom + '.'
+      : 'Cartons jaunes par tranche de 15 minutes (moyenne par match). Sélectionnez un arbitre pour le comparer à la moyenne.';
+
+    const W = 900, H = 260, m = { haut: 20, droite: 16, bas: 30, gauche: 40 };
+    const largeur = W - m.gauche - m.droite, hauteur = H - m.haut - m.bas;
+
+    const moyenne = ctx.global.tranches.map(v => v / ctx.global.matchs);
+    const arb = arbitre >= 0 ? ctx.stats[arbitre].tranches.map(v => v / ctx.stats[arbitre].matchs) : null;
+    const vMax = Math.max(...moyenne, ...(arb || [0])) * 1.25;
+
+    const svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Cartons jaunes par tranche de quinze minutes' });
+    const y = (v) => m.haut + (1 - v / vMax) * hauteur;
+
+    for (let v = 0; v <= vMax; v += 0.25) {
+      svg.appendChild(el('line', { x1: m.gauche, x2: W - m.droite, y1: y(v), y2: y(v), stroke: 'var(--grid)', 'stroke-width': 1 }));
+      const et = el('text', { x: m.gauche - 8, y: y(v) + 4, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--ink-3)' });
+      et.style.fontVariantNumeric = 'tabular-nums';
+      et.textContent = v.toLocaleString('fr-FR', { maximumFractionDigits: 2 });
+      svg.appendChild(et);
+    }
+
+    const bulle = document.getElementById('infobulleHisto');
+    const groupeL = largeur / NB_TRANCHES;
+    const nbBarres = arb ? 2 : 1;
+    const lBarre = Math.min(56, (groupeL - 24) / nbBarres);
+
+    for (let b = 0; b < NB_TRANCHES; b++) {
+      const cx = m.gauche + groupeL * (b + 0.5);
+      const x0 = cx - (lBarre * nbBarres + (nbBarres - 1) * 2) / 2;
+      const series = arb ? [{ v: moyenne[b], c: 'var(--serie)', nom: 'Moyenne' }, { v: arb[b], c: 'var(--serie2)', nom: ctx.stats[arbitre].nom }]
+                         : [{ v: moyenne[b], c: 'var(--serie)', nom: 'Moyenne' }];
+      series.forEach((s, i) => {
+        const bx = x0 + i * (lBarre + 2);
+        const by = y(s.v);
+        svg.appendChild(el('path', {
+          d: 'M' + bx + ',' + (m.haut + hauteur) + ' V' + (by + 4) + ' Q' + bx + ',' + by + ' ' + (bx + 4) + ',' + by
+            + ' H' + (bx + lBarre - 4) + ' Q' + (bx + lBarre) + ',' + by + ' ' + (bx + lBarre) + ',' + (by + 4)
+            + ' V' + (m.haut + hauteur) + ' Z',
+          fill: s.c
+        }));
+        const et = el('text', { x: bx + lBarre / 2, y: by - 6, 'text-anchor': 'middle', 'font-size': 11.5, 'font-weight': 600, fill: 'var(--ink-2)' });
+        et.style.fontVariantNumeric = 'tabular-nums';
+        et.textContent = s.v.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        svg.appendChild(et);
+        const cible = el('rect', { x: bx - 2, y: m.haut, width: lBarre + 4, height: hauteur, fill: 'transparent' });
+        cible.addEventListener('pointerenter', () => {
+          const rect = svg.getBoundingClientRect();
+          bulle.innerHTML = '<span class="titre-bulle">' + NOMS_TRANCHES[b] + ' — ' + s.nom + '</span><br>'
+            + s.v.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' jaune(s) par match';
+          bulle.style.left = ((bx + lBarre / 2) / W * rect.width) + 'px';
+          bulle.style.top = (by / H * rect.height) + 'px';
+          bulle.style.opacity = '1';
+        });
+        cible.addEventListener('pointerleave', () => { bulle.style.opacity = '0'; });
+        svg.appendChild(cible);
+      });
+      const et = el('text', { x: cx, y: m.haut + hauteur + 20, 'text-anchor': 'middle', 'font-size': 11.5, fill: 'var(--ink-3)' });
+      et.style.fontVariantNumeric = 'tabular-nums';
+      et.textContent = NOMS_TRANCHES[b];
+      svg.appendChild(et);
+    }
+    svg.appendChild(el('line', { x1: m.gauche, x2: W - m.droite, y1: m.haut + hauteur, y2: m.haut + hauteur, stroke: 'var(--axis)', 'stroke-width': 1 }));
+    zone.appendChild(svg);
+  }
+
+  // ============ TABLE DES ARBITRES ============
+  function majTableArbitres(ctx) {
+    const corps = document.getElementById('corpsTableArbitres');
+    corps.innerHTML = '';
+    for (const ia of ctx.ordre) {
+      const s = ctx.stats[ia];
+      if (s.matchs === 0) continue;
+      const tr = document.createElement('tr');
+      if (ia === arbitre) tr.className = 'choisi';
+      tr.innerHTML = '<td>' + s.nom + '</td><td>' + s.matchs + '</td><td>' + fmtDec(s.jaunes / s.matchs) + '</td><td>'
+        + s.rouges + '</td><td>' + fmtPct(s.matchsRouge / s.matchs) + '</td>';
+      tr.addEventListener('click', () => { arbitre = (arbitre === ia) ? -1 : ia; majTout(); });
+      corps.appendChild(tr);
+    }
+  }
+
+  // ============ INITIALISATION ============
+  const onglets = document.getElementById('ongletsLigues');
+  LIGUES.forEach((L, i) => {
+    const b = document.createElement('button');
+    b.textContent = L.nom;
+    b.addEventListener('click', () => { ligue = i; arbitre = -1; eqA = ''; eqB = ''; majTout(); });
+    onglets.appendChild(b);
+  });
+
+  for (const [id, quand] of [['eqEquipeA', (v) => eqA = v], ['eqEquipeB', (v) => eqB = v]]) {
+    const sel = document.getElementById(id);
+    sel.addEventListener('change', () => { quand(sel.value); majTout(); });
+  }
+
+  for (const [id, quand] of [['posEquipeA', (v) => posA = v], ['posEquipeB', (v) => posB = v]]) {
+    const sel = document.getElementById(id);
+    sel.innerHTML = '<option value="0">—</option>'
+      + Array.from({ length: 20 }, (_, i) => '<option value="' + (i + 1) + '">' + (i + 1) + (i === 0 ? 'er' : 'e') + '</option>').join('');
+    sel.addEventListener('change', () => { quand(parseInt(sel.value, 10)); majTout(); });
+  }
+
+  for (const [id, quand] of [['butsA', (v) => scA = v], ['butsB', (v) => scB = v]]) {
+    const sel = document.getElementById(id);
+    sel.innerHTML = '<option value="">—</option>'
+      + Array.from({ length: 10 }, (_, i) => '<option value="' + i + '">' + i + '</option>').join('');
+    sel.addEventListener('change', () => { quand(sel.value); majTout(); });
+  }
+
+  document.getElementById('choixArbitre').addEventListener('change', (e) => { arbitre = parseInt(e.target.value, 10); majTout(); });
+  document.getElementById('curseurMinute').addEventListener('input', (e) => { minute = +e.target.value; majTout(); });
+  document.getElementById('moinsJaune').addEventListener('click', () => { if (jaunes > 0) { jaunes--; majTout(); } });
+  document.getElementById('plusJaune').addEventListener('click', () => { if (jaunes < MAX_JAUNES) { jaunes++; majTout(); } });
+
+  document.getElementById('totalMatchs2').textContent = LIGUES.reduce((s, L) => s + L.matchs.length, 0).toLocaleString('fr-FR');
+  majTout();
+</script>

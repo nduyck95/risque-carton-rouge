@@ -1,0 +1,305 @@
+<meta charset="utf-8">
+<title>Bot de paris simulés — carton rouge</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f6f8f5; --surface: #fcfdfb; --surface-2: #f0f3ee;
+    --ink: #0c0e0c; --ink-2: #50554f; --ink-3: #8a8f88;
+    --grid: #e2e5e0; --ring: rgba(12, 14, 12, 0.10);
+    --accent: #0e6b2f; --accent-ink: #0e6b2f;
+    --bleu: #2a78d6; --jaune: #f2c437; --jaune-ink: #6b5200;
+    --rouge: #d03b3b; --vert: #1a8f47;
+    --wash: rgba(14, 107, 47, 0.07); --vert-wash: rgba(26, 143, 71, 0.12);
+    --rouge-wash: rgba(208, 59, 59, 0.10);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0f0d; --surface: #171a17; --surface-2: #1f231e;
+      --ink: #f2f4f1; --ink-2: #b9c0b7; --ink-3: #838a81;
+      --grid: #272b26; --ring: rgba(255, 255, 255, 0.10);
+      --accent: #4cbf74; --accent-ink: #4cbf74;
+      --bleu: #3987e5; --jaune: #e6b929; --jaune-ink: #3d2f00;
+      --rouge: #e05252; --vert: #4cbf74;
+      --wash: rgba(76, 191, 116, 0.09); --vert-wash: rgba(76, 191, 116, 0.14);
+      --rouge-wash: rgba(224, 82, 82, 0.14);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: var(--page); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .cadre { max-width: 1120px; margin: 0 auto; padding: 30px 18px 64px; display: flex; flex-direction: column; gap: 18px; }
+  a { color: var(--accent-ink); }
+
+  header .surtitre { text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; font-weight: 600; color: var(--accent); display: flex; align-items: center; gap: 8px; }
+  header .surtitre::before { content: ""; width: 14px; height: 19px; border-radius: 2.5px; background: var(--rouge); display: inline-block; transform: rotate(-8deg); }
+  header h1 { margin: 8px 0 4px; font-size: clamp(23px, 4vw, 32px); font-weight: 700; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--ink-2); max-width: 74ch; }
+  .lien-retour { font-size: 14px; font-weight: 600; text-decoration: none; }
+
+  .bandeau { border-radius: 14px; padding: 14px 16px; border: 1px solid var(--ring); background: var(--surface); display: flex; gap: 12px; align-items: flex-start; }
+  .bandeau.sim { background: var(--wash); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
+  .bandeau.alerte { background: var(--rouge-wash); border-color: color-mix(in srgb, var(--rouge) 40%, transparent); }
+  .bandeau .ico { font-size: 20px; line-height: 1.2; }
+  .bandeau b { display: block; }
+  .bandeau p { margin: 3px 0 0; font-size: 14px; color: var(--ink-2); }
+
+  .barre { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+  .bouton { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--ring); background: var(--surface); color: var(--ink-2); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .bouton:hover { background: var(--wash); }
+  .bouton-maj { background: var(--accent); border-color: var(--accent); color: var(--page); }
+  .bouton-stop { background: var(--rouge); border-color: var(--rouge); color: #fff; }
+  .bouton:disabled { opacity: 0.55; cursor: progress; }
+  .grandi { flex: 1; }
+  .statut { font-size: 13px; color: var(--ink-3); }
+
+  .cartes-stat { display: flex; flex-wrap: wrap; gap: 10px; }
+  .stat { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 10px 14px; min-width: 118px; }
+  .stat b { display: block; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
+  .stat span { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.06em; }
+  .stat.pos b { color: var(--vert); }
+  .stat.neg b { color: var(--rouge); }
+
+  h2 { margin: 12px 0 0; font-size: 17px; font-weight: 700; }
+  h2 .compte { color: var(--ink-3); font-weight: 500; font-size: 14px; }
+
+  .bloc { background: var(--surface); border: 1px solid var(--ring); border-radius: 14px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+  th { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); font-weight: 600; background: var(--surface-2); position: sticky; top: 0; }
+  tr:last-child td { border-bottom: none; }
+  .num { font-variant-numeric: tabular-nums; }
+  .mat { font-weight: 600; }
+  .sous { font-size: 12.5px; color: var(--ink-3); }
+  .puce { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11.5px; font-weight: 600; border: 1px solid var(--ring); }
+  .puce.vert { background: var(--vert-wash); color: var(--vert); border-color: transparent; }
+  .puce.rouge { background: var(--rouge-wash); color: var(--rouge); border-color: transparent; }
+  .puce.gris { color: var(--ink-3); }
+  .puce.jaune { background: var(--jaune); color: var(--jaune-ink); border-color: transparent; }
+  .refus { font-size: 12.5px; color: var(--ink-3); }
+  .vide { padding: 22px 16px; color: var(--ink-3); font-size: 14px; }
+  .journal { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12px; color: var(--ink-2); background: var(--surface-2); border-radius: 12px; border: 1px solid var(--ring); padding: 12px 14px; max-height: 240px; overflow: auto; white-space: pre-wrap; }
+  details summary { cursor: pointer; font-weight: 600; font-size: 14px; }
+  .conditions { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px 18px; font-size: 13.5px; color: var(--ink-2); margin-top: 10px; }
+  .conditions div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dotted var(--grid); padding: 3px 0; }
+  .conditions b { font-variant-numeric: tabular-nums; color: var(--ink); }
+  footer { color: var(--ink-3); font-size: 13px; margin-top: 8px; }
+</style>
+
+<div class="cadre">
+  <header>
+    <div class="surtitre">Bot de paris — mode simulation</div>
+    <h1>Ce que le bot <em>aurait</em> parié</h1>
+    <p>Le bot regarde les matchs en cours toutes les 30 secondes, calcule la probabilité qu'il n'y ait
+      pas de carton rouge, la compare à la cote réelle de Betfair, et note le pari qu'il aurait pris.
+      <b>Aucun euro n'est engagé</b> : le programme n'a même pas la capacité technique de placer un pari.</p>
+    <p style="margin-top:6px"><a class="lien-retour" href="/matchs">← Matchs de la saison</a> &nbsp;·&nbsp; <a class="lien-retour" href="/">Simulateur live</a></p>
+  </header>
+
+  <div id="bandeaux"></div>
+
+  <div class="barre">
+    <button class="bouton bouton-maj" id="btnTour">Analyser maintenant</button>
+    <button class="bouton" id="btnBetfair">Tester la connexion Betfair</button>
+    <span class="grandi"></span>
+    <span class="statut" id="statut">…</span>
+    <button class="bouton bouton-stop" id="btnStop">Tout arrêter</button>
+  </div>
+
+  <div class="cartes-stat" id="stats"></div>
+
+  <h2>Matchs en cours <span class="compte" id="compteLive"></span></h2>
+  <div class="bloc" id="blocLive"></div>
+
+  <h2>Paris simulés <span class="compte" id="compteParis"></span></h2>
+  <div class="bloc" id="blocParis"></div>
+
+  <details>
+    <summary>Les conditions actuelles du bot</summary>
+    <div class="conditions" id="conditions"></div>
+    <p class="sous" style="margin-top:10px">Pour changer une condition : ouvrir <code>config-paris.json</code>,
+      modifier la valeur, enregistrer, puis relancer <code>LANCER.bat</code>.</p>
+  </details>
+
+  <details>
+    <summary>Journal du dernier tour</summary>
+    <div class="journal" id="journal"></div>
+  </details>
+
+  <footer>
+    Cotes : API officielle Betfair (marché « carton rouge »). État des matchs : ESPN.
+    Le retard des données ESPN (30 s à 2 min) est mesuré à chaque décision et bloque le pari au-delà de la limite fixée.
+  </footer>
+</div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const pct = (x, d = 1) => x == null ? '—' : (x * 100).toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d }) + ' %';
+  const eur = (x) => x == null ? '—' : x.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+  const cote = (x) => x == null ? '—' : Number(x).toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const heure = (iso) => iso ? new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : '—';
+  const jour = (iso) => iso ? new Date(iso).toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' }) : '—';
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  let dernier = null;
+
+  function bandeaux(d) {
+    const out = [];
+    out.push(`<div class="bandeau sim"><div class="ico">🧪</div><div>
+      <b>Mode simulation — aucun argent réel</b>
+      <p>Capital fictif de référence : ${eur(d.config.capital)}. Le bot note ses paris et son bilan
+      comme s'il jouait, pour qu'on puisse juger le modèle sur pièces avant d'envisager quoi que ce soit d'autre.</p></div></div>`);
+    if (d.stop) {
+      out.push(`<div class="bandeau alerte"><div class="ico">🛑</div><div><b>Bot arrêté</b>
+        <p>Le fichier <code>STOP</code> est présent : aucune décision n'est prise. Clique sur « Tout arrêter » pour le retirer.</p></div></div>`);
+    }
+    if (!d.betfair.pret) {
+      out.push(`<div class="bandeau alerte"><div class="ico">🔌</div><div><b>Betfair pas encore branché — ${esc(d.betfair.raison)}</b>
+        <p>Sans cotes, le bot lit bien les matchs en direct et calcule ses probabilités, mais il ne peut
+        chiffrer aucun pari : il l'écrit alors en clair dans la colonne « décision ».</p></div></div>`);
+    }
+    $('bandeaux').innerHTML = out.join('');
+  }
+
+  function stats(d) {
+    const s = d.stats;
+    const cls = s.pl > 0 ? 'pos' : s.pl < 0 ? 'neg' : '';
+    $('stats').innerHTML = `
+      <div class="stat"><b class="num">${s.nbParis}</b><span>Paris simulés</span></div>
+      <div class="stat"><b class="num">${s.nbRegles}</b><span>Réglés</span></div>
+      <div class="stat"><b class="num">${s.gagnes} / ${s.perdus}</b><span>Gagnés / perdus</span></div>
+      <div class="stat"><b class="num">${eur(s.miseTotale)}</b><span>Total misé</span></div>
+      <div class="stat ${cls}"><b class="num">${s.pl > 0 ? '+' : ''}${eur(s.pl)}</b><span>Résultat</span></div>
+      <div class="stat ${cls}"><b class="num">${s.roi == null ? '—' : (s.roi > 0 ? '+' : '') + pct(s.roi)}</b><span>Rentabilité</span></div>
+      <div class="stat"><b class="num">${s.nbRegles >= 10 ? pct(s.tauxReussiteReel) : '—'}</b><span>Réussite réelle</span></div>
+      <div class="stat"><b class="num">${s.nbRegles >= 10 ? pct(s.pModeleMoyenne) : '—'}</b><span>Annoncé par le modèle</span></div>`;
+  }
+
+  function live(d) {
+    const L = d.dernieresDecisions || [];
+    $('compteLive').textContent = L.length ? `— analysés à ${heure(d.dernierTour)}` : '';
+    if (!L.length) {
+      $('blocLive').innerHTML = `<div class="vide">Aucun match en cours en Premier League, Liga ou Serie A.
+        Le bot se réveille tout seul dès qu'un match commence.</div>`;
+      return;
+    }
+    const lignes = L.map(x => {
+      const dec = x.parie
+        ? `<span class="puce vert">★ pari pris</span>`
+        : `<div class="refus">${esc((x.refus || []).join(' · '))}</div>`;
+      const cotesTxt = x.cotes
+        ? `Non ${cote(x.cotes.coteNon)} <span class="sous">(${eur(x.cotes.dispoNon)})</span><br>Oui ${cote(x.cotes.coteOui)} <span class="sous">(${eur(x.cotes.dispoOui)})</span>`
+        : `<span class="puce gris">pas de cote</span>`;
+      return `<tr>
+        <td><div class="mat">${esc(x.match)}</div><div class="sous">${esc(x.ligue)} · ${esc(x.arbitre || 'arbitre —')}</div></td>
+        <td class="num">${x.minute == null ? '—' : x.minute + "'"}<div class="sous">${esc(x.score)}</div></td>
+        <td class="num">${x.jaunes}${x.dejaRouge ? ' <span class="puce rouge">rouge déjà</span>' : ''}</td>
+        <td class="num">${pct(x.pNo)}<div class="sous">cote juste ${cote(x.coteEquitable)} · n=${x.n}</div></td>
+        <td class="num">${cotesTxt}</td>
+        <td class="num">${x.ageSec} s</td>
+        <td>${dec}</td>
+      </tr>`;
+    }).join('');
+    $('blocLive').innerHTML = `<table><thead><tr>
+      <th>Match</th><th>Minute</th><th>Jaunes</th><th>Modèle « pas de rouge »</th>
+      <th>Betfair</th><th>Retard</th><th>Décision</th></tr></thead><tbody>${lignes}</tbody></table>`;
+  }
+
+  function tableParis(d) {
+    const P = (d.paris || []).slice().reverse();
+    $('compteParis').textContent = P.length ? `— ${P.length}` : '';
+    if (!P.length) {
+      $('blocParis').innerHTML = `<div class="vide">Aucun pari simulé pour l'instant. C'est normal au début :
+        les conditions sont volontairement sévères, et beaucoup de matchs passent sans qu'aucune occasion ne se présente.</div>`;
+      return;
+    }
+    const lignes = P.map(p => {
+      let res = `<span class="puce jaune">en attente</span>`;
+      if (p.resultat) {
+        res = p.resultat.gagne
+          ? `<span class="puce vert">gagné ${p.resultat.pl > 0 ? '+' : ''}${eur(p.resultat.pl)}</span>`
+          : `<span class="puce rouge">perdu ${eur(p.resultat.pl)}</span>`;
+      }
+      return `<tr>
+        <td class="sous">${jour(p.ts)}<br>${heure(p.ts)}</td>
+        <td><div class="mat">${esc(p.match)}</div><div class="sous">${esc(p.ligue)} · ${p.minute}' · ${p.jaunes} jaunes · ${esc(p.score)}</div></td>
+        <td>${esc(p.sens)}</td>
+        <td class="num">${cote(p.cote)}<div class="sous">juste ${cote(p.coteEquitable)}</div></td>
+        <td class="num">${eur(p.mise)}</td>
+        <td class="num">${pct(p.edge)}</td>
+        <td class="num sous">${p.ageDonneesSec} s</td>
+        <td>${res}</td>
+      </tr>`;
+    }).join('');
+    $('blocParis').innerHTML = `<table><thead><tr>
+      <th>Quand</th><th>Match</th><th>Sens</th><th>Cote</th><th>Mise</th><th>Avantage</th><th>Retard</th><th>Résultat</th>
+      </tr></thead><tbody>${lignes}</tbody></table>`;
+  }
+
+  function conditions(d) {
+    const c = d.config;
+    const l = [
+      ['Championnats', (c.ligues || []).map(i => ['Premier League', 'Liga', 'Serie A'][i]).join(', ')],
+      ['Sens des paris', { les_deux: 'les deux', pas_de_rouge: '« pas de rouge » seulement', rouge: '« rouge » seulement' }[c.sens] || c.sens],
+      ['Avantage minimum', pct(c.edgeMini)],
+      ['Fourchette de cotes', cote(c.coteMini) + ' à ' + cote(c.coteMaxi)],
+      ['Mises', 'Kelly ×' + c.kellyFraction + ', de ' + eur(c.miseMini) + ' à ' + eur(c.miseMaxi)],
+      ['Capital de référence', eur(c.capital)],
+      ['Commission Betfair', pct(c.commission, 0)],
+      ['Fenêtre de jeu', c.minuteMini + "' à " + c.minuteMaxi + "'"],
+      ['Liquidité minimum', eur(c.liquiditeMini)],
+      ['Échantillon minimum', 'n ≥ ' + c.echantillonMini],
+      ['Données au plus vieilles', c.fraicheurMaxSec + ' s'],
+      ['Attente après un carton', c.attenteApresCarteMin + ' min'],
+      ['Paris max par match', c.maxParisParMatch],
+      ['Paris max par jour', c.maxParisParJour],
+      ['Attente entre 2 paris', c.cooldownMin + ' min'],
+      ['Arrêt si perte du jour', eur(c.perteMaxJour)],
+      ['Arrêt si perte totale', eur(c.perteMaxTotale)],
+    ];
+    $('conditions').innerHTML = l.map(([k, v]) => `<div><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('');
+  }
+
+  function affiche(d) {
+    dernier = d;
+    bandeaux(d); stats(d); live(d); tableParis(d); conditions(d);
+    $('journal').textContent = (d.journal || []).join('\n') || '(vide)';
+    $('statut').textContent = `Dernier tour : ${heure(d.dernierTour)} · bot actif toutes les 30 s`;
+    $('btnStop').textContent = d.stop ? 'Réautoriser le bot' : 'Tout arrêter';
+  }
+
+  async function charge() {
+    try {
+      const r = await fetch('/api/paris', { cache: 'no-store' });
+      affiche(await r.json());
+    } catch (e) { $('statut').textContent = 'Serveur injoignable — LANCER.bat est-il ouvert ?'; }
+  }
+
+  $('btnTour').onclick = async () => {
+    const b = $('btnTour'); b.disabled = true; b.textContent = 'Analyse…';
+    try { await fetch('/api/paris/tour', { cache: 'no-store' }); await charge(); }
+    finally { b.disabled = false; b.textContent = 'Analyser maintenant'; }
+  };
+  $('btnStop').onclick = async () => {
+    const actif = dernier && dernier.stop ? '0' : '1';
+    await fetch('/api/paris/stop?actif=' + actif, { cache: 'no-store' });
+    await charge();
+  };
+  $('btnBetfair').onclick = async () => {
+    const b = $('btnBetfair'); b.disabled = true; b.textContent = 'Test…';
+    try {
+      const r = await fetch('/api/betfair/test', { cache: 'no-store' });
+      const j = await r.json();
+      if (j.ok) {
+        alert('Betfair : connexion réussie (' + j.methode + ').\n\nCompétitions trouvées :\n'
+          + (j.competitions || []).map(c => '• ' + c.nom + ' — ' + c.nbMarches + ' marchés').join('\n'));
+      } else {
+        alert('Betfair : pas encore prêt.\n\n' + (j.erreur || j.raison));
+      }
+      await charge();
+    } finally { b.disabled = false; b.textContent = 'Tester la connexion Betfair'; }
+  };
+
+  charge();
+  setInterval(charge, 20000);
+</script>

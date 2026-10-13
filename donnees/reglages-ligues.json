@@ -1,0 +1,5 @@
+[
+ { "nom": "Premier League", "arbP": 100, "scoreActif": false },
+ { "nom": "Liga", "arbP": 100, "scoreActif": true },
+ { "nom": "Serie A", "arbP": 0, "scoreActif": false }
+]
