@@ -6,6 +6,9 @@
 //                 Vérifié : Pinnacle ne cote pas ce marché pour ces 3 ligues,
 //                 donc en pratique cela renvoie "rien" et on passe au repli.
 //    - Unibet (Kambi) : source de repli qui, elle, cote "Red Card given" (oui/non).
+//    - Winamax Espagne (winamax.es) : 2e site, pari « Expulsión » (sí/no). Ce pari
+//      n'existe pas sur winamax.fr (règles françaises), mais le site espagnol
+//      répond depuis la France comme depuis GitHub.
 // ============================================================================
 const UA = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', 'Accept': 'application/json' };
 
@@ -31,9 +34,9 @@ const pause = (ms) => new Promise(r => setTimeout(r, ms));
 
 // Les 3 ligues, avec tous leurs identifiants selon la source
 const LIGUES_META = [
-  { il: 0, nom: 'Premier League', espn: 'eng.1', kambi: 'football/england/premier_league', pinnacle: 1980 },
-  { il: 1, nom: 'Liga',           espn: 'esp.1', kambi: 'football/spain/la_liga',           pinnacle: 2196 },
-  { il: 2, nom: 'Serie A',        espn: 'ita.1', kambi: 'football/italy/serie_a',           pinnacle: 2436 },
+  { il: 0, nom: 'Premier League', espn: 'eng.1', kambi: 'football/england/premier_league', pinnacle: 1980, winamax: '1/1' },
+  { il: 1, nom: 'Liga',           espn: 'esp.1', kambi: 'football/spain/la_liga',           pinnacle: 2196, winamax: '32/36' },
+  { il: 2, nom: 'Serie A',        espn: 'ita.1', kambi: 'football/italy/serie_a',           pinnacle: 2436, winamax: '31/33' },
 ];
 
 // Saison de football courante à partir d'une date (une saison va d'août à juin)
@@ -326,10 +329,131 @@ async function kambiCotesCarton(eventId) {
   } catch (e) { return null; }
 }
 
+// ---------------------------------------------------------------------------
+//  Winamax Espagne : pari « Expulsión » (marketId 146, sí/no) — 2e site de cotes
+//  Pas d'API publique : chaque page du site contient toutes ses données dans un
+//  bloc PRELOADED_STATE (matchs, paris, cotes) qu'on lit tel quel.
+// ---------------------------------------------------------------------------
+const WINAMAX = 'https://www.winamax.es/apuestas-deportivas';
+const WINAMAX_UA = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36',
+  'Accept': 'text/html',
+};
+const WINAMAX_MARCHE_EXPULSION = 146;
+
+async function httpTexte(url, headers = {}, essais = 2) {
+  let derniereErr;
+  for (let i = 1; i <= essais; i++) {
+    try {
+      const ctrl = new AbortController();
+      const to = setTimeout(() => ctrl.abort(), 25000);
+      const r = await fetch(url, { headers, signal: ctrl.signal });
+      clearTimeout(to);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return await r.text();
+    } catch (e) {
+      derniereErr = e;
+      if (i < essais) await new Promise(res => setTimeout(res, 800 * i));
+    }
+  }
+  throw derniereErr;
+}
+
+// Extrait l'objet JSON qui suit « PRELOADED_STATE » dans la page (en sautant les
+// accolades qui se trouvent à l'intérieur des textes entre guillemets).
+function winamaxEtatPage(html) {
+  const i = html.indexOf('PRELOADED_STATE');
+  if (i < 0) return null;
+  const debut = html.indexOf('{', i);
+  if (debut < 0) return null;
+  let prof = 0, dansTexte = false, echappe = false;
+  for (let k = debut; k < html.length; k++) {
+    const c = html[k];
+    if (dansTexte) {
+      if (echappe) echappe = false;
+      else if (c === '\\') echappe = true;
+      else if (c === '"') dansTexte = false;
+      continue;
+    }
+    if (c === '"') dansTexte = true;
+    else if (c === '{') prof++;
+    else if (c === '}' && --prof === 0) {
+      try { return JSON.parse(html.slice(debut, k + 1)); } catch (e) { return null; }
+    }
+  }
+  return null;
+}
+
+// Les matchs à venir d'un championnat chez Winamax (chemin = "catégorie/tournoi")
+async function winamaxEvenements(chemin) {
+  try {
+    const [cat, tournoi] = String(chemin).split('/').map(Number);
+    const etat = winamaxEtatPage(await httpTexte(`${WINAMAX}/sports/1/${cat}/${tournoi}`, WINAMAX_UA));
+    if (!etat || !etat.matches) return [];
+    return Object.values(etat.matches)
+      .filter(m => m.tournamentId === tournoi && m.status === 'PREMATCH')
+      .map(m => ({
+        id: m.matchId,
+        home: m.competitor1Name || '',
+        away: m.competitor2Name || '',
+        start: new Date(m.matchStart * 1000).toISOString(),
+        tokensHome: normEquipe(m.competitor1Name),
+        tokensAway: normEquipe(m.competitor2Name),
+      }));
+  } catch (e) { return []; }
+}
+
+// Ressemblance de deux noms d'équipe écrits dans des langues différentes
+// (« Nápoles » / « Napoli », « Bolonia » / « Bologna ») : on compare les 4 premières lettres des mots.
+function ressemblanceNoms(aTokens, bTokens) {
+  const A = [...new Set(aTokens.map(w => w.slice(0, 4)))];
+  const B = new Set(bTokens.map(w => w.slice(0, 4)));
+  if (!A.length || !B.size) return 0;
+  const inter = A.filter(x => B.has(x)).length;
+  return inter / (A.length + B.size - inter);
+}
+
+// Associer un match ESPN à un match Winamax : même heure de coup d'envoi (± 15 min)
+// ET un nom qui ressemble des deux côtés (domicile et extérieur).
+function trouveWinamax(fixture, evsWinamax) {
+  const t = new Date(fixture.date).getTime();
+  const tHome = normEquipe(fixture.home).concat(normEquipe(fixture.homeCourt));
+  const tAway = normEquipe(fixture.away).concat(normEquipe(fixture.awayCourt));
+  let best = null, bestScore = 0;
+  for (const e of evsWinamax) {
+    if (Math.abs(new Date(e.start).getTime() - t) > 15 * 60000) continue;
+    const sH = ressemblanceNoms(tHome, e.tokensHome), sA = ressemblanceNoms(tAway, e.tokensAway);
+    if (sH === 0 || sA === 0) continue;
+    if (sH + sA > bestScore) { bestScore = sH + sA; best = e; }
+  }
+  return best;
+}
+
+// Lire les cotes « Expulsión » (sí/no) d'un match Winamax
+async function winamaxCotesCarton(matchId) {
+  try {
+    const etat = winamaxEtatPage(await httpTexte(`${WINAMAX}/match/${matchId}`, WINAMAX_UA));
+    if (!etat || !etat.bets) return null;
+    const pari = Object.values(etat.bets).find(b => b.matchId === matchId && b.marketId === WINAMAX_MARCHE_EXPULSION && b.available !== false);
+    if (!pari) return null;
+    let coteNon = null, coteOui = null;
+    for (const id of (pari.outcomes || [])) {
+      const libelle = String(etat.outcomes?.[id]?.label || '').trim();
+      const cote = Number(etat.odds?.[id]);
+      if (!(cote > 1)) continue;
+      if (/^no$/i.test(libelle)) coteNon = cote;
+      if (/^s[ií]$/i.test(libelle)) coteOui = cote;
+    }
+    if (coteNon == null && coteOui == null) return null;
+    return { coteNon, coteOui };
+  } catch (e) { return null; }
+}
+
 module.exports = {
   LIGUES_META, saisonCourante, pause,
   espnMatchs, espnDetail, espnClassement,
   espnLiveLigue, espnCartesLive, minuteDepuisHorloge, minuteCourante,
   pinnacleMarcheCarton,
   kambiEvenements, trouveKambi, kambiCotesCarton, normEquipe, jaccard, httpJson,
+  winamaxEvenements, trouveWinamax, winamaxCotesCarton,
 };

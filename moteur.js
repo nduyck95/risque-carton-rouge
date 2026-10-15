@@ -43,8 +43,8 @@ function calculeValueBet(pNo, cotes) {
   const edgeNon = cotes.coteNon ? pNo * cotes.coteNon - 1 : null;
   const edgeOui = cotes.coteOui ? (1 - pNo) * cotes.coteOui - 1 : null;
   const cands = [];
-  if (edgeNon != null) cands.push({ mise: 'Pas de rouge', cote: cotes.coteNon, edge: edgeNon, pModele: pNo });
-  if (edgeOui != null) cands.push({ mise: 'Rouge', cote: cotes.coteOui, edge: edgeOui, pModele: 1 - pNo });
+  if (edgeNon != null) cands.push({ mise: 'Pas de rouge', cote: cotes.coteNon, edge: edgeNon, pModele: pNo, source: cotes.sourceNon || cotes.source });
+  if (edgeOui != null) cands.push({ mise: 'Rouge', cote: cotes.coteOui, edge: edgeOui, pModele: 1 - pNo, source: cotes.sourceOui || cotes.source });
   if (!cands.length) return null;
   cands.sort((a, b) => b.edge - a.edge);
   const meilleur = cands[0];
@@ -54,8 +54,49 @@ function calculeValueBet(pNo, cotes) {
     coteEquitable: meilleur.pModele > 0 ? 1 / meilleur.pModele : null,
     edge: meilleur.edge,
     interessant: meilleur.edge >= SEUIL_VALUE,
-    source: cotes.source,
+    source: meilleur.source,
     edgeNon, edgeOui,
+  };
+}
+
+// Va chercher la cote « carton rouge » sur chaque site (Unibet, Winamax Espagne)
+// et garde, pour chaque côté (« pas de rouge » / « rouge »), la plus haute — avec le
+// nom du site qui la propose. Renvoie null si aucun site ne cote ce match.
+async function chercheCotes(match, kambiEvs, winamaxEvs) {
+  const offres = [];
+  const evK = F.trouveKambi(match, kambiEvs);
+  if (evK) {
+    const c = await F.kambiCotesCarton(evK.id);
+    if (c && (c.coteNon || c.coteOui)) offres.push({ source: 'Unibet', ...c });
+    await F.pause(120);
+  }
+  const evW = F.trouveWinamax(match, winamaxEvs);
+  if (evW) {
+    const c = await F.winamaxCotesCarton(evW.id);
+    if (c && (c.coteNon || c.coteOui)) offres.push({ source: 'Winamax', ...c });
+    await F.pause(300);
+  }
+  return combineCotes(offres);
+}
+
+function combineCotes(offres) {
+  if (!offres.length) return null;
+  // La plus haute cote d'un côté, et le(s) site(s) qui la proposent (ex-æquo : « Unibet = Winamax »)
+  const meilleur = (cle) => {
+    const max = Math.max(...offres.map(o => o[cle] || 0));
+    if (!(max > 0)) return { cote: null, source: null };
+    return { cote: max, source: offres.filter(o => o[cle] === max).map(o => o.source).join(' = ') };
+  };
+  const non = meilleur('coteNon'), oui = meilleur('coteOui');
+  const sources = [...new Set(offres.map(o => o.source))];
+  return {
+    source: sources.join(' + '),
+    coteNon: non.cote, sourceNon: non.source,
+    coteOui: oui.cote, sourceOui: oui.source,
+    // Marge en prenant la meilleure cote de chaque côté (peut descendre sous 0 si les 2 sites divergent fort)
+    marge: (non.cote && oui.cote) ? (1 / non.cote + 1 / oui.cote - 1) : null,
+    parSite: offres.map(o => ({ source: o.source, coteNon: o.coteNon || null, coteOui: o.coteOui || null })),
+    maj: new Date().toISOString(),
   };
 }
 
@@ -81,8 +122,9 @@ async function rafraichitLigue(meta, saison, ancienParId, journal) {
   }
   const classement = await F.espnClassement(meta.espn, saison.anneeEspn);
   const pinnacleCartes = await F.pinnacleMarcheCarton(meta.pinnacle);
-  dit(`${meta.nom} : Pinnacle ${pinnacleCartes ? 'cote' : 'ne cote PAS'} le carton → source cotes = ${pinnacleCartes ? 'Pinnacle' : 'Unibet (repli)'}.`);
+  dit(`${meta.nom} : Pinnacle ${pinnacleCartes ? 'cote' : 'ne cote PAS'} le carton → sources cotes = ${pinnacleCartes ? 'Pinnacle' : 'Unibet + Winamax Espagne (la plus haute)'}.`);
   const kambiEvs = pinnacleCartes ? [] : await F.kambiEvenements(meta.kambi);
+  const winamaxEvs = pinnacleCartes ? [] : await F.winamaxEvenements(meta.winamax);
 
   let figesFaits = 0, avecCote = 0, avecArbitre = 0, confirmesFaits = 0, corriges = 0;
   const out = [];
@@ -151,19 +193,11 @@ async function rafraichitLigue(meta, saison, ancienParId, journal) {
       // Prédiction maison (avant-match)
       const pr = M.predirePreMatch(meta.il, fx.home, fx.away, arbitre, posH, posA);
 
-      // Cotes bookmaker : Pinnacle d'abord (absent), sinon Unibet (repli), pour les matchs à venir
+      // Cotes bookmaker : Pinnacle d'abord (absent), sinon la plus haute entre Unibet et Winamax Espagne
       let cotes = ancien?.cotes || null;
-      if (fx.statut !== 'termine') {
-        const ev = F.trouveKambi(fx, kambiEvs);
-        if (ev) {
-          const c = await F.kambiCotesCarton(ev.id);
-          if (c && (c.coteNon || c.coteOui)) {
-            const marge = (c.coteNon && c.coteOui) ? (1 / c.coteNon + 1 / c.coteOui - 1) : null;
-            cotes = { source: 'Unibet', coteNon: c.coteNon, coteOui: c.coteOui, marge, maj: new Date().toISOString() };
-            avecCote++;
-            await F.pause(120);
-          }
-        }
+      if (fx.statut !== 'termine' && new Date(fx.date).getTime() > maintenant) {
+        const c = await chercheCotes(fx, kambiEvs, winamaxEvs);
+        if (c) { cotes = c; avecCote++; }
       }
       const valueBet = calculeValueBet(pr.pNo, cotes);
 
@@ -247,6 +281,7 @@ async function rafraichitImminents(fenetreMin = 35, journal = []) {
     const classement = await F.espnClassement(meta.espn, saison.anneeEspn);
     const pinnacleCartes = await F.pinnacleMarcheCarton(meta.pinnacle);
     const kambiEvs = pinnacleCartes ? [] : await F.kambiEvenements(meta.kambi);
+    const winamaxEvs = pinnacleCartes ? [] : await F.winamaxEvenements(meta.winamax);
 
     for (const m of imminents) {
       try {
@@ -261,13 +296,10 @@ async function rafraichitImminents(fenetreMin = 35, journal = []) {
           pBase: pr.pBase, facteurs: pr.facteurs, classementApplique: pr.classement.applique, gap: pr.classement.gap,
         };
         m.derby = pr.derby;
-        const ev = F.trouveKambi(m, kambiEvs);
-        if (ev) {
-          const c = await F.kambiCotesCarton(ev.id);
-          if (c && (c.coteNon || c.coteOui)) {
-            const marge = (c.coteNon && c.coteOui) ? (1 / c.coteNon + 1 / c.coteOui - 1) : null;
-            m.cotes = { source: 'Unibet', coteNon: c.coteNon, coteOui: c.coteOui, marge, maj: new Date().toISOString() };
-          }
+        // Cotes AVANT-MATCH seulement : une fois le match lancé on garde la dernière cote d'avant le coup d'envoi
+        if (!det.termine && new Date(m.date).getTime() > Date.now()) {
+          const c = await chercheCotes(m, kambiEvs, winamaxEvs);
+          if (c) m.cotes = c;
         }
         m.valueBet = calculeValueBet(pr.pNo, m.cotes);
         if (det.termine) {

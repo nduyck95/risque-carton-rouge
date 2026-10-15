@@ -94,6 +94,8 @@
   .cote-book b { font-variant-numeric: tabular-nums; }
   .cote-book .src { font-size: 11px; color: var(--ink-3); }
   .cote-book .paire { color: var(--ink-2); font-size: 12.5px; }
+  .cote-book .ligne-cote { white-space: nowrap; }
+  .cote-book .site { font-size: 11px; color: var(--ink-3); }
 
   .vb-oui { background: var(--vert-wash); color: var(--vert); border-radius: 8px; padding: 6px 10px; display: inline-block; font-weight: 600; font-size: 13px; }
   .vb-oui b { font-variant-numeric: tabular-nums; }
@@ -151,8 +153,9 @@
       <li><b>Arbitre</b> : <span class="badge b-ok">✓</span> désigné et pris en compte ·
           <span class="badge b-att">?</span> désigné mais inconnu de mes données ·
           <span class="badge b-non">—</span> pas encore désigné (souvent publié la veille).</li>
-      <li><b>Cote bookmaker</b> : le prix réel « pas de rouge » / « rouge ». J'essaie d'abord <b>Pinnacle</b> ;
-          comme il ne cote pas ce marché pour ces ligues, je prends le meilleur book disponible (souvent <b>Unibet</b>) et j'indique son nom.</li>
+      <li><b>Cote bookmaker</b> : le prix réel « pas de rouge » / « rouge ». J'essaie d'abord <b>Pinnacle</b> (qui ne cote pas ce pari) ;
+          puis je compare <b>Unibet</b> et <b>Winamax Espagne</b> et j'affiche, pour chaque côté, <b>la cote la plus haute</b> avec le nom du site.
+          Survole la case pour voir la cote de chaque site. (Ce pari n'existe pas sur winamax.fr.)</li>
       <li><b>Value bet (pari de valeur)</b> : quand le bookmaker paie <b>plus</b> que ma cote juste, il y a un avantage théorique (★).
           ⚠️ C'est une <b>estimation</b>, pas un gain garanti : l'écart est souvent à l'intérieur de la marge du book. À jouer avec prudence.</li>
       <li><b>🔥 Derby</b> : match rival à fort enjeu. Mesuré sur 3 saisons, les derbies génèrent plus de cartons rouges
@@ -279,9 +282,20 @@
     if (!m.cotes) return '<span class="vb-non">—</span>';
     const c = m.cotes;
     const marge = c.marge != null ? ` · marge ${(c.marge * 100).toFixed(1)} %` : '';
-    return `<div class="cote-book">
-      <div class="paire">non <b>${fmtCote(c.coteNon)}</b> / rouge <b>${fmtCote(c.coteOui)}</b></div>
-      <div class="src">${c.source}${marge}</div></div>`;
+    // Ancienne mémoire : un seul site, pas de détail par côté
+    if (!c.parSite) {
+      return `<div class="cote-book">
+        <div class="paire">non <b>${fmtCote(c.coteNon)}</b> / rouge <b>${fmtCote(c.coteOui)}</b></div>
+        <div class="src">${c.source}${marge}</div></div>`;
+    }
+    // Infobulle : la cote de chaque site, pour comparer
+    const detail = c.parSite.map(s => `${s.source} : non ${fmtCote(s.coteNon)} / rouge ${fmtCote(s.coteOui)}`).join('\n');
+    const titre = `La plus haute cote de chaque côté.\n${detail}`;
+    const plusieurs = c.parSite.length > 1 ? `meilleure de ${c.parSite.length} sites` : 'seul site qui la cote';
+    return `<div class="cote-book" title="${titre}">
+      <div class="paire ligne-cote">non <b>${fmtCote(c.coteNon)}</b> <span class="site">${c.sourceNon || ''}</span></div>
+      <div class="paire ligne-cote">rouge <b>${fmtCote(c.coteOui)}</b> <span class="site">${c.sourceOui || ''}</span></div>
+      <div class="src">${plusieurs}${marge}</div></div>`;
   }
 
   function celluleValueBet(m) {
@@ -290,7 +304,7 @@
     const vb = m.valueBet;
     let corps;
     if (!vb) corps = '<span class="vb-non">—</span>';
-    else if (vb.interessant) corps = `<span class="vb-oui" title="Le book paie plus que ma cote juste. Estimation, pas une garantie.">★ ${vb.mise} · <b>${fmtCote(vb.cote)}</b> · ${fmtEdge(vb.edge)}</span>`;
+    else if (vb.interessant) corps = `<span class="vb-oui" title="Le book paie plus que ma cote juste. Estimation, pas une garantie.">★ ${vb.mise} · <b>${fmtCote(vb.cote)}</b>${vb.source ? ` (${vb.source})` : ''} · ${fmtEdge(vb.edge)}</span>`;
     else corps = `<span class="vb-non">pas de valeur (${fmtEdge(vb.edge)})</span>`;
     return derby ? `<div class="vb-cell">${derby}${corps}</div>` : corps;
   }
