@@ -340,6 +340,9 @@ const WINAMAX_UA = {
   'Accept': 'text/html',
 };
 const WINAMAX_MARCHE_EXPULSION = 146;
+// Dernier problème rencontré chez Winamax (affiché dans le journal, pour comprendre un blocage)
+let winamaxDerniereErreur = null;
+const winamaxErreur = () => winamaxDerniereErreur;
 
 async function httpTexte(url, headers = {}, essais = 2) {
   let derniereErr;
@@ -349,7 +352,7 @@ async function httpTexte(url, headers = {}, essais = 2) {
       const to = setTimeout(() => ctrl.abort(), 25000);
       const r = await fetch(url, { headers, signal: ctrl.signal });
       clearTimeout(to);
-      if (!r.ok) throw new Error('HTTP ' + r.status);
+      if (!r.ok) throw new Error('HTTP ' + r.status + (r.url !== url ? ' (redirigé vers ' + r.url + ')' : ''));
       return await r.text();
     } catch (e) {
       derniereErr = e;
@@ -387,9 +390,16 @@ function winamaxEtatPage(html) {
 // Les matchs à venir d'un championnat chez Winamax (chemin = "catégorie/tournoi")
 async function winamaxEvenements(chemin) {
   try {
+    winamaxDerniereErreur = null;
     const [cat, tournoi] = String(chemin).split('/').map(Number);
-    const etat = winamaxEtatPage(await httpTexte(`${WINAMAX}/sports/1/${cat}/${tournoi}`, WINAMAX_UA));
-    if (!etat || !etat.matches) return [];
+    const url = `${WINAMAX}/sports/1/${cat}/${tournoi}`;
+    const html = await httpTexte(url, WINAMAX_UA);
+    const etat = winamaxEtatPage(html);
+    if (!etat || !etat.matches) {
+      const titre = (html.match(/<title>([^<]*)<\/title>/i) || [])[1] || '';
+      winamaxDerniereErreur = `page sans données (${html.length} caractères, titre « ${titre.trim().slice(0, 80)} »)`;
+      return [];
+    }
     return Object.values(etat.matches)
       .filter(m => m.tournamentId === tournoi && m.status === 'PREMATCH')
       .map(m => ({
@@ -400,7 +410,7 @@ async function winamaxEvenements(chemin) {
         tokensHome: normEquipe(m.competitor1Name),
         tokensAway: normEquipe(m.competitor2Name),
       }));
-  } catch (e) { return []; }
+  } catch (e) { winamaxDerniereErreur = e.message || String(e); return []; }
 }
 
 // Ressemblance de deux noms d'équipe écrits dans des langues différentes
@@ -433,7 +443,7 @@ function trouveWinamax(fixture, evsWinamax) {
 async function winamaxCotesCarton(matchId) {
   try {
     const etat = winamaxEtatPage(await httpTexte(`${WINAMAX}/match/${matchId}`, WINAMAX_UA));
-    if (!etat || !etat.bets) return null;
+    if (!etat || !etat.bets) { winamaxDerniereErreur = `page du match ${matchId} sans données`; return null; }
     const pari = Object.values(etat.bets).find(b => b.matchId === matchId && b.marketId === WINAMAX_MARCHE_EXPULSION && b.available !== false);
     if (!pari) return null;
     let coteNon = null, coteOui = null;
@@ -446,7 +456,7 @@ async function winamaxCotesCarton(matchId) {
     }
     if (coteNon == null && coteOui == null) return null;
     return { coteNon, coteOui };
-  } catch (e) { return null; }
+  } catch (e) { winamaxDerniereErreur = `match ${matchId} : ${e.message || e}`; return null; }
 }
 
 module.exports = {
@@ -455,5 +465,5 @@ module.exports = {
   espnLiveLigue, espnCartesLive, minuteDepuisHorloge, minuteCourante,
   pinnacleMarcheCarton,
   kambiEvenements, trouveKambi, kambiCotesCarton, normEquipe, jaccard, httpJson,
-  winamaxEvenements, trouveWinamax, winamaxCotesCarton,
+  winamaxEvenements, trouveWinamax, winamaxCotesCarton, winamaxErreur,
 };

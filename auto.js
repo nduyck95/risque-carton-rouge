@@ -24,5 +24,7 @@ const moteur = require('./moteur.js');
   fs.mkdirSync(site, { recursive: true });
   fs.copyFileSync(path.join(__dirname, 'matchs.html'), path.join(site, 'index.html'));
   fs.writeFileSync(path.join(site, 'etat.json'), JSON.stringify(etat), 'utf8');
+  // Journal du dernier passage, lisible en ligne (journal.txt) pour comprendre un souci de source
+  fs.writeFileSync(path.join(site, 'journal.txt'), [new Date().toISOString(), ...journal].join('\n') + '\n', 'utf8');
   console.log('Site prêt dans site/ (mis à jour le ' + etat.misAJour + ').');
 })();

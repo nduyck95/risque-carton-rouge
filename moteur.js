@@ -125,6 +125,7 @@ async function rafraichitLigue(meta, saison, ancienParId, journal) {
   dit(`${meta.nom} : Pinnacle ${pinnacleCartes ? 'cote' : 'ne cote PAS'} le carton → sources cotes = ${pinnacleCartes ? 'Pinnacle' : 'Unibet + Winamax Espagne (la plus haute)'}.`);
   const kambiEvs = pinnacleCartes ? [] : await F.kambiEvenements(meta.kambi);
   const winamaxEvs = pinnacleCartes ? [] : await F.winamaxEvenements(meta.winamax);
+  dit(`${meta.nom} : Winamax Espagne ${winamaxEvs.length} matchs lus${F.winamaxErreur() ? ' — problème : ' + F.winamaxErreur() : ''}.`);
 
   let figesFaits = 0, avecCote = 0, avecArbitre = 0, confirmesFaits = 0, corriges = 0;
   const out = [];
@@ -312,6 +313,7 @@ async function rafraichitImminents(fenetreMin = 35, journal = []) {
       } catch (e) { /* on ignore ce match, on ne casse pas la boucle */ }
     }
     dit(`${meta.nom} : ${imminents.length} match(s) imminent(s) rafraîchi(s).`);
+    dit(`${meta.nom} : Winamax Espagne ${winamaxEvs.length} matchs lus${F.winamaxErreur() ? ' — problème : ' + F.winamaxErreur() : ''}.`);
   }
 
   // ---- REVÉRIFICATION des résultats figés trop tôt ----------------------
