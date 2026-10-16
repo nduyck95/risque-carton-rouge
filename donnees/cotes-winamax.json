@@ -1,16 +1,154 @@
 {
- "maj": "2026-10-16T14:40:04.227Z",
+ "maj": "2026-10-16T16:40:04.612Z",
  "ligues": {
-  "0": [],
-  "1": [],
+  "0": [
+   {
+    "id": 72221312,
+    "home": "Bournemouth",
+    "away": "Sunderland",
+    "start": "2026-10-18T13:00:00.000Z",
+    "coteNon": 1.08,
+    "coteOui": 5
+   },
+   {
+    "id": 72221314,
+    "home": "Brentford",
+    "away": "Liverpool",
+    "start": "2026-10-17T14:00:00.000Z",
+    "coteNon": 1.13,
+    "coteOui": 4.5
+   },
+   {
+    "id": 72221316,
+    "home": "Brighton",
+    "away": "Crystal Palace",
+    "start": "2026-10-18T13:00:00.000Z",
+    "coteNon": 1.1,
+    "coteOui": 4.6
+   },
+   {
+    "id": 72221318,
+    "home": "Everton",
+    "away": "Chelsea",
+    "start": "2026-10-17T11:30:00.000Z",
+    "coteNon": 1.09,
+    "coteOui": 5.4
+   },
+   {
+    "id": 72221320,
+    "home": "Fulham",
+    "away": "Hull City",
+    "start": "2026-10-17T14:00:00.000Z",
+    "coteNon": 1.14,
+    "coteOui": 4.4
+   },
+   {
+    "id": 72221322,
+    "home": "Leeds",
+    "away": "Manchester United",
+    "start": "2026-10-18T13:00:00.000Z",
+    "coteNon": 1.12,
+    "coteOui": 4.3
+   },
+   {
+    "id": 72221326,
+    "home": "Newcastle",
+    "away": "Aston Villa",
+    "start": "2026-10-17T16:30:00.000Z",
+    "coteNon": 1.1,
+    "coteOui": 4.6
+   },
+   {
+    "id": 72221328,
+    "home": "Nottingham Forest",
+    "away": "Arsenal",
+    "start": "2026-10-18T15:30:00.000Z",
+    "coteNon": 1.05,
+    "coteOui": 5.9
+   }
+  ],
+  "1": [
+   {
+    "id": 72478626,
+    "home": "Real Betis",
+    "away": "FC Barcelona",
+    "start": "2026-10-17T16:30:00.000Z",
+    "coteNon": 1.09,
+    "coteOui": 5.3
+   },
+   {
+    "id": 72478628,
+    "home": "Celta Vigo",
+    "away": "Alavés",
+    "start": "2026-10-18T14:15:00.000Z",
+    "coteNon": 1.23,
+    "coteOui": 3.25
+   },
+   {
+    "id": 72478630,
+    "home": "Deportivo de A Coruña",
+    "away": "Levante",
+    "start": "2026-10-16T19:00:00.000Z",
+    "coteNon": 1.16,
+    "coteOui": 4.1
+   },
+   {
+    "id": 72478632,
+    "home": "Espanyol",
+    "away": "Atlético Madrid",
+    "start": "2026-10-17T12:00:00.000Z",
+    "coteNon": 1.17,
+    "coteOui": 4
+   },
+   {
+    "id": 72478636,
+    "home": "Málaga",
+    "away": "Real Sociedad",
+    "start": "2026-10-18T16:30:00.000Z",
+    "coteNon": 1.12,
+    "coteOui": 4.2
+   },
+   {
+    "id": 72478638,
+    "home": "Osasuna",
+    "away": "Racing De Santander",
+    "start": "2026-10-18T12:00:00.000Z",
+    "coteNon": 1.14,
+    "coteOui": 4
+   },
+   {
+    "id": 72478640,
+    "home": "Real Madrid",
+    "away": "Sevilla FC",
+    "start": "2026-10-18T19:00:00.000Z",
+    "coteNon": 1.19,
+    "coteOui": 3.5
+   },
+   {
+    "id": 72478642,
+    "home": "Valencia",
+    "away": "Athletic Bilbao",
+    "start": "2026-10-17T19:00:00.000Z",
+    "coteNon": 1.09,
+    "coteOui": 4.8
+   },
+   {
+    "id": 72478644,
+    "home": "Villarreal",
+    "away": "Elche",
+    "start": "2026-10-17T14:15:00.000Z",
+    "coteNon": 1.17,
+    "coteOui": 4
+   }
+  ],
   "2": [
    {
     "id": 71945306,
     "home": "Bolonia",
     "away": "Inter Milán",
     "start": "2026-10-17T16:00:00.000Z",
-    "coteNon": 1.04,
-    "coteOui": 6.25
+    "coteNon": 1.05,
+    "coteOui": 6.5
    },
    {
     "id": 71945308,
@@ -41,8 +179,8 @@
     "home": "AC Milan",
     "away": "Atalanta Bérgamo",
     "start": "2026-10-18T16:00:00.000Z",
-    "coteNon": 1.06,
-    "coteOui": 5.7
+    "coteNon": 1.03,
+    "coteOui": 6.75
    },
    {
     "id": 71945320,
@@ -57,16 +195,16 @@
     "home": "Udinese",
     "away": "Lecce",
     "start": "2026-10-18T10:30:00.000Z",
-    "coteNon": 1.06,
-    "coteOui": 5.4
+    "coteNon": 1.04,
+    "coteOui": 6.25
    },
    {
     "id": 71945324,
     "home": "Venecia",
     "away": "Nápoles",
     "start": "2026-10-17T13:00:00.000Z",
-    "coteNon": 1.08,
-    "coteOui": 5.5
+    "coteNon": 1.05,
+    "coteOui": 6.5
    }
   ]
  }
