@@ -6,3 +6,4 @@ betfair-config.json
 donnees/paris-simules.json
 donnees/live-saison-courante.json
 STOP*
+journal-envoi-winamax*.txt
