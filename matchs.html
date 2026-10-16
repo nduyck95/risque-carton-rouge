@@ -288,13 +288,22 @@
         <div class="paire">non <b>${fmtCote(c.coteNon)}</b> / rouge <b>${fmtCote(c.coteOui)}</b></div>
         <div class="src">${c.source}${marge}</div></div>`;
     }
+    // Heure de lecture quand la cote a été lue par le PC (Winamax bloque GitHub)
+    const hhmm = iso => new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+    const nomSite = src => {
+      if (!src) return '';
+      return src.split(' = ').map(n => {
+        const s = c.parSite.find(x => x.source === n);
+        return s && s.lu ? `${n} (PC ${hhmm(s.lu)})` : n;
+      }).join(' = ');
+    };
     // Infobulle : la cote de chaque site, pour comparer
-    const detail = c.parSite.map(s => `${s.source} : non ${fmtCote(s.coteNon)} / rouge ${fmtCote(s.coteOui)}`).join('\n');
+    const detail = c.parSite.map(s => `${s.source}${s.lu ? ` (lue par ton PC à ${hhmm(s.lu)})` : ''} : non ${fmtCote(s.coteNon)} / rouge ${fmtCote(s.coteOui)}`).join('\n');
     const titre = `La plus haute cote de chaque côté.\n${detail}`;
     const plusieurs = c.parSite.length > 1 ? `meilleure de ${c.parSite.length} sites` : 'seul site qui la cote';
     return `<div class="cote-book" title="${titre}">
-      <div class="paire ligne-cote">non <b>${fmtCote(c.coteNon)}</b> <span class="site">${c.sourceNon || ''}</span></div>
-      <div class="paire ligne-cote">rouge <b>${fmtCote(c.coteOui)}</b> <span class="site">${c.sourceOui || ''}</span></div>
+      <div class="paire ligne-cote">non <b>${fmtCote(c.coteNon)}</b> <span class="site">${nomSite(c.sourceNon)}</span></div>
+      <div class="paire ligne-cote">rouge <b>${fmtCote(c.coteOui)}</b> <span class="site">${nomSite(c.sourceOui)}</span></div>
       <div class="src">${plusieurs}${marge}</div></div>`;
   }
 

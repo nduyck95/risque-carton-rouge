@@ -22,6 +22,45 @@ const MAX_CONFIRME_PAR_FOIS = 30; // borne le nb de résultats revérifiés par 
 // enregistré "pas de rouge" alors qu'il y a eu un rouge à la 90e).
 const DELAI_CONFIRMATION_MS = 3.5 * 3600 * 1000;
 
+// Cotes Winamax lues par le PC de Nicolas (envoi-winamax.js), pour quand Winamax
+// ne répond pas directement (cas des serveurs GitHub, bloqués par Winamax).
+const FICHIER_WINAMAX_PC = path.join(__dirname, 'donnees', 'cotes-winamax.json');
+const AGE_MAX_WINAMAX_PC_MS = 3 * 3600 * 1000;   // au-delà de 3 h, la cote est jugée trop ancienne
+
+// Les matchs Winamax d'une ligue : en direct si Winamax répond, sinon depuis le fichier
+// envoyé par le PC (s'il a moins de 3 h). Chaque match lu dans le fichier porte déjà sa cote.
+async function evenementsWinamax(meta, dit) {
+  const enDirect = await F.winamaxEvenements(meta.winamax);
+  if (enDirect.length) {
+    dit(`${meta.nom} : Winamax Espagne ${enDirect.length} matchs lus en direct.`);
+    return enDirect;
+  }
+  const probleme = F.winamaxErreur() ? ` (problème : ${F.winamaxErreur()})` : '';
+  let fichier = null;
+  try {
+    let t = fs.readFileSync(FICHIER_WINAMAX_PC, 'utf8');
+    if (t.charCodeAt(0) === 0xFEFF) t = t.slice(1);
+    fichier = JSON.parse(t);
+  } catch (e) { /* pas de fichier envoyé par le PC */ }
+  if (!fichier || !fichier.maj) {
+    dit(`${meta.nom} : Winamax Espagne ne répond pas${probleme} et aucun fichier du PC.`);
+    return [];
+  }
+  const age = Date.now() - new Date(fichier.maj).getTime();
+  const ageTexte = `${Math.round(age / 60000)} min`;
+  if (!(age >= 0 && age <= AGE_MAX_WINAMAX_PC_MS)) {
+    dit(`${meta.nom} : Winamax Espagne ne répond pas${probleme} ; fichier du PC trop ancien (${ageTexte}) → ignoré.`);
+    return [];
+  }
+  const evs = (fichier.ligues?.[meta.il] || []).map(m => ({
+    id: m.id, home: m.home, away: m.away, start: m.start,
+    tokensHome: F.normEquipe(m.home), tokensAway: F.normEquipe(m.away),
+    coteLue: { coteNon: m.coteNon || null, coteOui: m.coteOui || null, lu: fichier.maj },
+  }));
+  dit(`${meta.nom} : Winamax Espagne ne répond pas${probleme} → ${evs.length} cotes reprises du fichier du PC (lu il y a ${ageTexte}).`);
+  return evs;
+}
+
 function resultatConfirmable(dateISO) {
   return Date.now() - new Date(dateISO).getTime() > DELAI_CONFIRMATION_MS;
 }
@@ -71,7 +110,11 @@ async function chercheCotes(match, kambiEvs, winamaxEvs) {
     await F.pause(120);
   }
   const evW = F.trouveWinamax(match, winamaxEvs);
-  if (evW) {
+  if (evW && evW.coteLue) {
+    // Cote déjà lue par le PC (fichier cotes-winamax.json) : on note l'heure de lecture
+    const c = evW.coteLue;
+    if (c.coteNon || c.coteOui) offres.push({ source: 'Winamax', coteNon: c.coteNon, coteOui: c.coteOui, lu: c.lu });
+  } else if (evW) {
     const c = await F.winamaxCotesCarton(evW.id);
     if (c && (c.coteNon || c.coteOui)) offres.push({ source: 'Winamax', ...c });
     await F.pause(300);
@@ -95,7 +138,8 @@ function combineCotes(offres) {
     coteOui: oui.cote, sourceOui: oui.source,
     // Marge en prenant la meilleure cote de chaque côté (peut descendre sous 0 si les 2 sites divergent fort)
     marge: (non.cote && oui.cote) ? (1 / non.cote + 1 / oui.cote - 1) : null,
-    parSite: offres.map(o => ({ source: o.source, coteNon: o.coteNon || null, coteOui: o.coteOui || null })),
+    // lu = heure de lecture quand la cote vient du PC (sinon elle a été lue à l'instant, cf. maj)
+    parSite: offres.map(o => ({ source: o.source, coteNon: o.coteNon || null, coteOui: o.coteOui || null, lu: o.lu || null })),
     maj: new Date().toISOString(),
   };
 }
@@ -124,8 +168,7 @@ async function rafraichitLigue(meta, saison, ancienParId, journal) {
   const pinnacleCartes = await F.pinnacleMarcheCarton(meta.pinnacle);
   dit(`${meta.nom} : Pinnacle ${pinnacleCartes ? 'cote' : 'ne cote PAS'} le carton → sources cotes = ${pinnacleCartes ? 'Pinnacle' : 'Unibet + Winamax Espagne (la plus haute)'}.`);
   const kambiEvs = pinnacleCartes ? [] : await F.kambiEvenements(meta.kambi);
-  const winamaxEvs = pinnacleCartes ? [] : await F.winamaxEvenements(meta.winamax);
-  dit(`${meta.nom} : Winamax Espagne ${winamaxEvs.length} matchs lus${F.winamaxErreur() ? ' — problème : ' + F.winamaxErreur() : ''}.`);
+  const winamaxEvs = pinnacleCartes ? [] : await evenementsWinamax(meta, dit);
 
   let figesFaits = 0, avecCote = 0, avecArbitre = 0, confirmesFaits = 0, corriges = 0;
   const out = [];
@@ -282,7 +325,7 @@ async function rafraichitImminents(fenetreMin = 35, journal = []) {
     const classement = await F.espnClassement(meta.espn, saison.anneeEspn);
     const pinnacleCartes = await F.pinnacleMarcheCarton(meta.pinnacle);
     const kambiEvs = pinnacleCartes ? [] : await F.kambiEvenements(meta.kambi);
-    const winamaxEvs = pinnacleCartes ? [] : await F.winamaxEvenements(meta.winamax);
+    const winamaxEvs = pinnacleCartes ? [] : await evenementsWinamax(meta, dit);
 
     for (const m of imminents) {
       try {
@@ -313,7 +356,6 @@ async function rafraichitImminents(fenetreMin = 35, journal = []) {
       } catch (e) { /* on ignore ce match, on ne casse pas la boucle */ }
     }
     dit(`${meta.nom} : ${imminents.length} match(s) imminent(s) rafraîchi(s).`);
-    dit(`${meta.nom} : Winamax Espagne ${winamaxEvs.length} matchs lus${F.winamaxErreur() ? ' — problème : ' + F.winamaxErreur() : ''}.`);
   }
 
   // ---- REVÉRIFICATION des résultats figés trop tôt ----------------------
