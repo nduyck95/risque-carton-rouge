@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-16T05:38:35.678Z",
+ "misAJour": "2026-10-16T05:51:42.964Z",
  "ligues": [
   {
    "il": 0,
@@ -3350,7 +3350,7 @@
         "coteOui": 4.3
        }
       ],
-      "maj": "2026-10-16T05:38:22.474Z"
+      "maj": "2026-10-16T05:51:26.631Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3415,7 +3415,7 @@
         "coteOui": 4.1
        }
       ],
-      "maj": "2026-10-16T05:38:22.949Z"
+      "maj": "2026-10-16T05:51:27.186Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3480,7 +3480,7 @@
         "coteOui": 5
        }
       ],
-      "maj": "2026-10-16T05:38:23.439Z"
+      "maj": "2026-10-16T05:51:27.771Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3545,7 +3545,7 @@
         "coteOui": 4.8
        }
       ],
-      "maj": "2026-10-16T05:38:23.922Z"
+      "maj": "2026-10-16T05:51:28.354Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3610,7 +3610,7 @@
         "coteOui": 4.6
        }
       ],
-      "maj": "2026-10-16T05:38:24.396Z"
+      "maj": "2026-10-16T05:51:28.909Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3675,7 +3675,7 @@
         "coteOui": 4.8
        }
       ],
-      "maj": "2026-10-16T05:38:24.899Z"
+      "maj": "2026-10-16T05:51:29.493Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3740,7 +3740,7 @@
         "coteOui": 4.2
        }
       ],
-      "maj": "2026-10-16T05:38:25.450Z"
+      "maj": "2026-10-16T05:51:30.046Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3805,7 +3805,7 @@
         "coteOui": 4.3
        }
       ],
-      "maj": "2026-10-16T05:38:25.915Z"
+      "maj": "2026-10-16T05:51:30.607Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3870,7 +3870,7 @@
         "coteOui": 5.2
        }
       ],
-      "maj": "2026-10-16T05:38:26.387Z"
+      "maj": "2026-10-16T05:51:31.160Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3921,8 +3921,32 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.16,
+      "sourceNon": "Unibet",
+      "coteOui": 4.4,
+      "sourceOui": "Unibet",
+      "marge": 0.08934169278996862,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.16,
+        "coteOui": 4.4
+       }
+      ],
+      "maj": "2026-10-16T05:50:48.071Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.16,
+      "coteEquitable": 1.1413444117141445,
+      "edge": 0.016345275005847926,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": 0.016345275005847926,
+      "edgeOui": -0.4551027672635616
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -20967,7 +20991,7 @@
         "coteOui": 3.7
        }
       ],
-      "maj": "2026-10-16T05:38:27.337Z"
+      "maj": "2026-10-16T05:51:32.617Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21067,7 +21091,7 @@
     },
     {
      "id": "401882846",
-     "date": "2026-10-17T16:30Z",
+     "date": "2026-10-17T16:00Z",
      "home": "Real Betis",
      "away": "Barcelona",
      "homeCourt": "Betis",
@@ -36628,7 +36652,7 @@
         "coteOui": 5.3
        }
       ],
-      "maj": "2026-10-16T05:38:32.007Z"
+      "maj": "2026-10-16T05:51:38.681Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
