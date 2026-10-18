@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-18T15:29:58.937Z",
+ "misAJour": "2026-10-18T15:58:55.890Z",
  "ligues": [
   {
    "il": 0,
@@ -3985,7 +3985,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:53.681Z"
+      "maj": "2026-10-18T15:58:51.483Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21418,8 +21418,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-18T15:58:55.770Z"
      },
      "fige": true,
      "majArbitre": null
@@ -21540,7 +21540,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:54.757Z"
+      "maj": "2026-10-18T15:58:52.354Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21606,7 +21606,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:55.238Z"
+      "maj": "2026-10-18T15:58:52.749Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21672,7 +21672,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:55.722Z"
+      "maj": "2026-10-18T15:58:53.196Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -37397,7 +37397,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:56.897Z"
+      "maj": "2026-10-18T15:58:53.917Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37463,7 +37463,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:57.440Z"
+      "maj": "2026-10-18T15:58:54.427Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37529,7 +37529,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:57.956Z"
+      "maj": "2026-10-18T15:58:54.867Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37595,7 +37595,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T15:29:58.502Z"
+      "maj": "2026-10-18T15:58:55.396Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
