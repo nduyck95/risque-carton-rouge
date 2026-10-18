@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-18T16:32:04.081Z",
+ "misAJour": "2026-10-18T17:01:15.562Z",
  "ligues": [
   {
    "il": 0,
@@ -3985,7 +3985,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T16:31:58.431Z"
+      "maj": "2026-10-18T17:01:11.273Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21611,7 +21611,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T16:31:59.974Z"
+      "maj": "2026-10-18T17:01:12.337Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21666,28 +21666,28 @@
       "source": "Unibet",
       "coteNon": 1.23,
       "sourceNon": "Unibet",
-      "coteOui": 3.55,
+      "coteOui": 3.6,
       "sourceOui": "Unibet",
-      "marge": 0.09469827092637129,
+      "marge": 0.09078590785907847,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.23,
-        "coteOui": 3.55,
+        "coteOui": 3.6,
         "lu": null
        }
       ],
-      "maj": "2026-10-18T16:32:00.722Z"
+      "maj": "2026-10-18T17:01:12.867Z"
      },
      "valueBet": {
       "mise": "Rouge",
-      "cote": 3.55,
+      "cote": 3.6,
       "coteEquitable": 3.5346357938575674,
-      "edge": 0.004346757923159084,
+      "edge": 0.018492486907992545,
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.11798493302689739,
-      "edgeOui": 0.004346757923159084
+      "edgeOui": 0.018492486907992545
      },
      "resultat": null,
      "fige": false,
@@ -37468,7 +37468,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T16:32:01.900Z"
+      "maj": "2026-10-18T17:01:14.024Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37534,7 +37534,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T16:32:02.471Z"
+      "maj": "2026-10-18T17:01:14.584Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37600,7 +37600,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T16:32:03.014Z"
+      "maj": "2026-10-18T17:01:15.174Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
