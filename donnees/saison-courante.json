@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-18T19:56:46.820Z",
+ "misAJour": "2026-10-18T20:30:43.907Z",
  "ligues": [
   {
    "il": 0,
@@ -3990,7 +3990,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T19:56:42.585Z"
+      "maj": "2026-10-18T20:30:39.954Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21565,8 +21565,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-18T20:30:43.787Z"
      },
      "fige": true,
      "majArbitre": null
@@ -21687,7 +21687,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T19:56:43.948Z"
+      "maj": "2026-10-18T20:30:41.971Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -37549,7 +37549,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T19:56:45.559Z"
+      "maj": "2026-10-18T20:30:42.918Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37615,7 +37615,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T19:56:46.131Z"
+      "maj": "2026-10-18T20:30:43.381Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
