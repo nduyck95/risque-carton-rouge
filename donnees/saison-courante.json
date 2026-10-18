@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-18T10:58:57.753Z",
+ "misAJour": "2026-10-18T11:29:53.473Z",
  "ligues": [
   {
    "il": 0,
@@ -3706,7 +3706,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:48.843Z"
+      "maj": "2026-10-18T11:29:45.101Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3772,7 +3772,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:49.354Z"
+      "maj": "2026-10-18T11:29:45.579Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3838,7 +3838,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:49.869Z"
+      "maj": "2026-10-18T11:29:46.066Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3904,7 +3904,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:50.378Z"
+      "maj": "2026-10-18T11:29:46.543Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -3970,7 +3970,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:50.903Z"
+      "maj": "2026-10-18T11:29:47.064Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21375,30 +21375,30 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.22,
+      "coteNon": 1.21,
       "sourceNon": "Unibet",
-      "coteOui": 3.7,
+      "coteOui": 3.75,
       "sourceOui": "Unibet",
-      "marge": 0.08994240141781118,
+      "marge": 0.09311294765840228,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.22,
-        "coteOui": 3.7,
+        "coteNon": 1.21,
+        "coteOui": 3.75,
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:51.879Z"
+      "maj": "2026-10-18T11:29:47.922Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.22,
+      "cote": 1.21,
       "coteEquitable": 1.3093692377964083,
-      "edge": -0.06825365620076085,
+      "edge": -0.07589092131386932,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.06825365620076085,
-      "edgeOui": -0.1257880918501516
+      "edgeNon": -0.07589092131386932,
+      "edgeOui": -0.11397441741569425
      },
      "resultat": null,
      "fige": false,
@@ -21454,7 +21454,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:52.397Z"
+      "maj": "2026-10-18T11:29:48.420Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21520,7 +21520,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:52.913Z"
+      "maj": "2026-10-18T11:29:48.927Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21586,7 +21586,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:53.418Z"
+      "maj": "2026-10-18T11:29:49.440Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -21652,7 +21652,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:53.933Z"
+      "maj": "2026-10-18T11:29:49.940Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -37301,7 +37301,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:55.349Z"
+      "maj": "2026-10-18T11:29:51.153Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37367,7 +37367,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:55.853Z"
+      "maj": "2026-10-18T11:29:51.632Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37433,7 +37433,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:56.363Z"
+      "maj": "2026-10-18T11:29:52.107Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37499,7 +37499,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:56.897Z"
+      "maj": "2026-10-18T11:29:52.601Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -37565,7 +37565,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-18T10:58:57.409Z"
+      "maj": "2026-10-18T11:29:53.090Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
