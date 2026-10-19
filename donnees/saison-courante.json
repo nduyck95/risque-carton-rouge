@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-19T20:11:36.529Z",
+ "misAJour": "2026-10-19T21:04:32.504Z",
  "ligues": [
   {
    "il": 0,
@@ -3947,7 +3947,7 @@
      "away": "Coventry City",
      "homeCourt": "Spurs",
      "awayCourt": "Coventry",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Tottenham",
      "awayEq": null,
@@ -3957,18 +3957,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8757301294675864,
-      "cote": 1.1419042994534918,
-      "coteRouge": 8.047002831142146,
+      "pNo": 0.874433540822441,
+      "cote": 1.1435974871909174,
+      "coteRouge": 7.963910160004876,
       "pBase": 0.8771929824561403,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0024470916787371,
-       "classement": 1.0094416067507448,
+       "classement": 1.0199737696929203,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 1
      },
      "derby": {
       "est": false,
@@ -3995,15 +3995,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.14,
-      "coteEquitable": 1.1419042994534918,
-      "edge": -0.0016676524069515475,
+      "coteEquitable": 1.1435974871909174,
+      "edge": -0.0031457634624173503,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.0016676524069515475,
-      "edgeOui": -0.4283585955508976
+      "edgeNon": -0.0031457634624173503,
+      "edgeOui": -0.4223942877832284
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -21649,7 +21654,7 @@
      "away": "Rayo Vallecano",
      "homeCourt": "Getafe",
      "awayCourt": "Rayo",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Getafe",
      "awayEq": "Rayo Vallecano",
@@ -21704,8 +21709,13 @@
       "edgeNon": -0.08930151621476401,
       "edgeOui": -0.066381887001007
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": true,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -37587,7 +37597,7 @@
      "away": "Torino",
      "homeCourt": "Parma",
      "awayCourt": "Torino",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Parme",
      "awayEq": "Torino",
@@ -37597,18 +37607,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8402911167849133,
-      "cote": 1.1900637529361944,
-      "coteRouge": 6.2613924777951,
+      "pNo": 0.8644440324231268,
+      "cote": 1.1568128907049027,
+      "coteRouge": 7.377026757843801,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9061438871711516,
-       "classement": 1.0979578532318366,
+       "classement": 0.9319127161701207,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -37635,15 +37645,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.17,
-      "coteEquitable": 1.1900637529361944,
-      "edge": -0.016859393361651542,
+      "coteEquitable": 1.1568128907049027,
+      "edge": 0.011399517935058334,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.016859393361651542,
-      "edgeOui": -0.3292226904966359
+      "edgeNon": 0.011399517935058334,
+      "edgeOui": -0.43066493617713275
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
