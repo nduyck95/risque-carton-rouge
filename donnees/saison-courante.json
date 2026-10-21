@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-21T17:10:08.274Z",
+ "misAJour": "2026-10-21T18:06:03.136Z",
  "ligues": [
   {
    "il": 0,
@@ -19653,9 +19653,9 @@
      },
      "resultat": {
       "termine": true,
-      "aRouge": null,
-      "confirme": false,
-      "confirmeLe": null
+      "aRouge": false,
+      "confirme": true,
+      "confirmeLe": "2026-10-21T18:06:03.015Z"
      },
      "fige": true,
      "majArbitre": "2026-09-16T20:17:57.046Z"
