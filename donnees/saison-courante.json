@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-21T19:37:18.944Z",
+ "misAJour": "2026-10-21T20:08:38.574Z",
  "ligues": [
   {
    "il": 0,
@@ -21776,18 +21776,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7780251317559089,
-      "cote": 1.2853055244412486,
-      "coteRouge": 4.505014499661134,
+      "pNo": 0.7718446233778706,
+      "cote": 1.2955975460755806,
+      "coteRouge": 4.382978016144667,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0156732770332106,
-       "classement": 1.0468336517080166,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 4
      },
      "derby": {
       "est": false,
