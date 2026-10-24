@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-24T19:07:21.952Z",
+ "misAJour": "2026-10-24T19:34:56.184Z",
  "ligues": [
   {
    "il": 0,
@@ -4416,7 +4416,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:12.203Z"
+      "maj": "2026-10-24T19:34:46.061Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4482,7 +4482,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:12.721Z"
+      "maj": "2026-10-24T19:34:46.594Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4548,7 +4548,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:13.238Z"
+      "maj": "2026-10-24T19:34:47.165Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4614,7 +4614,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:13.788Z"
+      "maj": "2026-10-24T19:34:47.693Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4680,7 +4680,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:14.314Z"
+      "maj": "2026-10-24T19:34:48.216Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22393,7 +22393,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:15.805Z"
+      "maj": "2026-10-24T19:34:49.771Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -22459,7 +22459,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:16.361Z"
+      "maj": "2026-10-24T19:34:50.291Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22525,7 +22525,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:17.020Z"
+      "maj": "2026-10-24T19:34:50.966Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22580,18 +22580,18 @@
       "source": "Unibet",
       "coteNon": 1.17,
       "sourceNon": "Unibet",
-      "coteOui": 4.25,
+      "coteOui": 4.2,
       "sourceOui": "Unibet",
-      "marge": 0.08999497234791365,
+      "marge": 0.09279609279609291,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.17,
-        "coteOui": 4.25,
+        "coteOui": 4.2,
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:17.542Z"
+      "maj": "2026-10-24T19:34:51.627Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22601,7 +22601,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.06945107546941709,
-      "edgeOui": -0.1301990848333141
+      "edgeOui": -0.14043203677645155
      },
      "resultat": null,
      "fige": false,
@@ -22657,7 +22657,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:18.051Z"
+      "maj": "2026-10-24T19:34:52.142Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38484,8 +38484,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-24T19:34:56.064Z"
      },
      "fige": true,
      "majArbitre": null
@@ -38606,7 +38606,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:19.235Z"
+      "maj": "2026-10-24T19:34:53.296Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38672,7 +38672,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:19.749Z"
+      "maj": "2026-10-24T19:34:53.813Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38738,7 +38738,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:20.261Z"
+      "maj": "2026-10-24T19:34:54.310Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38804,7 +38804,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:20.783Z"
+      "maj": "2026-10-24T19:34:54.844Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38870,7 +38870,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-24T19:07:21.330Z"
+      "maj": "2026-10-24T19:34:55.355Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
