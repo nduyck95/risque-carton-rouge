@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-25T21:59:17.820Z",
+ "misAJour": "2026-10-25T22:28:27.262Z",
  "ligues": [
   {
    "il": 0,
@@ -22593,7 +22593,7 @@
      "away": "Real Madrid",
      "homeCourt": "Barcelona",
      "awayCourt": "Real Madrid",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Barcelona",
      "awayEq": "Real Madrid",
@@ -22648,8 +22648,13 @@
       "edgeNon": 0.03394324947842553,
       "edgeOui": -0.36555697952547617
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -22702,7 +22707,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T21:59:12.888Z"
+      "maj": "2026-10-25T22:28:21.357Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
