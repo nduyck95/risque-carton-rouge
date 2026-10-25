@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-25T19:08:20.548Z",
+ "misAJour": "2026-10-25T19:56:59.182Z",
  "ligues": [
   {
    "il": 0,
@@ -22522,7 +22522,7 @@
      "away": "Levante",
      "homeCourt": "Real Sociedad",
      "awayCourt": "Levante",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Real Sociedad",
      "awayEq": "Levante",
@@ -22577,8 +22577,13 @@
       "edgeNon": -0.030960039883052515,
       "edgeOui": -0.26862654037033384
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -22620,18 +22625,18 @@
       "source": "Unibet",
       "coteNon": 1.3,
       "sourceNon": "Unibet",
-      "coteOui": 3.05,
+      "coteOui": 3.1,
       "sourceOui": "Unibet",
-      "marge": 0.09709962168978548,
+      "marge": 0.09181141439205942,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.3,
-        "coteOui": 3.05,
+        "coteOui": 3.1,
         "lu": null
        }
       ],
-      "maj": "2026-10-25T19:08:16.041Z"
+      "maj": "2026-10-25T19:56:54.223Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22641,7 +22646,7 @@
       "interessant": true,
       "source": "Unibet",
       "edgeNon": 0.03394324947842553,
-      "edgeOui": -0.3757899314686137
+      "edgeOui": -0.36555697952547617
      },
      "resultat": null,
      "fige": false,
@@ -22697,7 +22702,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T19:08:16.472Z"
+      "maj": "2026-10-25T19:56:54.690Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39214,18 +39219,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8664097100601172,
-      "cote": 1.1541883572964728,
-      "coteRouge": 7.485573992316448,
+      "pNo": 0.8700560815655596,
+      "cote": 1.149351198374043,
+      "coteRouge": 7.695627560319586,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.8686293157670143,
-       "classement": 0.9580632279812336,
+       "classement": 0.9319127161701207,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
