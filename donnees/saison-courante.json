@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-25T18:01:56.146Z",
+ "misAJour": "2026-10-25T18:34:11.091Z",
  "ligues": [
   {
    "il": 0,
@@ -4657,7 +4657,7 @@
      "away": "Leeds United",
      "homeCourt": "Sunderland",
      "awayCourt": "Leeds",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Sunderland",
      "awayEq": "Leeds United",
@@ -4667,18 +4667,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8995457228447605,
-      "cote": 1.111672230331504,
-      "coteRouge": 9.95477771896786,
+      "pNo": 0.9002412854593724,
+      "cote": 1.110813307667536,
+      "coteRouge": 10.024186905423102,
       "pBase": 0.8771929824561403,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.830242959967594,
-       "classement": 0.9852354885322006,
+       "classement": 0.9784135493194693,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -4705,15 +4705,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.13,
-      "coteEquitable": 1.111672230331504,
-      "edge": 0.01648666681457933,
+      "coteEquitable": 1.110813307667536,
+      "edge": 0.01727265256909072,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": 0.01648666681457933,
-      "edgeOui": -0.5278648973703745
+      "edgeNon": 0.01727265256909072,
+      "edgeOui": -0.5311340416590504
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -22626,7 +22631,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T18:01:51.597Z"
+      "maj": "2026-10-25T18:34:05.975Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22692,7 +22697,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T18:01:52.049Z"
+      "maj": "2026-10-25T18:34:06.494Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38925,7 +38930,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T18:01:53.107Z"
+      "maj": "2026-10-25T18:34:07.649Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
