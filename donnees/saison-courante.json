@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-25T17:06:16.287Z",
+ "misAJour": "2026-10-25T17:35:20.653Z",
  "ligues": [
   {
    "il": 0,
@@ -4431,8 +4431,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-25T17:35:19.627Z"
      },
      "fige": true,
      "majArbitre": null
@@ -4502,8 +4502,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-25T17:35:19.835Z"
      },
      "fige": true,
      "majArbitre": null
@@ -4573,8 +4573,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-25T17:35:20.033Z"
      },
      "fige": true,
      "majArbitre": null
@@ -4644,8 +4644,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-25T17:35:20.199Z"
      },
      "fige": true,
      "majArbitre": null
@@ -22446,7 +22446,7 @@
      "away": "Real Betis",
      "homeCourt": "Celta Vigo",
      "awayCourt": "Betis",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Celta Vigo",
      "awayEq": "Real Betis",
@@ -22456,18 +22456,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8066787474575372,
-      "cote": 1.2396508562445288,
-      "coteRouge": 5.172737021142314,
+      "pNo": 0.8012557050774465,
+      "cote": 1.2480410356683123,
+      "coteRouge": 5.031590971653697,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9093789351579817,
-       "classement": 1.0182691927366034,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -22494,15 +22494,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.26,
-      "coteEquitable": 1.2396508562445288,
-      "edge": 0.016415221796496793,
+      "coteEquitable": 1.2480410356683123,
+      "edge": 0.009582188397582625,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": 0.016415221796496793,
-      "edgeOui": -0.35237380398274964
+      "edgeNon": 0.009582188397582625,
+      "edgeOui": -0.3342066120094457
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -22621,7 +22626,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T17:06:12.976Z"
+      "maj": "2026-10-25T17:35:14.331Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22687,7 +22692,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T17:06:13.494Z"
+      "maj": "2026-10-25T17:35:14.891Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -38727,8 +38732,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-25T17:35:20.367Z"
      },
      "fige": true,
      "majArbitre": null
@@ -38798,8 +38803,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-25T17:35:20.533Z"
      },
      "fige": true,
      "majArbitre": null
@@ -38920,7 +38925,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-25T17:06:14.618Z"
+      "maj": "2026-10-25T17:35:16.374Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39117,18 +39122,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8301743156521814,
-      "cote": 1.2045662954706138,
-      "coteRouge": 5.8883908157962015,
+      "pNo": 0.8255578176079097,
+      "cote": 1.2113021991573458,
+      "coteRouge": 5.732558411544746,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9635438095775044,
-       "classement": 1.0979578532318366,
+       "classement": 1.1278044591890148,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -39158,18 +39163,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.9057345740668246,
-      "cote": 1.104076214635283,
-      "coteRouge": 10.608343304032784,
+      "pNo": 0.9084160725624267,
+      "cote": 1.100817158792927,
+      "coteRouge": 10.918946456862031,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.812863332418703,
-       "classement": 0.7224181730166455,
+       "classement": 0.7018680802868567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 18
+      "gap": 19
      },
      "derby": {
       "est": false,
