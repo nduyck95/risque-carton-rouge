@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-27T05:10:48.511Z",
+ "misAJour": "2026-10-27T05:54:52.143Z",
  "ligues": [
   {
    "il": 0,
@@ -22665,7 +22665,7 @@
      "homeCourt": "Sevilla",
      "awayCourt": "Osasuna",
      "statut": "termine",
-     "score": null,
+     "score": "2-0",
      "homeEq": "Séville",
      "awayEq": "Osasuna",
      "homePromu": false,
@@ -39021,7 +39021,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T05:10:43.783Z"
+      "maj": "2026-10-27T05:54:46.028Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39087,7 +39087,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T05:10:44.358Z"
+      "maj": "2026-10-27T05:54:46.889Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39153,7 +39153,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T05:10:44.868Z"
+      "maj": "2026-10-27T05:54:47.494Z"
      },
      "valueBet": {
       "mise": "Rouge",
