@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-27T19:24:02.052Z",
+ "misAJour": "2026-10-27T20:14:59.316Z",
  "ligues": [
   {
    "il": 0,
@@ -38978,7 +38978,7 @@
      "away": "Lazio",
      "homeCourt": "Sassuolo",
      "awayCourt": "Lazio",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Sassuolo",
      "awayEq": "Lazio",
@@ -38988,18 +38988,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8502241983357827,
-      "cote": 1.1761603609464262,
-      "coteRouge": 6.676645952741431,
+      "pNo": 0.8543863459967379,
+      "cote": 1.1704306894480943,
+      "coteRouge": 6.867487852324602,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0887153690238824,
-       "classement": 0.857000471091246,
+       "classement": 0.8331851253107124,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -39026,15 +39026,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.13,
-      "coteEquitable": 1.1761603609464262,
-      "edge": -0.03924665588056564,
+      "coteEquitable": 1.1704306894480943,
+      "edge": -0.034543429023686234,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.03924665588056564,
-      "edgeOui": -0.28107615201175684
+      "edgeNon": -0.034543429023686234,
+      "edgeOui": -0.30105446078434195
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": true,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -39219,7 +39224,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:23:58.040Z"
+      "maj": "2026-10-27T20:14:56.459Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39285,7 +39290,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:23:58.678Z"
+      "maj": "2026-10-27T20:14:56.901Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39318,18 +39323,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.9084160725624267,
-      "cote": 1.100817158792927,
-      "coteRouge": 10.918946456862031,
+      "pNo": 0.9057345740668246,
+      "cote": 1.104076214635283,
+      "coteRouge": 10.608343304032784,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.812863332418703,
-       "classement": 0.7018680802868567,
+       "classement": 0.7224181730166455,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 19
+      "gap": 18
      },
      "derby": {
       "est": false,
@@ -39338,30 +39343,30 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.08,
+      "coteNon": 1.09,
       "sourceNon": "Unibet",
       "coteOui": 5.8,
       "sourceOui": "Unibet",
-      "marge": 0.098339719029374,
+      "marge": 0.08984498576399869,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.08,
+        "coteNon": 1.09,
         "coteOui": 5.8,
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:23:59.344Z"
+      "maj": "2026-10-27T20:14:57.345Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.08,
-      "coteEquitable": 1.100817158792927,
-      "edge": -0.01891064163257905,
+      "cote": 1.09,
+      "coteEquitable": 1.104076214635283,
+      "edge": -0.012749314267161194,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.01891064163257905,
-      "edgeOui": -0.4688132208620751
+      "edgeNon": -0.012749314267161194,
+      "edgeOui": -0.45326052958758245
      },
      "resultat": null,
      "fige": false,
@@ -39417,7 +39422,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:23:59.891Z"
+      "maj": "2026-10-27T20:14:57.916Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39483,7 +39488,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:24:00.475Z"
+      "maj": "2026-10-27T20:14:58.338Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39549,7 +39554,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:24:01.303Z"
+      "maj": "2026-10-27T20:14:58.764Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39615,7 +39620,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-27T19:24:01.932Z"
+      "maj": "2026-10-27T20:14:59.196Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
