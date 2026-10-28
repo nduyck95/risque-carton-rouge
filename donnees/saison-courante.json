@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-28T20:44:05.675Z",
+ "misAJour": "2026-10-28T21:42:42.675Z",
  "ligues": [
   {
    "il": 0,
@@ -39249,8 +39249,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-28T21:42:42.068Z"
      },
      "fige": true,
      "majArbitre": null
@@ -39320,8 +39320,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-28T21:42:42.334Z"
      },
      "fige": true,
      "majArbitre": null
@@ -39391,8 +39391,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-10-28T21:42:42.555Z"
      },
      "fige": true,
      "majArbitre": null
@@ -39404,7 +39404,7 @@
      "away": "Juventus",
      "homeCourt": "Genoa",
      "awayCourt": "Juventus",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Genoa",
      "awayEq": "Juventus",
@@ -39414,18 +39414,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8700560815655596,
-      "cote": 1.149351198374043,
-      "coteRouge": 7.695627560319586,
+      "pNo": 0.8549639936982616,
+      "cote": 1.1696398998914161,
+      "coteRouge": 6.894839602240302,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.8686293157670143,
-       "classement": 0.9319127161701207,
+       "classement": 1.0401479361522523,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -39452,15 +39452,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.18,
-      "coteEquitable": 1.149351198374043,
-      "edge": 0.02666617624736034,
-      "interessant": true,
+      "coteEquitable": 1.1696398998914161,
+      "edge": 0.008857512563948733,
+      "interessant": false,
       "source": "Unibet",
-      "edgeNon": 0.02666617624736034,
-      "edgeOui": -0.46722993441879435
+      "edgeNon": 0.008857512563948733,
+      "edgeOui": -0.4053523741628726
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -39470,7 +39475,7 @@
      "away": "Napoli",
      "homeCourt": "Monza",
      "awayCourt": "Napoli",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Monza",
      "awayEq": "Naples",
@@ -39480,18 +39485,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8467917066527169,
-      "cote": 1.1809279568323836,
-      "coteRouge": 6.52706180685181,
+      "pNo": 0.862734182484446,
+      "cote": 1.1591055742340761,
+      "coteRouge": 7.285134916321661,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9175736316347217,
-       "classement": 1.0401479361522523,
+       "classement": 0.9319127161701207,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -39518,15 +39523,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.11,
-      "coteEquitable": 1.1809279568323836,
-      "edge": -0.060061205615484226,
+      "coteEquitable": 1.1591055742340761,
+      "edge": -0.04236505744226482,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.060061205615484226,
-      "edgeOui": -0.20331687459412762
+      "edgeNon": -0.04236505744226482,
+      "edgeOui": -0.2862177489191192
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -39546,18 +39556,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.860091423035567,
-      "cote": 1.1626670993539805,
-      "coteRouge": 7.147524631418528,
+      "pNo": 0.8638919464273946,
+      "cote": 1.1575521732034626,
+      "coteRouge": 7.34710381753098,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.8850002908022442,
-       "classement": 0.9848150741300744,
+       "classement": 0.9580632279812336,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -39579,17 +39589,17 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-28T20:44:03.342Z"
+      "maj": "2026-10-28T21:42:39.537Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.1,
-      "coteEquitable": 1.1626670993539805,
-      "edge": -0.05389943466087632,
+      "coteEquitable": 1.1575521732034626,
+      "edge": -0.04971885892986583,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.05389943466087632,
-      "edgeOui": -0.23050282669561828
+      "edgeNon": -0.04971885892986583,
+      "edgeOui": -0.2514057053506705
      },
      "resultat": null,
      "fige": false,
@@ -39645,7 +39655,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-28T20:44:03.893Z"
+      "maj": "2026-10-28T21:42:40.240Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39678,18 +39688,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.824949899373063,
-      "cote": 1.2121948263282047,
-      "coteRouge": 5.7126502436646875,
+      "pNo": 0.8296331211132875,
+      "cote": 1.2053520701513178,
+      "coteRouge": 5.8696855077386365,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0203374266170282,
-       "classement": 1.0687406031041256,
+       "classement": 1.0401479361522523,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 5
      },
      "derby": {
       "est": false,
