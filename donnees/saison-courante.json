@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-29T06:55:52.736Z",
+ "misAJour": "2026-10-29T08:02:46.133Z",
  "ligues": [
   {
    "il": 0,
@@ -39576,30 +39576,30 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.1,
+      "coteNon": 1.09,
       "sourceNon": "Unibet",
-      "coteOui": 5.5,
+      "coteOui": 5.6,
       "sourceOui": "Unibet",
-      "marge": 0.09090909090909083,
+      "marge": 0.09600262123197889,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.1,
-        "coteOui": 5.5,
+        "coteNon": 1.09,
+        "coteOui": 5.6,
         "lu": null
        }
       ],
-      "maj": "2026-10-29T06:55:50.472Z"
+      "maj": "2026-10-29T08:02:41.155Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.1,
+      "cote": 1.09,
       "coteEquitable": 1.1575521732034626,
-      "edge": -0.04971885892986583,
+      "edge": -0.0583577783941398,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.04971885892986583,
-      "edgeOui": -0.2514057053506705
+      "edgeNon": -0.0583577783941398,
+      "edgeOui": -0.23779489999341008
      },
      "resultat": null,
      "fige": false,
@@ -39644,18 +39644,18 @@
       "source": "Unibet",
       "coteNon": 1.12,
       "sourceNon": "Unibet",
-      "coteOui": 4.9,
+      "coteOui": 5,
       "sourceOui": "Unibet",
-      "marge": 0.09693877551020402,
+      "marge": 0.09285714285714275,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.12,
-        "coteOui": 4.9,
+        "coteOui": 5,
         "lu": null
        }
       ],
-      "maj": "2026-10-29T06:55:51.126Z"
+      "maj": "2026-10-29T08:02:42.559Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39665,7 +39665,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.04537332761301305,
-      "edgeOui": -0.2764916916930673
+      "edgeOui": -0.261726216013334
      },
      "resultat": null,
      "fige": false,
