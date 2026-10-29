@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-29T18:52:21.581Z",
+ "misAJour": "2026-10-29T19:52:20.393Z",
  "ligues": [
   {
    "il": 0,
@@ -4771,7 +4771,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:05.507Z"
+      "maj": "2026-10-29T19:52:04.062Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4837,7 +4837,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:06.158Z"
+      "maj": "2026-10-29T19:52:04.628Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4903,7 +4903,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:06.705Z"
+      "maj": "2026-10-29T19:52:05.243Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4969,7 +4969,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:07.288Z"
+      "maj": "2026-10-29T19:52:05.801Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5035,7 +5035,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:07.865Z"
+      "maj": "2026-10-29T19:52:06.388Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5101,7 +5101,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:08.411Z"
+      "maj": "2026-10-29T19:52:06.955Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5167,7 +5167,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:08.996Z"
+      "maj": "2026-10-29T19:52:07.537Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5233,7 +5233,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:09.601Z"
+      "maj": "2026-10-29T19:52:08.253Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5299,7 +5299,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:10.334Z"
+      "maj": "2026-10-29T19:52:08.821Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22992,18 +22992,18 @@
       "source": "Unibet",
       "coteNon": 1.21,
       "sourceNon": "Unibet",
-      "coteOui": 3.75,
+      "coteOui": 3.8,
       "sourceOui": "Unibet",
-      "marge": 0.09311294765840228,
+      "marge": 0.0896041757285777,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.21,
-        "coteOui": 3.75,
+        "coteOui": 3.8,
         "lu": null
        }
       ],
-      "maj": "2026-10-29T18:52:11.658Z"
+      "maj": "2026-10-29T19:52:10.224Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23013,7 +23013,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.03732678305682069,
-      "edgeOui": -0.2334913748239028
+      "edgeOui": -0.22327125982155493
      },
      "resultat": null,
      "fige": false,
@@ -39796,7 +39796,7 @@
      "away": "Lecce",
      "homeCourt": "Frosinone",
      "awayCourt": "Lecce",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Frosinone",
      "awayEq": "Lecce",
@@ -39851,8 +39851,13 @@
       "edgeNon": -0.0583577783941398,
       "edgeOui": -0.21057328927888896
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
