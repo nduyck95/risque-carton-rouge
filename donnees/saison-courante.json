@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-29T21:43:47.217Z",
+ "misAJour": "2026-10-29T22:44:31.749Z",
  "ligues": [
   {
    "il": 0,
@@ -4771,7 +4771,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:34.793Z"
+      "maj": "2026-10-29T22:44:15.927Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4837,7 +4837,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:35.246Z"
+      "maj": "2026-10-29T22:44:16.463Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4903,7 +4903,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:35.688Z"
+      "maj": "2026-10-29T22:44:16.980Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4969,7 +4969,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:36.112Z"
+      "maj": "2026-10-29T22:44:17.550Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5035,7 +5035,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:36.551Z"
+      "maj": "2026-10-29T22:44:18.069Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5101,7 +5101,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:36.967Z"
+      "maj": "2026-10-29T22:44:18.685Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5167,7 +5167,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:37.379Z"
+      "maj": "2026-10-29T22:44:19.210Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5233,7 +5233,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:37.808Z"
+      "maj": "2026-10-29T22:44:19.729Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5299,7 +5299,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:38.225Z"
+      "maj": "2026-10-29T22:44:20.361Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23003,7 +23003,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-29T21:43:39.225Z"
+      "maj": "2026-10-29T22:44:21.675Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -39867,7 +39867,7 @@
      "away": "Atalanta",
      "homeCourt": "Fiorentina",
      "awayCourt": "Atalanta",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Fiorentina",
      "awayEq": "Atalanta",
@@ -39877,18 +39877,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8523452432026668,
-      "cote": 1.1732335083404983,
-      "coteRouge": 6.772555261274597,
+      "pNo": 0.8482431841567188,
+      "cote": 1.1789072033560166,
+      "coteRouge": 6.589489865369192,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9339992267750253,
-       "classement": 0.9848150741300744,
+       "classement": 1.0121746368766102,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -39915,15 +39915,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.1,
-      "coteEquitable": 1.1732335083404983,
-      "edge": -0.062420232477066406,
+      "coteEquitable": 1.1789072033560166,
+      "edge": -0.0669324974276092,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.062420232477066406,
-      "edgeOui": -0.2026643132944007
+      "edgeNon": -0.0669324974276092,
+      "edgeOui": -0.18051319444628167
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
