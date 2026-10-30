@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-30T20:42:34.997Z",
+ "misAJour": "2026-10-30T21:40:41.727Z",
  "ligues": [
   {
    "il": 0,
@@ -4771,7 +4771,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:20.974Z"
+      "maj": "2026-10-30T21:40:23.163Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4837,7 +4837,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:21.415Z"
+      "maj": "2026-10-30T21:40:23.733Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4903,7 +4903,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:21.855Z"
+      "maj": "2026-10-30T21:40:24.307Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4969,7 +4969,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:22.336Z"
+      "maj": "2026-10-30T21:40:24.866Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5035,7 +5035,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:22.851Z"
+      "maj": "2026-10-30T21:40:25.438Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5101,7 +5101,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:23.284Z"
+      "maj": "2026-10-30T21:40:26.044Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5167,7 +5167,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:23.732Z"
+      "maj": "2026-10-30T21:40:26.660Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5233,7 +5233,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:24.233Z"
+      "maj": "2026-10-30T21:40:27.274Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5299,7 +5299,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:24.693Z"
+      "maj": "2026-10-30T21:40:27.879Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5365,7 +5365,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:25.127Z"
+      "maj": "2026-10-30T21:40:28.492Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23094,7 +23094,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:26.191Z"
+      "maj": "2026-10-30T21:40:29.874Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23160,7 +23160,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:26.653Z"
+      "maj": "2026-10-30T21:40:30.470Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23226,7 +23226,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:27.184Z"
+      "maj": "2026-10-30T21:40:31.088Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23281,28 +23281,28 @@
       "source": "Unibet",
       "coteNon": 1.1,
       "sourceNon": "Unibet",
-      "coteOui": 5.6,
+      "coteOui": 5.5,
       "sourceOui": "Unibet",
-      "marge": 0.08766233766233755,
+      "marge": 0.09090909090909083,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.1,
-        "coteOui": 5.6,
+        "coteOui": 5.5,
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:27.851Z"
+      "maj": "2026-10-30T21:40:31.910Z"
      },
      "valueBet": {
       "mise": "Rouge",
-      "cote": 5.6,
+      "cote": 5.5,
       "coteEquitable": 4.931543604310869,
-      "edge": 0.1355470922136437,
+      "edge": 0.11526946556697149,
       "interessant": true,
       "source": "Unibet",
       "edgeNon": -0.12305389311339421,
-      "edgeOui": 0.1355470922136437
+      "edgeOui": 0.11526946556697149
      },
      "resultat": null,
      "fige": false,
@@ -23358,7 +23358,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:28.279Z"
+      "maj": "2026-10-30T21:40:32.471Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23424,7 +23424,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:28.773Z"
+      "maj": "2026-10-30T21:40:33.037Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -23490,7 +23490,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:29.245Z"
+      "maj": "2026-10-30T21:40:33.609Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23556,7 +23556,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:29.696Z"
+      "maj": "2026-10-30T21:40:34.184Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23622,7 +23622,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:30.145Z"
+      "maj": "2026-10-30T21:40:34.847Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40231,7 +40231,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:31.053Z"
+      "maj": "2026-10-30T21:40:36.389Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40297,7 +40297,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:31.469Z"
+      "maj": "2026-10-30T21:40:36.927Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40363,7 +40363,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:31.903Z"
+      "maj": "2026-10-30T21:40:37.504Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40429,7 +40429,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:32.338Z"
+      "maj": "2026-10-30T21:40:38.079Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40495,7 +40495,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:32.769Z"
+      "maj": "2026-10-30T21:40:38.715Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40561,7 +40561,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:33.177Z"
+      "maj": "2026-10-30T21:40:39.281Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40627,7 +40627,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:33.590Z"
+      "maj": "2026-10-30T21:40:39.867Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40693,7 +40693,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:34.027Z"
+      "maj": "2026-10-30T21:40:40.472Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40759,7 +40759,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:34.446Z"
+      "maj": "2026-10-30T21:40:41.038Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40825,7 +40825,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T20:42:34.876Z"
+      "maj": "2026-10-30T21:40:41.607Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
