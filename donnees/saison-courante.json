@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-30T08:56:22.400Z",
+ "misAJour": "2026-10-30T09:54:05.411Z",
  "ligues": [
   {
    "il": 0,
@@ -4771,7 +4771,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:06.483Z"
+      "maj": "2026-10-30T09:53:49.465Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4837,7 +4837,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:07.062Z"
+      "maj": "2026-10-30T09:53:50.023Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4890,30 +4890,30 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.16,
+      "coteNon": 1.17,
       "sourceNon": "Unibet",
-      "coteOui": 4.3,
+      "coteOui": 4.2,
       "sourceOui": "Unibet",
-      "marge": 0.09462710505212524,
+      "marge": 0.09279609279609291,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.16,
-        "coteOui": 4.3,
+        "coteNon": 1.17,
+        "coteOui": 4.2,
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:07.585Z"
+      "maj": "2026-10-30T09:53:50.576Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.16,
+      "cote": 1.17,
       "coteEquitable": 1.1146417663439545,
-      "edge": 0.04069310430096418,
+      "edge": 0.04966459657942068,
       "interessant": true,
       "source": "Unibet",
-      "edgeNon": 0.04069310430096418,
-      "edgeOui": -0.5577416797363327
+      "edgeNon": 0.04966459657942068,
+      "edgeOui": -0.5680267569517667
      },
      "resultat": null,
      "fige": false,
@@ -4969,7 +4969,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:08.122Z"
+      "maj": "2026-10-30T09:53:51.128Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5024,18 +5024,18 @@
       "source": "Unibet",
       "coteNon": 1.14,
       "sourceNon": "Unibet",
-      "coteOui": 4.6,
+      "coteOui": 4.7,
       "sourceOui": "Unibet",
-      "marge": 0.09458428680396658,
+      "marge": 0.08995893990294901,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.14,
-        "coteOui": 4.6,
+        "coteOui": 4.7,
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:08.665Z"
+      "maj": "2026-10-30T09:53:51.680Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5045,7 +5045,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": 0.001667355400184034,
-      "edgeOui": -0.441815644597234
+      "edgeOui": -0.42968120208847815
      },
      "resultat": null,
      "fige": false,
@@ -5088,30 +5088,30 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.15,
+      "coteNon": 1.14,
       "sourceNon": "Unibet",
-      "coteOui": 4.5,
+      "coteOui": 4.6,
       "sourceOui": "Unibet",
-      "marge": 0.09178743961352653,
+      "marge": 0.09458428680396658,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.15,
-        "coteOui": 4.5,
+        "coteNon": 1.14,
+        "coteOui": 4.6,
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:09.241Z"
+      "maj": "2026-10-30T09:53:52.234Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.15,
+      "cote": 1.14,
       "coteEquitable": 1.112548454192958,
-      "edge": 0.033662844675119485,
+      "edge": 0.02467447211272722,
       "interessant": true,
       "source": "Unibet",
-      "edgeNon": 0.033662844675119485,
-      "edgeOui": -0.5447676530765547
+      "edgeNon": 0.02467447211272722,
+      "edgeOui": -0.5346513787004782
      },
      "resultat": null,
      "fige": false,
@@ -5167,7 +5167,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:09.787Z"
+      "maj": "2026-10-30T09:53:52.790Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5233,7 +5233,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:10.315Z"
+      "maj": "2026-10-30T09:53:53.396Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5299,7 +5299,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:10.832Z"
+      "maj": "2026-10-30T09:53:54.098Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23028,7 +23028,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-30T08:56:12.274Z"
+      "maj": "2026-10-30T09:53:55.527Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23079,8 +23079,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.24,
+      "sourceNon": "Unibet",
+      "coteOui": 3.55,
+      "sourceOui": "Unibet",
+      "marge": 0.08814175374829625,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.24,
+        "coteOui": 3.55,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:56.119Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.24,
+      "coteEquitable": 1.206984094263573,
+      "edge": 0.027354052048690347,
+      "interessant": true,
+      "source": "Unibet",
+      "edgeNon": 0.027354052048690347,
+      "edgeOui": -0.3912152296555246
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23120,8 +23145,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.27,
+      "sourceNon": "Unibet",
+      "coteOui": 3.3,
+      "sourceOui": "Unibet",
+      "marge": 0.09043187783345252,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.27,
+        "coteOui": 3.3,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:56.678Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.27,
+      "coteEquitable": 1.2567931292352221,
+      "edge": 0.010508388737623386,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": 0.010508388737623386,
+      "edgeOui": -0.32573045892453345
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23161,8 +23211,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.23,
+      "sourceNon": "Unibet",
+      "coteOui": 3.6,
+      "sourceOui": "Unibet",
+      "marge": 0.09078590785907847,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.23,
+        "coteOui": 3.6,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:57.230Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.23,
+      "coteEquitable": 1.1780260666057998,
+      "edge": 0.04411951048243834,
+      "interessant": true,
+      "source": "Unibet",
+      "edgeNon": 0.04411951048243834,
+      "edgeOui": -0.4559595428754296
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23202,8 +23277,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.1,
+      "sourceNon": "Unibet",
+      "coteOui": 5.4,
+      "sourceOui": "Unibet",
+      "marge": 0.09427609427609429,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.1,
+        "coteOui": 5.4,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:57.790Z"
+     },
+     "valueBet": {
+      "mise": "Rouge",
+      "cote": 5.4,
+      "coteEquitable": 4.931543604310869,
+      "edge": 0.09499183892029928,
+      "interessant": true,
+      "source": "Unibet",
+      "edgeNon": -0.12305389311339421,
+      "edgeOui": 0.09499183892029928
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23243,8 +23343,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.3,
+      "sourceNon": "Unibet",
+      "coteOui": 3.05,
+      "sourceOui": "Unibet",
+      "marge": 0.09709962168978548,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.3,
+        "coteOui": 3.05,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:58.424Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.3,
+      "coteEquitable": 1.2739931708295766,
+      "edge": 0.020413633107223772,
+      "interessant": true,
+      "source": "Unibet",
+      "edgeNon": 0.020413633107223772,
+      "edgeOui": -0.34404736998233243
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23284,8 +23409,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.1,
+      "sourceNon": "Unibet",
+      "coteOui": 5.5,
+      "sourceOui": "Unibet",
+      "marge": 0.09090909090909083,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.1,
+        "coteOui": 5.5,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:58.981Z"
+     },
+     "valueBet": {
+      "mise": "Rouge",
+      "cote": 5.5,
+      "coteEquitable": 5.82390027520376,
+      "edge": -0.05561569736741889,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.08887686052651611,
+      "edgeOui": -0.05561569736741889
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23325,8 +23475,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.28,
+      "sourceNon": "Unibet",
+      "coteOui": 3.25,
+      "sourceOui": "Unibet",
+      "marge": 0.08894230769230771,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.28,
+        "coteOui": 3.25,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:53:59.612Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.28,
+      "coteEquitable": 1.2603474881034098,
+      "edge": 0.015592931379713182,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": 0.015592931379713182,
+      "edgeOui": -0.3286539273313027
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -23366,8 +23541,33 @@
       "label": "Derby basque",
       "mult": 1.008
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.2,
+      "sourceNon": "Unibet",
+      "coteOui": 3.85,
+      "sourceOui": "Unibet",
+      "marge": 0.09307359307359309,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.2,
+        "coteOui": 3.85,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:00.343Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.2,
+      "coteEquitable": 1.2848342441375808,
+      "edge": -0.06602738409616737,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.06602738409616737,
+      "edgeOui": -0.1464954760247965
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -39991,8 +40191,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.18,
+      "sourceNon": "Unibet",
+      "coteOui": 4.1,
+      "sourceOui": "Unibet",
+      "marge": 0.09136006614303449,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.18,
+        "coteOui": 4.1,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:01.642Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.18,
+      "coteEquitable": 1.2053520701513178,
+      "edge": -0.021032917086320824,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.021032917086320824,
+      "edgeOui": -0.30149579656447867
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40032,8 +40257,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.14,
+      "sourceNon": "Unibet",
+      "coteOui": 4.6,
+      "sourceOui": "Unibet",
+      "marge": 0.09458428680396658,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.14,
+        "coteOui": 4.6,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:02.179Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.14,
+      "coteEquitable": 1.152778101996675,
+      "edge": -0.011084615481975812,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.011084615481975812,
+      "edgeOui": -0.390360323493782
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40073,8 +40323,33 @@
       "label": "Derby de la Madonnina",
       "mult": 1.357
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.14,
+      "sourceNon": "Unibet",
+      "coteOui": 4.7,
+      "sourceOui": "Unibet",
+      "marge": 0.08995893990294901,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.14,
+        "coteOui": 4.7,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:02.682Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.14,
+      "coteEquitable": 1.2229982190767281,
+      "edge": -0.06786454614740611,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.06786454614740611,
+      "edgeOui": -0.14301459044490483
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40114,8 +40389,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.11,
+      "sourceNon": "Unibet",
+      "coteOui": 5.1,
+      "sourceOui": "Unibet",
+      "marge": 0.09697933227344979,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.11,
+        "coteOui": 5.1,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:03.199Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.11,
+      "coteEquitable": 1.1427157025416177,
+      "edge": -0.028629782953757954,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.028629782953757954,
+      "edgeOui": -0.36305234859084157
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40155,8 +40455,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.12,
+      "sourceNon": "Unibet",
+      "coteOui": 5,
+      "sourceOui": "Unibet",
+      "marge": 0.09285714285714275,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.12,
+        "coteOui": 5,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:03.692Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.12,
+      "coteEquitable": 1.1895900755389508,
+      "edge": -0.05849920655014085,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.05849920655014085,
+      "edgeOui": -0.20312854218687082
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40196,8 +40521,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.19,
+      "sourceNon": "Unibet",
+      "coteOui": 3.9,
+      "sourceOui": "Unibet",
+      "marge": 0.09674639086403802,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.19,
+        "coteOui": 3.9,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:04.180Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.19,
+      "coteEquitable": 1.1978741621072935,
+      "edge": -0.006573446824699292,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.006573446824699292,
+      "edgeOui": -0.35576769528039764
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40237,8 +40587,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.22,
+      "sourceNon": "Unibet",
+      "coteOui": 3.65,
+      "sourceOui": "Unibet",
+      "marge": 0.09364473388726702,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.22,
+        "coteOui": 3.65,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:04.717Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.22,
+      "coteEquitable": 1.201514725123073,
+      "edge": 0.015384975723067962,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": 0.015384975723067962,
+      "edgeOui": -0.3878320994993426
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -40278,8 +40653,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Unibet",
+      "coteNon": 1.16,
+      "sourceNon": "Unibet",
+      "coteOui": 4.4,
+      "sourceOui": "Unibet",
+      "marge": 0.08934169278996862,
+      "parSite": [
+       {
+        "source": "Unibet",
+        "coteNon": 1.16,
+        "coteOui": 4.4,
+        "lu": null
+       }
+      ],
+      "maj": "2026-10-30T09:54:05.290Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.16,
+      "coteEquitable": 1.168819416709527,
+      "edge": -0.0075455768302989945,
+      "interessant": false,
+      "source": "Unibet",
+      "edgeNon": -0.0075455768302989945,
+      "edgeOui": -0.36448229478162464
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
