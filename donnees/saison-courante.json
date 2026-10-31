@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-10-31T05:42:35.432Z",
+ "misAJour": "2026-10-31T05:58:19.992Z",
  "ligues": [
   {
    "il": 0,
@@ -4771,7 +4771,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:16.162Z"
+      "maj": "2026-10-31T05:58:06.000Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4837,7 +4837,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:16.735Z"
+      "maj": "2026-10-31T05:58:06.429Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4903,7 +4903,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:17.590Z"
+      "maj": "2026-10-31T05:58:06.858Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -4969,7 +4969,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:18.147Z"
+      "maj": "2026-10-31T05:58:07.310Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5035,7 +5035,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:18.701Z"
+      "maj": "2026-10-31T05:58:07.765Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5101,7 +5101,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:19.274Z"
+      "maj": "2026-10-31T05:58:08.219Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5167,7 +5167,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:19.845Z"
+      "maj": "2026-10-31T05:58:08.659Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5233,7 +5233,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:20.415Z"
+      "maj": "2026-10-31T05:58:09.098Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5299,7 +5299,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:20.981Z"
+      "maj": "2026-10-31T05:58:09.550Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5365,7 +5365,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:21.704Z"
+      "maj": "2026-10-31T05:58:10.011Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -22986,7 +22986,7 @@
      "homeCourt": "Villarreal",
      "awayCourt": "Espanyol",
      "statut": "termine",
-     "score": null,
+     "score": "0-1",
      "homeEq": "Villarreal",
      "awayEq": "Espanyol",
      "homePromu": false,
@@ -23099,7 +23099,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:23.132Z"
+      "maj": "2026-10-31T05:58:11.038Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23165,7 +23165,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:23.840Z"
+      "maj": "2026-10-31T05:58:11.521Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23231,7 +23231,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:24.364Z"
+      "maj": "2026-10-31T05:58:11.969Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23297,7 +23297,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:24.946Z"
+      "maj": "2026-10-31T05:58:12.438Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -23363,7 +23363,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:25.505Z"
+      "maj": "2026-10-31T05:58:12.935Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23429,7 +23429,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:26.096Z"
+      "maj": "2026-10-31T05:58:13.422Z"
      },
      "valueBet": {
       "mise": "Rouge",
@@ -23495,7 +23495,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:26.807Z"
+      "maj": "2026-10-31T05:58:13.885Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23561,7 +23561,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:27.375Z"
+      "maj": "2026-10-31T05:58:14.346Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23627,7 +23627,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:27.939Z"
+      "maj": "2026-10-31T05:58:14.821Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23701,18 +23701,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7990037597730592,
-      "cote": 1.2515585662375728,
-      "coteRouge": 4.975217441236313,
+      "pNo": 0.7933243112504869,
+      "cote": 1.2605185367680691,
+      "coteRouge": 4.838498451610244,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9721979104019743,
-       "classement": 0.9902871523850751,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -23742,18 +23742,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7968036201962808,
-      "cote": 1.2550143782650796,
-      "coteRouge": 4.921347520885786,
+      "pNo": 0.7605618831429648,
+      "cote": 1.314817402980511,
+      "coteRouge": 4.176444473947665,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9828397567206991,
-       "classement": 0.9902871523850751,
+       "classement": 1.1669129693345957,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 1
      },
      "derby": {
       "est": false,
@@ -23783,18 +23783,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7900219321018214,
-      "cote": 1.265787643818369,
-      "coteRouge": 4.762402140422181,
+      "pNo": 0.795710034775809,
+      "cote": 1.2567392093801475,
+      "coteRouge": 4.895003036015913,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9347538308530029,
-       "classement": 1.0759809340376505,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -23865,18 +23865,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8273961799486629,
-      "cote": 1.208610849595712,
-      "coteRouge": 5.7936145312576075,
+      "pNo": 0.832295949012736,
+      "cote": 1.2014956953547515,
+      "coteRouge": 5.962885178462046,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9350856667142335,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -23906,18 +23906,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8070503844056967,
-      "cote": 1.2390800120074157,
-      "coteRouge": 5.1827001412773175,
+      "pNo": 0.8125277171619043,
+      "cote": 1.2307272464414158,
+      "coteRouge": 5.3341218491675235,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0453095411595816,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -23947,18 +23947,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7966690928261813,
-      "cote": 1.2552263028712498,
-      "coteRouge": 4.918091469218418,
+      "pNo": 0.8022172879440115,
+      "cote": 1.24654506332428,
+      "coteRouge": 5.056053633832866,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9303655429328787,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -23988,18 +23988,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7668840788433495,
-      "cote": 1.3039780425592442,
-      "coteRouge": 4.289711294871253,
+      "pNo": 0.7733342693938215,
+      "cote": 1.2931018830755432,
+      "coteRouge": 4.411782925127994,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1275574666174757,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -24070,18 +24070,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8200487177409342,
-      "cote": 1.2194397459150899,
-      "coteRouge": 5.55705959660991,
+      "pNo": 0.7871844611738046,
+      "cote": 1.270350279156752,
+      "coteRouge": 4.6989050024993295,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9473853254012043,
-       "classement": 0.9098214812430289,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -24152,18 +24152,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7723996240417978,
-      "cote": 1.294666606344549,
-      "coteRouge": 4.393665853098792,
+      "pNo": 0.7661603260629547,
+      "cote": 1.3052098444442697,
+      "coteRouge": 4.27643429005645,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9859601064777408,
-       "classement": 1.1057107357541824,
+       "classement": 1.1360220159079695,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -24316,18 +24316,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8013207354870514,
-      "cote": 1.2479397521046167,
-      "coteRouge": 5.033237879410544,
+      "pNo": 0.8068549265711313,
+      "cote": 1.2393801748843152,
+      "coteRouge": 5.177455382356824,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9883377057684661,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -24357,18 +24357,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8050372685330465,
-      "cote": 1.2421785165576473,
-      "coteRouge": 5.129185421622498,
+      "pNo": 0.7994892451735415,
+      "cote": 1.2507985642545254,
+      "coteRouge": 4.987263655086716,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9698496680102429,
-       "classement": 0.9628864463291567,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -24398,18 +24398,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.82298552302606,
-      "cote": 1.2150882026734446,
-      "coteRouge": 5.649255456926382,
+      "pNo": 0.8281264941883628,
+      "cote": 1.207544991034357,
+      "coteRouge": 5.818232398749919,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0771724415964852,
-       "classement": 0.7871390288098947,
+       "classement": 0.7642784181015942,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 15
+      "gap": 16
      },
      "derby": {
       "est": false,
@@ -24562,18 +24562,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8349348683434837,
-      "cote": 1.1976982132558514,
-      "coteRouge": 6.058214657235413,
+      "pNo": 0.8396759880419873,
+      "cote": 1.1909355682920826,
+      "coteRouge": 6.237368861888824,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.947427228630916,
-       "classement": 0.8345212019690162,
+       "classement": 0.8105514824421364,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 13
+      "gap": 14
      },
      "derby": {
       "est": false,
@@ -24603,18 +24603,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7314115966536596,
-      "cote": 1.3672192300138266,
-      "coteRouge": 3.723168936339058,
+      "pNo": 0.7656249404702002,
+      "cote": 1.30612255053481,
+      "coteRouge": 4.26666558296001,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1024951434968735,
-       "classement": 1.1669129693345957,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 1
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -24726,18 +24726,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8202386702355702,
-      "cote": 1.2191573456452656,
-      "coteRouge": 5.5629317012199495,
+      "pNo": 0.8253721128761551,
+      "cote": 1.2115747362911538,
+      "coteRouge": 5.726462230461546,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0023147437563953,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -24849,18 +24849,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8078971514749425,
-      "cote": 1.2377813168103684,
-      "coteRouge": 5.205544882222617,
+      "pNo": 0.8024689989980319,
+      "cote": 1.246154058597412,
+      "coteRouge": 5.062496493854332,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.929181499651231,
-       "classement": 0.9902871523850751,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -24890,18 +24890,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8123115264267231,
-      "cote": 1.2310547954414726,
-      "coteRouge": 5.327977690700235,
+      "pNo": 0.7777773204811215,
+      "cote": 1.2857150416541008,
+      "coteRouge": 4.499990739761766,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.016807167962126,
-       "classement": 0.8841519263452385,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -25054,18 +25054,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7518026200582779,
-      "cote": 1.3301363593578357,
-      "coteRouge": 4.029051395445047,
+      "pNo": 0.7450535838626524,
+      "cote": 1.3421853429864796,
+      "coteRouge": 3.9223928508226953,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0464978463009598,
-       "classement": 1.1360220159079695,
+       "classement": 1.1669129693345957,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 1
      },
      "derby": {
       "est": false,
@@ -25136,18 +25136,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7694242993432849,
-      "cote": 1.2996730163753794,
-      "coteRouge": 4.336970448975526,
+      "pNo": 0.775576508157368,
+      "cote": 1.289363447038671,
+      "coteRouge": 4.455861513380293,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9721979104019743,
-       "classement": 1.1360220159079695,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -25382,18 +25382,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7991842984925386,
-      "cote": 1.2512758344805448,
-      "coteRouge": 4.979690295595957,
+      "pNo": 0.8048144385825018,
+      "cote": 1.242522440031361,
+      "coteRouge": 5.123329782888084,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0275888801443505,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -25423,18 +25423,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8155176714804838,
-      "cote": 1.226214998118445,
-      "coteRouge": 5.420573385131634,
+      "pNo": 0.7820834909886265,
+      "cote": 1.278635863718216,
+      "coteRouge": 4.588913453765946,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.944009795781572,
-       "classement": 0.9360653404663006,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -25464,18 +25464,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7927652266741811,
-      "cote": 1.2614074966370723,
-      "coteRouge": 4.825444996278588,
+      "pNo": 0.7984992999627111,
+      "cote": 1.2523492507090472,
+      "coteRouge": 4.962761915045178,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.002373046194837,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -25546,18 +25546,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8149098680445148,
-      "cote": 1.2271295749548765,
-      "coteRouge": 5.402773175614265,
+      "pNo": 0.8200991205001573,
+      "cote": 1.2193647999404338,
+      "coteRouge": 5.5586165158290655,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.947119971168391,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -25587,18 +25587,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8237748603843822,
-      "cote": 1.213923910634259,
-      "coteRouge": 5.674559272196915,
+      "pNo": 0.8287155707768532,
+      "cote": 1.2066866308093882,
+      "coteRouge": 5.838242299871957,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9017571460375376,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -25628,18 +25628,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8011990343049472,
-      "cote": 1.248129312671371,
-      "coteRouge": 5.03015665192458,
+      "pNo": 0.8068761916536707,
+      "cote": 1.2393475112340684,
+      "coteRouge": 5.178025477867019,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1084761069039972,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -25669,18 +25669,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7738927704377964,
-      "cote": 1.2921686804675707,
-      "coteRouge": 4.422680344791422,
+      "pNo": 0.7801061977579121,
+      "cote": 1.2818767532857454,
+      "coteRouge": 4.547649773680611,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0636034525259166,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -25710,18 +25710,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8003244009804826,
-      "cote": 1.2494933289237382,
-      "coteRouge": 5.00812320038291,
+      "pNo": 0.8058863448628051,
+      "cote": 1.2408697657859447,
+      "coteRouge": 5.151621091742483,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9932940104075743,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -25956,18 +25956,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.762004839400793,
-      "cote": 1.312327623517924,
-      "coteRouge": 4.201766109370763,
+      "pNo": 0.7683550138579336,
+      "cote": 1.3014817134842005,
+      "coteRouge": 4.316950764419767,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.00348127387808,
-       "classement": 1.1360220159079695,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -25997,18 +25997,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7689677864834721,
-      "cote": 1.3004445928392523,
-      "coteRouge": 4.328400722908109,
+      "pNo": 0.7625842701211482,
+      "cote": 1.3113304839622968,
+      "coteRouge": 4.212020831603191,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0284800160164569,
-       "classement": 1.0759809340376505,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -26038,18 +26038,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7848814037880408,
-      "cote": 1.27407783542041,
-      "coteRouge": 4.64859857589758,
+      "pNo": 0.7908336181611842,
+      "cote": 1.2644884803015346,
+      "coteRouge": 4.7808830042803105,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0405062775788214,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -26079,18 +26079,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7705708261782562,
-      "cote": 1.2977392421662612,
-      "coteRouge": 4.358643599427139,
+      "pNo": 0.8052975935749939,
+      "cote": 1.2417769629245443,
+      "coteRouge": 5.136043351293512,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9417552908596903,
-       "classement": 1.1669129693345957,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 1
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -26161,18 +26161,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8545214304060006,
-      "cote": 1.1702456654889035,
-      "coteRouge": 6.8738646715512335,
+      "pNo": 0.826642278743803,
+      "cote": 1.2097131077297885,
+      "coteRouge": 5.768419155222676,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9317162162922753,
-       "classement": 0.7419638226462125,
+       "classement": 0.8841519263452385,
        "derby": 1.008
       },
       "classementApplique": true,
-      "gap": 17
+      "gap": 11
      },
      "derby": {
       "est": true,
@@ -26202,18 +26202,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.795533586768728,
-      "cote": 1.2570179520160385,
-      "coteRouge": 4.8907788041887335,
+      "pNo": 0.7898405712034988,
+      "cote": 1.2660782903013912,
+      "coteRouge": 4.758292338947623,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9281361015716934,
-       "classement": 1.0468336517080166,
+       "classement": 1.0759809340376505,
        "derby": 1.008
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 4
      },
      "derby": {
       "est": true,
@@ -26243,18 +26243,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7902097425717352,
-      "cote": 1.2654868019540015,
-      "coteRouge": 4.76666558427737,
+      "pNo": 0.7843684937226068,
+      "cote": 1.2749109736088555,
+      "coteRouge": 4.637541226065441,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9599210934883785,
-       "classement": 1.0468336517080166,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -26284,18 +26284,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7952110429178463,
-      "cote": 1.2575278083799328,
-      "coteRouge": 4.883075797875357,
+      "pNo": 0.8007990231598143,
+      "cote": 1.2487527720178442,
+      "coteRouge": 5.020055703854689,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9370370293952477,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -26325,18 +26325,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8268126351936027,
-      "cote": 1.2094638584784623,
-      "coteRouge": 5.774093283986855,
+      "pNo": 0.8318150825841166,
+      "cote": 1.2021902715365538,
+      "coteRouge": 5.945836376797246,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0153200485415643,
-       "classement": 0.8105514824421364,
+       "classement": 0.7871390288098947,
        "derby": 1.008
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 15
      },
      "derby": {
       "est": true,
@@ -26407,18 +26407,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8279903255086226,
-      "cote": 1.2077435800783232,
-      "coteRouge": 5.813626489073606,
+      "pNo": 0.8329587557879587,
+      "cote": 1.2005396342271764,
+      "coteRouge": 5.98654544700712,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.016483103253124,
-       "classement": 0.8105514824421364,
+       "classement": 0.7871390288098947,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 15
      },
      "derby": {
       "est": false,
@@ -26448,18 +26448,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7961585061072173,
-      "cote": 1.2560312956894186,
-      "coteRouge": 4.905772524047452,
+      "pNo": 0.8017986892022955,
+      "cote": 1.247195852857896,
+      "coteRouge": 5.045375310462283,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9859601064777408,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -26612,18 +26612,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.822874397004616,
-      "cote": 1.2152522956603673,
-      "coteRouge": 5.645711196399203,
+      "pNo": 0.8279025276088745,
+      "cote": 1.2078716595879622,
+      "coteRouge": 5.810660587317067,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9595825429578395,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -26653,18 +26653,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7752262255892071,
-      "cote": 1.2899460402541911,
-      "coteRouge": 4.448917595575079,
+      "pNo": 0.7813595221703123,
+      "cote": 1.2798205840281944,
+      "coteRouge": 4.573718507782263,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0284800160164569,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -26735,18 +26735,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8379624762010919,
-      "cote": 1.1933708589595875,
-      "coteRouge": 6.171410032413359,
+      "pNo": 0.8075091603156188,
+      "cote": 1.2383760446867813,
+      "coteRouge": 5.1950524068556,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9575531464820175,
-       "classement": 0.8105514824421364,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -26776,18 +26776,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8303199929125535,
-      "cote": 1.2043549577702588,
-      "coteRouge": 5.893446241339671,
+      "pNo": 0.835136762606709,
+      "cote": 1.1974086697832629,
+      "coteRouge": 6.065633647690909,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9192458342361681,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -26817,18 +26817,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8337367035753707,
-      "cote": 1.199419427874089,
-      "coteRouge": 6.014556558809245,
+      "pNo": 0.8384564818286555,
+      "cote": 1.1926677432548694,
+      "coteRouge": 6.19028241627949,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9007357157048417,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -26981,18 +26981,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8460572713512975,
-      "cote": 1.1819530826829605,
-      "coteRouge": 6.495922274328405,
+      "pNo": 0.8505038451650291,
+      "cote": 1.1757736378087311,
+      "coteRouge": 6.689135256381021,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9097173342301212,
-       "classement": 0.8105514824421364,
+       "classement": 0.7871390288098947,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 15
      },
      "derby": {
       "est": false,
@@ -27063,18 +27063,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7942984321260662,
-      "cote": 1.2589726475014444,
-      "coteRouge": 4.861411657362086,
+      "pNo": 0.8000655540949242,
+      "cote": 1.2498975801192342,
+      "coteRouge": 5.00163938971665,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0525902217245644,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -27104,18 +27104,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7799966706502117,
-      "cote": 1.2820567543786971,
-      "coteRouge": 4.545385758276764,
+      "pNo": 0.773917886954666,
+      "cote": 1.292126744782909,
+      "coteRouge": 4.4231716809877835,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9793830230395851,
-       "classement": 1.0759809340376505,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -27227,18 +27227,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7911260735523107,
-      "cote": 1.2640210371398892,
-      "coteRouge": 4.787576970505419,
+      "pNo": 0.7970192084498738,
+      "cote": 1.2546749054453836,
+      "coteRouge": 4.926574541182877,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0996536967743793,
-       "classement": 0.9098214812430289,
+       "classement": 0.8841519263452385,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 11
      },
      "derby": {
       "est": false,
@@ -27391,18 +27391,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8015076606858579,
-      "cote": 1.2476487113601513,
-      "coteRouge": 5.037977805366881,
+      "pNo": 0.806962230742358,
+      "cote": 1.23921537081117,
+      "coteRouge": 5.180333381626102,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9337036140031404,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -27514,18 +27514,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7955976999530407,
-      "cote": 1.2569166553133875,
-      "coteRouge": 4.892312854455457,
+      "pNo": 0.7588443436494335,
+      "cote": 1.3177933108004745,
+      "coteRouge": 4.14669933574482,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.016807167962126,
-       "classement": 0.9628864463291567,
+       "classement": 1.1360220159079695,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -27596,18 +27596,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7902609499482296,
-      "cote": 1.265404800864209,
-      "coteRouge": 4.767829356303309,
+      "pNo": 0.7959425778600437,
+      "cote": 1.2563720396621842,
+      "coteRouge": 4.900581363387669,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.933689801405505,
-       "classement": 1.0759809340376505,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -27760,18 +27760,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8452077924523234,
-      "cote": 1.1831410085543055,
-      "coteRouge": 6.460273523084138,
+      "pNo": 0.8157304037110926,
+      "cote": 1.2258952166678958,
+      "coteRouge": 5.426831230650489,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9701198527187501,
-       "classement": 0.7642784181015942,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 16
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -27842,18 +27842,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7891386987730248,
-      "cote": 1.2672043603422674,
-      "coteRouge": 4.742453898278757,
+      "pNo": 0.7950122192739614,
+      "cote": 1.2578423019878135,
+      "coteRouge": 4.878339559841748,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.048937719801353,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -27883,18 +27883,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8075333000974563,
-      "cote": 1.2383390256219973,
-      "coteRouge": 5.195703986748637,
+      "pNo": 0.8129293646231377,
+      "cote": 1.2301191758075876,
+      "coteRouge": 5.345574402874371,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9848664179806935,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -27965,18 +27965,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7637265113108518,
-      "cote": 1.3093692377964083,
-      "coteRouge": 4.232383436449123,
+      "pNo": 0.7699812308373687,
+      "cote": 1.2987329560130727,
+      "coteRouge": 4.347471311321404,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9698496680102429,
-       "classement": 1.1669129693345957,
+       "classement": 1.1360220159079695,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 1
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -28006,18 +28006,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8332221991709098,
-      "cote": 1.2001600545389224,
-      "coteRouge": 5.996001836148298,
+      "pNo": 0.8380125113879642,
+      "cote": 1.1932996064029437,
+      "coteRouge": 6.173316276265172,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9572574658921076,
-       "classement": 0.8345212019690162,
+       "classement": 0.8105514824421364,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 13
+      "gap": 14
      },
      "derby": {
       "est": false,
@@ -28047,18 +28047,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8273961799486629,
-      "cote": 1.208610849595712,
-      "coteRouge": 5.7936145312576075,
+      "pNo": 0.832295949012736,
+      "cote": 1.2014956953547515,
+      "coteRouge": 5.962885178462046,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9350856667142335,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -28129,18 +28129,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7677988779827599,
-      "cote": 1.3024244091464456,
-      "coteRouge": 4.306611403564853,
+      "pNo": 0.7740421865558834,
+      "cote": 1.2919192485483517,
+      "coteRouge": 4.425604871801957,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0058904429508193,
-       "classement": 1.1057107357541824,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -28211,18 +28211,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7900219321018214,
-      "cote": 1.265787643818369,
-      "coteRouge": 4.762402140422181,
+      "pNo": 0.795710034775809,
+      "cote": 1.2567392093801475,
+      "coteRouge": 4.895003036015913,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9347538308530029,
-       "classement": 1.0759809340376505,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -28375,18 +28375,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7534439096793468,
-      "cote": 1.3272388125422414,
-      "coteRouge": 4.055872230531688,
+      "pNo": 0.7728008711389884,
+      "cote": 1.293994400557747,
+      "coteRouge": 4.401425326818692,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0395775232338587,
-       "classement": 1.1360220159079695,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -28416,18 +28416,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7668840788433495,
-      "cote": 1.3039780425592442,
-      "coteRouge": 4.289711294871253,
+      "pNo": 0.7733342693938215,
+      "cote": 1.2931018830755432,
+      "coteRouge": 4.411782925127994,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1275574666174757,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -28539,18 +28539,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8019858475936092,
-      "cote": 1.2469047963882907,
-      "coteRouge": 5.05014408236674,
+      "pNo": 0.7964311601175298,
+      "cote": 1.255601299994879,
+      "coteRouge": 4.912343168912034,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.931454233268956,
-       "classement": 1.0182691927366034,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -28580,18 +28580,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.795675896643798,
-      "cote": 1.2567931292352221,
-      "coteRouge": 4.894185187034354,
+      "pNo": 0.8013294332798316,
+      "cote": 1.2479262067125279,
+      "coteRouge": 5.033458234447586,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9882944382609953,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -28621,18 +28621,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7843684937226068,
-      "cote": 1.2749109736088555,
-      "coteRouge": 4.637541226065441,
+      "pNo": 0.7902097425717352,
+      "cote": 1.2654868019540015,
+      "coteRouge": 4.76666558427737,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9599210934883785,
-       "classement": 1.0759809340376505,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -28662,18 +28662,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7940531436012863,
-      "cote": 1.259361552886345,
-      "coteRouge": 4.85562157872416,
+      "pNo": 0.7882759281342422,
+      "cote": 1.268591319751301,
+      "coteRouge": 4.7231285096105795,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9687694989968021,
-       "classement": 1.0182691927366034,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -28703,18 +28703,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8181735521748776,
-      "cote": 1.2222345703326505,
-      "coteRouge": 5.499749964657415,
+      "pNo": 0.8233035739214959,
+      "cote": 1.214618801224046,
+      "coteRouge": 5.659424031336728,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9572574658921077,
-       "classement": 0.9098214812430289,
+       "classement": 0.8841519263452385,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 11
      },
      "derby": {
       "est": false,
@@ -28867,18 +28867,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8113818136676454,
-      "cote": 1.23246538578398,
-      "coteRouge": 5.3017157011463905,
+      "pNo": 0.7764235162773263,
+      "cote": 1.2879568676572848,
+      "coteRouge": 4.472742317749344,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0516988795602424,
-       "classement": 0.8590531756028825,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -28990,18 +28990,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7861617497023257,
-      "cote": 1.2720028675760968,
-      "coteRouge": 4.676431829235164,
+      "pNo": 0.7920380254368872,
+      "cote": 1.26256564443153,
+      "coteRouge": 4.808571384748597,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0058904429508193,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -29072,18 +29072,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8349348683434837,
-      "cote": 1.1976982132558514,
-      "coteRouge": 6.058214657235413,
+      "pNo": 0.8396759880419873,
+      "cote": 1.1909355682920826,
+      "coteRouge": 6.237368861888824,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.947427228630916,
-       "classement": 0.8345212019690162,
+       "classement": 0.8105514824421364,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 13
+      "gap": 14
      },
      "derby": {
       "est": false,
@@ -29113,18 +29113,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8400253902023881,
-      "cote": 1.190440207716899,
-      "coteRouge": 6.25099196219404,
+      "pNo": 0.8446202962625617,
+      "cote": 1.183963971058939,
+      "coteRouge": 6.435846998973606,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9182090711153555,
-       "classement": 0.8345212019690162,
+       "classement": 0.8105514824421364,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 13
+      "gap": 14
      },
      "derby": {
       "est": false,
@@ -29195,18 +29195,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7915653294175997,
-      "cote": 1.2633196058950154,
-      "coteRouge": 4.797666324924917,
+      "pNo": 0.7611386830746412,
+      "cote": 1.3138210187405952,
+      "coteRouge": 4.186529710511842,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9804721223942737,
-       "classement": 1.0182691927366034,
+       "classement": 1.1669129693345957,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 1
      },
      "derby": {
       "est": false,
@@ -29441,18 +29441,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8155176714804838,
-      "cote": 1.226214998118445,
-      "coteRouge": 5.420573385131634,
+      "pNo": 0.7820834909886265,
+      "cote": 1.278635863718216,
+      "coteRouge": 4.588913453765946,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.944009795781572,
-       "classement": 0.9360653404663006,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -29482,18 +29482,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7858258867872259,
-      "cote": 1.2725465231088333,
-      "coteRouge": 4.669098356469144,
+      "pNo": 0.7918685602898229,
+      "cote": 1.2628358418902264,
+      "coteRouge": 4.804656141294652,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1275574666174757,
-       "classement": 0.9098214812430289,
+       "classement": 0.8841519263452385,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 11
      },
      "derby": {
       "est": false,
@@ -29523,18 +29523,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7763679273229407,
-      "cote": 1.2880490870458596,
-      "coteRouge": 4.471630513589486,
+      "pNo": 0.7823808355485367,
+      "cote": 1.278149916976031,
+      "coteRouge": 4.595183528622705,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9687694989968021,
-       "classement": 1.1057107357541824,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -29605,18 +29605,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7793280662441306,
-      "cote": 1.2831566618912735,
-      "coteRouge": 4.531613889359876,
+      "pNo": 0.7853921316198214,
+      "cote": 1.273249323159838,
+      "coteRouge": 4.659661398008465,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0380359401721089,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -29769,18 +29769,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8146311828443964,
-      "cote": 1.2275493757903582,
-      "coteRouge": 5.394650596278947,
+      "pNo": 0.8198611484216141,
+      "cote": 1.2197187315500764,
+      "coteRouge": 5.551273316322094,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9759068952194176,
-       "classement": 0.9098214812430289,
+       "classement": 0.8841519263452385,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 11
      },
      "derby": {
       "est": false,
@@ -29933,18 +29933,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7680872148920139,
-      "cote": 1.3019354841632027,
-      "coteRouge": 4.311965808760253,
+      "pNo": 0.7744601788952622,
+      "cote": 1.2912219727377872,
+      "coteRouge": 4.433806833320191,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0909126585795264,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -29974,18 +29974,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7902097425717352,
-      "cote": 1.2654868019540015,
-      "coteRouge": 4.76666558427737,
+      "pNo": 0.7843684937226068,
+      "cote": 1.2749109736088555,
+      "coteRouge": 4.637541226065441,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9599210934883785,
-       "classement": 1.0468336517080166,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -30015,18 +30015,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7852008806016877,
-      "cote": 1.2735594479131442,
-      "coteRouge": 4.655512568213337,
+      "pNo": 0.7669003778814434,
+      "cote": 1.3039503289364553,
+      "coteRouge": 4.290011244597346,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9828397567206991,
-       "classement": 1.0468336517080166,
+       "classement": 1.1360220159079695,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -30138,18 +30138,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.795533586768728,
-      "cote": 1.2570179520160385,
-      "coteRouge": 4.8907788041887335,
+      "pNo": 0.7898405712034988,
+      "cote": 1.2660782903013912,
+      "coteRouge": 4.758292338947623,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9281361015716934,
-       "classement": 1.0468336517080166,
+       "classement": 1.0759809340376505,
        "derby": 1.008
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 4
      },
      "derby": {
       "est": true,
@@ -30343,18 +30343,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7829161088771497,
-      "cote": 1.2772760563506476,
-      "coteRouge": 4.606514075399949,
+      "pNo": 0.788839575218928,
+      "cote": 1.2676848771468752,
+      "coteRouge": 4.735735879660146,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9932940104075743,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -30384,18 +30384,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8011990343049472,
-      "cote": 1.248129312671371,
-      "coteRouge": 5.03015665192458,
+      "pNo": 0.8068761916536707,
+      "cote": 1.2393475112340684,
+      "coteRouge": 5.178025477867019,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1084761069039972,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -30425,18 +30425,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7689677864834721,
-      "cote": 1.3004445928392523,
-      "coteRouge": 4.328400722908109,
+      "pNo": 0.7625842701211482,
+      "cote": 1.3113304839622968,
+      "coteRouge": 4.212020831603191,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0284800160164569,
-       "classement": 1.0759809340376505,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -30466,18 +30466,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7849913818948692,
-      "cote": 1.2738993357941426,
-      "coteRouge": 4.650976359984971,
+      "pNo": 0.7907724269520569,
+      "cote": 1.2645863284009373,
+      "coteRouge": 4.779484775512148,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.931412872707635,
-       "classement": 1.1057107357541824,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -30507,18 +30507,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.822874397004616,
-      "cote": 1.2152522956603673,
-      "coteRouge": 5.645711196399203,
+      "pNo": 0.8279025276088745,
+      "cote": 1.2078716595879622,
+      "coteRouge": 5.810660587317067,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9595825429578395,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -30548,18 +30548,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8207375034292028,
-      "cote": 1.2184163582409762,
-      "coteRouge": 5.578411654024154,
+      "pNo": 0.8257951862732616,
+      "cote": 1.2109540193772608,
+      "coteRouge": 5.740369503041534,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9437590914270968,
-       "classement": 0.9098214812430289,
+       "classement": 0.8841519263452385,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 11
      },
      "derby": {
       "est": false,
@@ -30589,18 +30589,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8497928524597118,
-      "cote": 1.1767573675225862,
-      "coteRouge": 6.657472805891494,
+      "pNo": 0.8213737350625903,
+      "cote": 1.2174725795484538,
+      "coteRouge": 5.598280859482775,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9140438828912038,
-       "classement": 0.7871390288098947,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 15
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -30630,18 +30630,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.82298552302606,
-      "cote": 1.2150882026734446,
-      "coteRouge": 5.649255456926382,
+      "pNo": 0.8281264941883628,
+      "cote": 1.207544991034357,
+      "coteRouge": 5.818232398749919,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0771724415964852,
-       "classement": 0.7871390288098947,
+       "classement": 0.7642784181015942,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 15
+      "gap": 16
      },
      "derby": {
       "est": false,
@@ -30712,18 +30712,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8200487177409342,
-      "cote": 1.2194397459150899,
-      "coteRouge": 5.55705959660991,
+      "pNo": 0.7871844611738046,
+      "cote": 1.270350279156752,
+      "coteRouge": 4.6989050024993295,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9473853254012043,
-       "classement": 0.9098214812430289,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -30794,18 +30794,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8149098680445148,
-      "cote": 1.2271295749548765,
-      "coteRouge": 5.402773175614265,
+      "pNo": 0.8200991205001573,
+      "cote": 1.2193647999404338,
+      "coteRouge": 5.5586165158290655,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.947119971168391,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -30835,18 +30835,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8396830825525696,
-      "cote": 1.1909255060374442,
-      "coteRouge": 6.237644884407852,
+      "pNo": 0.8443391121808573,
+      "cote": 1.1843582579244536,
+      "coteRouge": 6.424221357145718,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9755640801147237,
-       "classement": 0.7871390288098947,
+       "classement": 0.7642784181015942,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 15
+      "gap": 16
      },
      "derby": {
       "est": false,
@@ -30917,18 +30917,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7991842984925386,
-      "cote": 1.2512758344805448,
-      "coteRouge": 4.979690295595957,
+      "pNo": 0.8048144385825018,
+      "cote": 1.242522440031361,
+      "coteRouge": 5.123329782888084,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0275888801443505,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -31040,18 +31040,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7952110429178463,
-      "cote": 1.2575278083799328,
-      "coteRouge": 4.883075797875357,
+      "pNo": 0.8007990231598143,
+      "cote": 1.2487527720178442,
+      "coteRouge": 5.020055703854689,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9370370293952477,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -31163,18 +31163,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8003244009804826,
-      "cote": 1.2494933289237382,
-      "coteRouge": 5.00812320038291,
+      "pNo": 0.8058863448628051,
+      "cote": 1.2408697657859447,
+      "coteRouge": 5.151621091742483,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9932940104075743,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -31204,18 +31204,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7314115966536596,
-      "cote": 1.3672192300138266,
-      "coteRouge": 3.723168936339058,
+      "pNo": 0.7656249404702002,
+      "cote": 1.30612255053481,
+      "coteRouge": 4.26666558296001,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1024951434968735,
-       "classement": 1.1669129693345957,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 1
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -31286,18 +31286,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8050372685330465,
-      "cote": 1.2421785165576473,
-      "coteRouge": 5.129185421622498,
+      "pNo": 0.7994892451735415,
+      "cote": 1.2507985642545254,
+      "coteRouge": 4.987263655086716,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9698496680102429,
-       "classement": 0.9628864463291567,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -31491,18 +31491,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8285113322973309,
-      "cote": 1.206984094263573,
-      "coteRouge": 5.831289107300211,
+      "pNo": 0.8334085326035126,
+      "cote": 1.1998917228217796,
+      "coteRouge": 6.002708395742752,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9561879646238477,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -31532,18 +31532,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8040409681688194,
-      "cote": 1.2437177203513294,
-      "coteRouge": 5.103107474329143,
+      "pNo": 0.8094259229283856,
+      "cote": 1.2354435059136049,
+      "coteRouge": 5.247303386515771,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9217869911229046,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -31573,18 +31573,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7669003778814434,
-      "cote": 1.3039503289364553,
-      "coteRouge": 4.290011244597346,
+      "pNo": 0.802425953335935,
+      "cote": 1.2462209077892956,
+      "coteRouge": 5.061393522501968,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9828397567206991,
-       "classement": 1.1360220159079695,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -31614,18 +31614,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8237748603843822,
-      "cote": 1.213923910634259,
-      "coteRouge": 5.674559272196915,
+      "pNo": 0.8287155707768532,
+      "cote": 1.2066866308093882,
+      "coteRouge": 5.838242299871957,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9017571460375376,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -31655,18 +31655,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8347325197540503,
-      "cote": 1.197988548828366,
-      "coteRouge": 6.05079715931899,
+      "pNo": 0.8394520616672546,
+      "cote": 1.1912532539545826,
+      "coteRouge": 6.228669208616301,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9214998149549862,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -31696,18 +31696,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8070503844056967,
-      "cote": 1.2390800120074157,
-      "coteRouge": 5.1827001412773175,
+      "pNo": 0.8125277171619043,
+      "cote": 1.2307272464414158,
+      "coteRouge": 5.3341218491675235,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0453095411595816,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -31778,18 +31778,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7518026200582779,
-      "cote": 1.3301363593578357,
-      "coteRouge": 4.029051395445047,
+      "pNo": 0.7450535838626524,
+      "cote": 1.3421853429864796,
+      "coteRouge": 3.9223928508226953,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0464978463009598,
-       "classement": 1.1360220159079695,
+       "classement": 1.1669129693345957,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 1
      },
      "derby": {
       "est": false,
@@ -31860,18 +31860,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7921461806644443,
-      "cote": 1.2623932607504462,
-      "coteRouge": 4.811073489997395,
+      "pNo": 0.7979736439171103,
+      "cote": 1.2531742215083423,
+      "coteRouge": 4.9498492146723105,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0636034525259166,
-       "classement": 0.9360653404663006,
+       "classement": 0.9098214812430289,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 9
+      "gap": 10
      },
      "derby": {
       "est": false,
@@ -31942,18 +31942,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8545214304060006,
-      "cote": 1.1702456654889035,
-      "coteRouge": 6.8738646715512335,
+      "pNo": 0.826642278743803,
+      "cote": 1.2097131077297885,
+      "coteRouge": 5.768419155222676,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9317162162922753,
-       "classement": 0.7419638226462125,
+       "classement": 0.8841519263452385,
        "derby": 1.008
       },
       "classementApplique": true,
-      "gap": 17
+      "gap": 11
      },
      "derby": {
       "est": true,
@@ -32065,18 +32065,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8279903255086226,
-      "cote": 1.2077435800783232,
-      "coteRouge": 5.813626489073606,
+      "pNo": 0.8329587557879587,
+      "cote": 1.2005396342271764,
+      "coteRouge": 5.98654544700712,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.016483103253124,
-       "classement": 0.8105514824421364,
+       "classement": 0.7871390288098947,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 15
      },
      "derby": {
       "est": false,
@@ -32106,18 +32106,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7748323156256712,
-      "cote": 1.2906018242056767,
-      "coteRouge": 4.4411346271943515,
+      "pNo": 0.7809318903117584,
+      "cote": 1.2805214032183867,
+      "coteRouge": 4.564790381507886,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.002373046194837,
-       "classement": 1.0759809340376505,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -32229,18 +32229,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8013207354870514,
-      "cote": 1.2479397521046167,
-      "coteRouge": 5.033237879410544,
+      "pNo": 0.8068549265711313,
+      "cote": 1.2393801748843152,
+      "coteRouge": 5.177455382356824,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9883377057684661,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -32352,18 +32352,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8259301077618211,
-      "cote": 1.2107562015264088,
-      "coteRouge": 5.744818860643087,
+      "pNo": 0.7934394267110267,
+      "cote": 1.2603356555461458,
+      "coteRouge": 4.841194929300589,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9991120107333071,
-       "classement": 0.8345212019690162,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 13
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -32393,18 +32393,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8146967649520955,
-      "cote": 1.2274505595450602,
-      "coteRouge": 5.3965598589872465,
+      "pNo": 0.8200191780448268,
+      "cote": 1.2194836740090662,
+      "coteRouge": 5.5561475335914645,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0635882253019047,
-       "classement": 0.8345212019690162,
+       "classement": 0.8105514824421364,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 13
+      "gap": 14
      },
      "derby": {
       "est": false,
@@ -32434,18 +32434,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7806896877260107,
-      "cote": 1.2809186745027918,
-      "coteRouge": 4.559749104504841,
+      "pNo": 0.7866739053777235,
+      "cote": 1.271174743644061,
+      "coteRouge": 4.687659059106853,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.00348127387808,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -32475,18 +32475,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7990037597730592,
-      "cote": 1.2515585662375728,
-      "coteRouge": 4.975217441236313,
+      "pNo": 0.7933243112504869,
+      "cote": 1.2605185367680691,
+      "coteRouge": 4.838498451610244,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9721979104019743,
-       "classement": 0.9902871523850751,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -32516,18 +32516,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8399568520380274,
-      "cote": 1.1905373443572158,
-      "coteRouge": 6.248314987140887,
+      "pNo": 0.8445272027422531,
+      "cote": 1.1840944812113965,
+      "coteRouge": 6.431993362428373,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.8923699387943296,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -32557,18 +32557,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7915586577441605,
-      "cote": 1.263330253818296,
-      "coteRouge": 4.797512763915167,
+      "pNo": 0.797364770529477,
+      "cote": 1.2541311542218831,
+      "coteRouge": 4.93497602866469,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0368995400574865,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -32598,18 +32598,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7723996240417978,
-      "cote": 1.294666606344549,
-      "coteRouge": 4.393665853098792,
+      "pNo": 0.7661603260629547,
+      "cote": 1.3052098444442697,
+      "coteRouge": 4.27643429005645,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9859601064777408,
-       "classement": 1.1057107357541824,
+       "classement": 1.1360220159079695,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -32721,18 +32721,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8303199929125535,
-      "cote": 1.2043549577702588,
-      "coteRouge": 5.893446241339671,
+      "pNo": 0.835136762606709,
+      "cote": 1.1974086697832629,
+      "coteRouge": 6.065633647690909,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9192458342361681,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -32803,18 +32803,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7694242993432849,
-      "cote": 1.2996730163753794,
-      "coteRouge": 4.336970448975526,
+      "pNo": 0.775576508157368,
+      "cote": 1.289363447038671,
+      "coteRouge": 4.455861513380293,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9721979104019743,
-       "classement": 1.1360220159079695,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -32844,18 +32844,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7759774081111607,
-      "cote": 1.2886973119928093,
-      "coteRouge": 4.463835506805506,
+      "pNo": 0.7820008164235852,
+      "cote": 1.2787710434541688,
+      "coteRouge": 4.587173142552032,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9704612201198768,
-       "classement": 1.1057107357541824,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -32885,18 +32885,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8337367035753707,
-      "cote": 1.199419427874089,
-      "coteRouge": 6.014556558809245,
+      "pNo": 0.8384564818286555,
+      "cote": 1.1926677432548694,
+      "coteRouge": 6.19028241627949,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9007357157048417,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -32926,18 +32926,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7481722337455776,
-      "cote": 1.336590633674944,
-      "coteRouge": 3.970967994806803,
+      "pNo": 0.7412687808563065,
+      "cote": 1.3490383324181139,
+      "coteRouge": 3.865014833964133,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0909126585795264,
-       "classement": 1.1057107357541824,
+       "classement": 1.1360220159079695,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -32967,18 +32967,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7738927704377964,
-      "cote": 1.2921686804675707,
-      "coteRouge": 4.422680344791422,
+      "pNo": 0.7801061977579121,
+      "cote": 1.2818767532857454,
+      "coteRouge": 4.547649773680611,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0636034525259166,
-       "classement": 1.0182691927366034,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 6
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -33090,18 +33090,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7927652266741811,
-      "cote": 1.2614074966370723,
-      "coteRouge": 4.825444996278588,
+      "pNo": 0.7984992999627111,
+      "cote": 1.2523492507090472,
+      "coteRouge": 4.962761915045178,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.002373046194837,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -33213,18 +33213,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7961585061072173,
-      "cote": 1.2560312956894186,
-      "coteRouge": 4.905772524047452,
+      "pNo": 0.8017986892022955,
+      "cote": 1.247195852857896,
+      "coteRouge": 5.045375310462283,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9859601064777408,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -33254,18 +33254,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7848814037880408,
-      "cote": 1.27407783542041,
-      "coteRouge": 4.64859857589758,
+      "pNo": 0.7908336181611842,
+      "cote": 1.2644884803015346,
+      "coteRouge": 4.7808830042803105,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0405062775788214,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -33295,18 +33295,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7752262255892071,
-      "cote": 1.2899460402541911,
-      "coteRouge": 4.448917595575079,
+      "pNo": 0.7813595221703123,
+      "cote": 1.2798205840281944,
+      "coteRouge": 4.573718507782263,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0284800160164569,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -33336,18 +33336,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8379624762010919,
-      "cote": 1.1933708589595875,
-      "coteRouge": 6.171410032413359,
+      "pNo": 0.8075091603156188,
+      "cote": 1.2383760446867813,
+      "coteRouge": 5.1950524068556,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9575531464820175,
-       "classement": 0.8105514824421364,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -33500,18 +33500,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8268126351936027,
-      "cote": 1.2094638584784623,
-      "coteRouge": 5.774093283986855,
+      "pNo": 0.8318150825841166,
+      "cote": 1.2021902715365538,
+      "coteRouge": 5.945836376797246,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0153200485415643,
-       "classement": 0.8105514824421364,
+       "classement": 0.7871390288098947,
        "derby": 1.008
       },
       "classementApplique": true,
-      "gap": 14
+      "gap": 15
      },
      "derby": {
       "est": true,
@@ -33582,18 +33582,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8087407004746453,
-      "cote": 1.2364902612334283,
-      "coteRouge": 5.228503934092014,
+      "pNo": 0.8140327411056211,
+      "cote": 1.228451817112169,
+      "coteRouge": 5.377290636777924,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9251013408686247,
-       "classement": 0.9902871523850751,
+       "classement": 0.9628864463291567,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -33623,18 +33623,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7705708261782562,
-      "cote": 1.2977392421662612,
-      "coteRouge": 4.358643599427139,
+      "pNo": 0.8052975935749939,
+      "cote": 1.2417769629245443,
+      "coteRouge": 5.136043351293512,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9417552908596903,
-       "classement": 1.1669129693345957,
+       "classement": 0.9902871523850751,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 1
+      "gap": 7
      },
      "derby": {
       "est": false,
@@ -33746,18 +33746,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8100692326097467,
-      "cote": 1.2344623888236883,
-      "coteRouge": 5.265076394627979,
+      "pNo": 0.8153597351796065,
+      "cote": 1.2264525176482024,
+      "coteRouge": 5.415936772906696,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9448179675795662,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -33787,18 +33787,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8282937631577125,
-      "cote": 1.2073011345487983,
-      "coteRouge": 5.82390027520376,
+      "pNo": 0.8331382549220685,
+      "cote": 1.2002809786876725,
+      "coteRouge": 5.9929853875911325,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9039778267879033,
-       "classement": 0.9098214812430289,
+       "classement": 0.8841519263452385,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 10
+      "gap": 11
      },
      "derby": {
       "est": false,
@@ -34074,18 +34074,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7968036201962808,
-      "cote": 1.2550143782650796,
-      "coteRouge": 4.921347520885786,
+      "pNo": 0.7605618831429648,
+      "cote": 1.314817402980511,
+      "coteRouge": 4.176444473947665,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9828397567206991,
-       "classement": 0.9902871523850751,
+       "classement": 1.1669129693345957,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 1
      },
      "derby": {
       "est": false,
@@ -34156,18 +34156,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8202386702355702,
-      "cote": 1.2191573456452656,
-      "coteRouge": 5.5629317012199495,
+      "pNo": 0.8253721128761551,
+      "cote": 1.2115747362911538,
+      "coteRouge": 5.726462230461546,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0023147437563953,
-       "classement": 0.8590531756028825,
+       "classement": 0.8345212019690162,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 12
+      "gap": 13
      },
      "derby": {
       "est": false,
@@ -34197,18 +34197,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7849335639286336,
-      "cote": 1.2739931708295766,
-      "coteRouge": 4.649726002192948,
+      "pNo": 0.791038735122814,
+      "cote": 1.2641605974513288,
+      "coteRouge": 4.785575932399412,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.1651279890667163,
-       "classement": 0.8841519263452385,
+       "classement": 0.8590531756028825,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 12
      },
      "derby": {
       "est": false,
@@ -34238,18 +34238,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7934319776404009,
-      "cote": 1.2603474881034098,
-      "coteRouge": 4.841020350474059,
+      "pNo": 0.7877244170773322,
+      "cote": 1.2694795011055604,
+      "coteRouge": 4.71085739693529,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9195734210012653,
-       "classement": 1.0759809340376505,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 4
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -34279,18 +34279,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.762004839400793,
-      "cote": 1.312327623517924,
-      "coteRouge": 4.201766109370763,
+      "pNo": 0.7683550138579336,
+      "cote": 1.3014817134842005,
+      "coteRouge": 4.316950764419767,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.00348127387808,
-       "classement": 1.1360220159079695,
+       "classement": 1.1057107357541824,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 2
+      "gap": 3
      },
      "derby": {
       "est": false,
@@ -34320,18 +34320,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8006268918010869,
-      "cote": 1.2490212485248955,
-      "coteRouge": 5.015721573655297,
+      "pNo": 0.8061804098317911,
+      "cote": 1.2404171421241175,
+      "coteRouge": 5.159437181412553,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9917892580903918,
-       "classement": 0.9628864463291567,
+       "classement": 0.9360653404663006,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 8
+      "gap": 9
      },
      "derby": {
       "est": false,
@@ -34402,18 +34402,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8123115264267231,
-      "cote": 1.2310547954414726,
-      "coteRouge": 5.327977690700235,
+      "pNo": 0.7777773204811215,
+      "cote": 1.2857150416541008,
+      "coteRouge": 4.499990739761766,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.016807167962126,
-       "classement": 0.8841519263452385,
+       "classement": 1.0468336517080166,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 11
+      "gap": 5
      },
      "derby": {
       "est": false,
@@ -34443,18 +34443,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8347550568353603,
-      "cote": 1.1979562050107246,
-      "coteRouge": 6.051622402772488,
+      "pNo": 0.8395797044643298,
+      "cote": 1.191072145601735,
+      "coteRouge": 6.233625219682041,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.0356296512925118,
-       "classement": 0.7642784181015942,
+       "classement": 0.7419638226462125,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 16
+      "gap": 17
      },
      "derby": {
       "est": false,
@@ -34484,18 +34484,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7966690928261813,
-      "cote": 1.2552263028712498,
-      "coteRouge": 4.918091469218418,
+      "pNo": 0.8022172879440115,
+      "cote": 1.24654506332428,
+      "coteRouge": 5.056053633832866,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9303655429328787,
-       "classement": 1.0468336517080166,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -34566,18 +34566,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8078971514749425,
-      "cote": 1.2377813168103684,
-      "coteRouge": 5.205544882222617,
+      "pNo": 0.8024689989980319,
+      "cote": 1.246154058597412,
+      "coteRouge": 5.062496493854332,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.929181499651231,
-       "classement": 0.9902871523850751,
+       "classement": 1.0182691927366034,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 6
      },
      "derby": {
       "est": false,
@@ -40236,7 +40236,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:29.491Z"
+      "maj": "2026-10-31T05:58:15.839Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40302,7 +40302,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:30.183Z"
+      "maj": "2026-10-31T05:58:16.261Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40368,7 +40368,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:30.904Z"
+      "maj": "2026-10-31T05:58:16.692Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40434,7 +40434,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:31.617Z"
+      "maj": "2026-10-31T05:58:17.158Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40500,7 +40500,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:32.331Z"
+      "maj": "2026-10-31T05:58:17.613Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40566,7 +40566,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:32.879Z"
+      "maj": "2026-10-31T05:58:18.066Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40632,7 +40632,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:33.488Z"
+      "maj": "2026-10-31T05:58:18.506Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40698,7 +40698,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:34.226Z"
+      "maj": "2026-10-31T05:58:18.969Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40764,7 +40764,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:34.773Z"
+      "maj": "2026-10-31T05:58:19.407Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40830,7 +40830,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-10-31T05:42:35.313Z"
+      "maj": "2026-10-31T05:58:19.870Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
