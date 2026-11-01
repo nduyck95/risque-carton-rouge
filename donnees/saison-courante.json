@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-01T19:19:12.149Z",
+ "misAJour": "2026-11-01T20:08:50.392Z",
  "ligues": [
   {
    "il": 0,
@@ -5354,8 +5354,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-01T20:08:50.271Z"
      },
      "fige": true,
      "majArbitre": null
@@ -5410,7 +5410,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T19:19:06.495Z"
+      "maj": "2026-11-01T20:08:46.223Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23527,7 +23527,7 @@
      "away": "Valencia",
      "homeCourt": "Elche",
      "awayCourt": "Valencia",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Elche",
      "awayEq": "Valence",
@@ -23582,8 +23582,13 @@
       "edgeNon": -0.06171373163925942,
       "edgeOui": -0.16033511099070952
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -23702,7 +23707,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T19:19:08.821Z"
+      "maj": "2026-11-01T20:08:47.703Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40874,7 +40879,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T19:19:11.310Z"
+      "maj": "2026-11-01T20:08:49.477Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40940,7 +40945,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T19:19:11.828Z"
+      "maj": "2026-11-01T20:08:50.050Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
