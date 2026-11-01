@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-01T21:12:07.995Z",
+ "misAJour": "2026-11-01T22:11:29.828Z",
  "ligues": [
   {
    "il": 0,
@@ -5410,7 +5410,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T21:12:04.232Z"
+      "maj": "2026-11-01T22:11:26.721Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -23598,7 +23598,7 @@
      "away": "Real Sociedad",
      "homeCourt": "Athletic",
      "awayCourt": "Real Sociedad",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Athletic Bilbao",
      "awayEq": "Real Sociedad",
@@ -23653,8 +23653,13 @@
       "edgeNon": -0.0038191039030044394,
       "edgeOui": -0.28253474628336117
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -23707,7 +23712,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T21:12:05.425Z"
+      "maj": "2026-11-01T22:11:28.079Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40770,7 +40775,7 @@
      "away": "Napoli",
      "homeCourt": "Juventus",
      "awayCourt": "Napoli",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Juventus",
      "awayEq": "Naples",
@@ -40825,8 +40830,13 @@
       "edgeNon": -0.024656859988397284,
       "edgeOui": -0.32115154215309905
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": true,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -40868,18 +40878,18 @@
       "source": "Unibet",
       "coteNon": 1.14,
       "sourceNon": "Unibet",
-      "coteOui": 4.6,
+      "coteOui": 4.7,
       "sourceOui": "Unibet",
-      "marge": 0.09458428680396658,
+      "marge": 0.08995893990294901,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.14,
-        "coteOui": 4.6,
+        "coteOui": 4.7,
         "lu": null
        }
       ],
-      "maj": "2026-11-01T21:12:06.749Z"
+      "maj": "2026-11-01T22:11:29.219Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40889,7 +40899,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.06884145581890289,
-      "edgeOui": -0.15730640634477844
+      "edgeOui": -0.13898698039575175
      },
      "resultat": null,
      "fige": false,
@@ -40945,7 +40955,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-01T21:12:07.315Z"
+      "maj": "2026-11-01T22:11:29.707Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
