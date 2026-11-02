@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-02T22:43:50.500Z",
+ "misAJour": "2026-11-02T23:39:27.158Z",
  "ligues": [
   {
    "il": 0,
@@ -5425,8 +5425,8 @@
      "resultat": {
       "termine": true,
       "aRouge": true,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-02T23:39:26.558Z"
      },
      "fige": true,
      "majArbitre": null
@@ -23732,8 +23732,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-02T23:39:26.797Z"
      },
      "fige": true,
      "majArbitre": null
@@ -40985,8 +40985,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-02T23:39:27.038Z"
      },
      "fige": true,
      "majArbitre": null
