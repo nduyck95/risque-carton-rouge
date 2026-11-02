@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-02T15:29:58.655Z",
+ "misAJour": "2026-11-02T16:37:31.941Z",
  "ligues": [
   {
    "il": 0,
@@ -5397,29 +5397,29 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.15,
+      "coteNon": 1.14,
       "sourceNon": "Unibet",
       "coteOui": 4.6,
       "sourceOui": "Unibet",
-      "marge": 0.0869565217391306,
+      "marge": 0.09458428680396658,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.15,
+        "coteNon": 1.14,
         "coteOui": 4.6,
         "lu": null
        }
       ],
-      "maj": "2026-11-02T15:29:54.634Z"
+      "maj": "2026-11-02T16:37:29.481Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.15,
+      "cote": 1.14,
       "coteEquitable": 1.1191725638747088,
-      "edge": 0.02754484618400843,
-      "interessant": true,
+      "edge": 0.018609673608495303,
+      "interessant": false,
       "source": "Unibet",
-      "edgeNon": 0.02754484618400843,
+      "edgeNon": 0.018609673608495303,
       "edgeOui": -0.510179384736034
      },
      "resultat": null,
@@ -23712,7 +23712,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-02T15:29:56.380Z"
+      "maj": "2026-11-02T16:37:30.411Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40878,18 +40878,18 @@
       "source": "Unibet",
       "coteNon": 1.13,
       "sourceNon": "Unibet",
-      "coteOui": 4.8,
+      "coteOui": 4.9,
       "sourceOui": "Unibet",
-      "marge": 0.09328908554572268,
+      "marge": 0.08903738486545065,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.13,
-        "coteOui": 4.8,
+        "coteOui": 4.9,
         "lu": null
        }
       ],
-      "maj": "2026-11-02T15:29:58.045Z"
+      "maj": "2026-11-02T16:37:31.301Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -40899,7 +40899,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.07700951322400018,
-      "edgeOui": -0.12066755444672528
+      "edgeOui": -0.10234812849769859
      },
      "resultat": null,
      "fige": false,
@@ -40955,7 +40955,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-02T15:29:58.534Z"
+      "maj": "2026-11-02T16:37:31.821Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
