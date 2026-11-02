@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-02T20:46:18.200Z",
+ "misAJour": "2026-11-02T21:42:42.442Z",
  "ligues": [
   {
    "il": 0,
@@ -40904,8 +40904,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-02T21:42:42.323Z"
      },
      "fige": true,
      "majArbitre": null
@@ -40917,7 +40917,7 @@
      "away": "Parma",
      "homeCourt": "Atalanta",
      "awayCourt": "Parma",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Atalanta",
      "awayEq": "Parme",
@@ -40927,18 +40927,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8581849382347325,
-      "cote": 1.1652500008412847,
-      "coteRouge": 7.051437185531122,
+      "pNo": 0.8462337389903517,
+      "cote": 1.1817066064904338,
+      "coteRouge": 6.5033772261475065,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.849338886306225,
-       "classement": 1.0401479361522523,
+       "classement": 1.1278044591890148,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 5
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -40965,15 +40965,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.12,
-      "coteEquitable": 1.1652500008412847,
-      "edge": -0.038832869177099494,
+      "coteEquitable": 1.1817066064904338,
+      "edge": -0.052218212330806035,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.038832869177099494,
-      "edgeOui": -0.2909246911736626
+      "edgeNon": -0.052218212330806035,
+      "edgeOui": -0.2311686949517585
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
