@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-05T06:01:48.452Z",
+ "misAJour": "2026-11-05T06:19:50.358Z",
  "ligues": [
   {
    "il": 0,
@@ -8056,47 +8056,6 @@
      "majArbitre": null
     },
     {
-     "id": "401879198",
-     "date": "2026-12-19T15:00Z",
-     "home": "Nottingham Forest",
-     "away": "Everton",
-     "homeCourt": "Nottm Forest",
-     "awayCourt": "Everton",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": "Nottingham Forest",
-     "awayEq": "Everton",
-     "homePromu": false,
-     "awayPromu": false,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.8930585414914135,
-      "cote": 1.11974742252618,
-      "coteRouge": 9.350910432175455,
-      "pBase": 0.8771929824561403,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 0.886934083886485,
-       "classement": 0.9818193201780877,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 12
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
      "id": "401879200",
      "date": "2026-12-19T17:30Z",
      "home": "Liverpool",
@@ -8166,6 +8125,47 @@
       },
       "classementApplique": true,
       "gap": 11
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
+     "id": "401879198",
+     "date": "2026-12-20T14:00Z",
+     "home": "Nottingham Forest",
+     "away": "Everton",
+     "homeCourt": "Nottm Forest",
+     "awayCourt": "Everton",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": "Nottingham Forest",
+     "awayEq": "Everton",
+     "homePromu": false,
+     "awayPromu": false,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.8930585414914135,
+      "cote": 1.11974742252618,
+      "coteRouge": 9.350910432175455,
+      "pBase": 0.8771929824561403,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 0.886934083886485,
+       "classement": 0.9818193201780877,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 12
      },
      "derby": {
       "est": false,
