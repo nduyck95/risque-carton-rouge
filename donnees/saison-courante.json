@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-08T17:38:25.836Z",
+ "misAJour": "2026-11-08T18:45:05.001Z",
  "ligues": [
   {
    "il": 0,
@@ -6077,7 +6077,7 @@
      "away": "Aston Villa",
      "homeCourt": "Man Utd",
      "awayCourt": "Aston Villa",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Manchester United",
      "awayEq": "Aston Villa",
@@ -6087,18 +6087,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.8921598089369338,
-      "cote": 1.1208754193842971,
-      "coteRouge": 9.272980603448564,
+      "pNo": 0.8925330890820038,
+      "cote": 1.1204066406417816,
+      "coteRouge": 9.305189769184496,
       "pBase": 0.8771929824561403,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.8790022568439758,
-       "classement": 0.999004568245194,
+       "classement": 0.9955465943072397,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 7
+      "gap": 8
      },
      "derby": {
       "est": false,
@@ -6125,15 +6125,20 @@
      "valueBet": {
       "mise": "Pas de rouge",
       "cote": 1.16,
-      "coteEquitable": 1.1208754193842971,
-      "edge": 0.034905378366843154,
+      "coteEquitable": 1.1204066406417816,
+      "edge": 0.0353383833351244,
       "interessant": true,
       "source": "Unibet",
-      "edgeNon": 0.034905378366843154,
-      "edgeOui": -0.5362871784288155
+      "edgeNon": 0.0353383833351244,
+      "edgeOui": -0.5378922830526163
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -24524,8 +24529,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T18:45:04.880Z"
      },
      "fige": true,
      "majArbitre": null
@@ -24712,7 +24717,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T17:38:22.871Z"
+      "maj": "2026-11-08T18:45:03.739Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -42244,18 +42249,18 @@
       "source": "Unibet",
       "coteNon": 1.16,
       "sourceNon": "Unibet",
-      "coteOui": 4.4,
+      "coteOui": 4.3,
       "sourceOui": "Unibet",
-      "marge": 0.08934169278996862,
+      "marge": 0.09462710505212524,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.16,
-        "coteOui": 4.4,
+        "coteOui": 4.3,
         "lu": null
        }
       ],
-      "maj": "2026-11-08T17:38:24.458Z"
+      "maj": "2026-11-08T18:45:04.693Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -42265,7 +42270,7 @@
       "interessant": false,
       "source": "Unibet",
       "edgeNon": -0.007517136391628987,
-      "edgeOui": -0.36459017230761437
+      "edgeOui": -0.37903130475516866
      },
      "resultat": null,
      "fige": false,
