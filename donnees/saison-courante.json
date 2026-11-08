@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-08T21:38:49.941Z",
+ "misAJour": "2026-11-08T22:40:18.663Z",
  "ligues": [
   {
    "il": 0,
@@ -24684,7 +24684,7 @@
      "away": "Barcelona",
      "homeCourt": "Atlético",
      "awayCourt": "Barcelona",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Atlético Madrid",
      "awayEq": "Barcelona",
@@ -24739,8 +24739,13 @@
       "edgeNon": -0.05097299969994218,
       "edgeOui": -0.1804153728431569
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -42232,7 +42237,7 @@
      "away": "Juventus",
      "homeCourt": "Fiorentina",
      "awayCourt": "Juventus",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Fiorentina",
      "awayEq": "Juventus",
@@ -42287,8 +42292,13 @@
       "edgeNon": -0.007517136391628987,
       "edgeOui": -0.37903130475516866
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
