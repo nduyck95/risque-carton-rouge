@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-08T16:40:49.978Z",
+ "misAJour": "2026-11-08T17:38:25.836Z",
  "ligues": [
   {
    "il": 0,
@@ -5851,8 +5851,8 @@
      "resultat": {
       "termine": true,
       "aRouge": true,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T17:38:24.671Z"
      },
      "fige": true,
      "majArbitre": null
@@ -5922,8 +5922,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T17:38:24.887Z"
      },
      "fige": true,
      "majArbitre": null
@@ -5993,8 +5993,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T17:38:25.090Z"
      },
      "fige": true,
      "majArbitre": null
@@ -6064,8 +6064,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T17:38:25.314Z"
      },
      "fige": true,
      "majArbitre": null
@@ -24466,7 +24466,7 @@
      "away": "Rayo Vallecano",
      "homeCourt": "Real Sociedad",
      "awayCourt": "Rayo",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Real Sociedad",
      "awayEq": "Rayo Vallecano",
@@ -24521,8 +24521,13 @@
       "edgeNon": -0.021262858730260903,
       "edgeOui": -0.27481044838014135
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": false,
+      "confirmeLe": null
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -24707,7 +24712,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T16:40:47.842Z"
+      "maj": "2026-11-08T17:38:22.871Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -42057,8 +42062,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T17:38:25.510Z"
      },
      "fige": true,
      "majArbitre": null
@@ -42128,8 +42133,8 @@
      "resultat": {
       "termine": true,
       "aRouge": false,
-      "confirme": false,
-      "confirmeLe": null
+      "confirme": true,
+      "confirmeLe": "2026-11-08T17:38:25.716Z"
      },
      "fige": true,
      "majArbitre": null
@@ -42250,7 +42255,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T16:40:49.658Z"
+      "maj": "2026-11-08T17:38:24.458Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
