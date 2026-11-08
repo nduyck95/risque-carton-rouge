@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-08T06:58:23.885Z",
+ "misAJour": "2026-11-08T08:02:11.139Z",
  "ligues": [
   {
    "il": 0,
@@ -5836,7 +5836,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:12.755Z"
+      "maj": "2026-11-08T08:02:04.418Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5902,7 +5902,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:13.493Z"
+      "maj": "2026-11-08T08:02:04.841Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -5968,7 +5968,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:14.062Z"
+      "maj": "2026-11-08T08:02:05.297Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -6034,7 +6034,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:14.584Z"
+      "maj": "2026-11-08T08:02:05.715Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -6100,7 +6100,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:15.071Z"
+      "maj": "2026-11-08T08:02:06.177Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -24418,7 +24418,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:16.522Z"
+      "maj": "2026-11-08T08:02:06.887Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -24484,7 +24484,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:17.374Z"
+      "maj": "2026-11-08T08:02:07.309Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -24550,7 +24550,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:18.712Z"
+      "maj": "2026-11-08T08:02:07.727Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -24616,7 +24616,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:19.217Z"
+      "maj": "2026-11-08T08:02:08.136Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -24682,7 +24682,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:19.994Z"
+      "maj": "2026-11-08T08:02:08.553Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -41933,30 +41933,30 @@
      },
      "cotes": {
       "source": "Unibet",
-      "coteNon": 1.14,
+      "coteNon": 1.13,
       "sourceNon": "Unibet",
-      "coteOui": 4.7,
+      "coteOui": 4.9,
       "sourceOui": "Unibet",
-      "marge": 0.08995893990294901,
+      "marge": 0.08903738486545065,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.14,
-        "coteOui": 4.7,
+        "coteNon": 1.13,
+        "coteOui": 4.9,
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:21.313Z"
+      "maj": "2026-11-08T08:02:09.246Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.14,
+      "cote": 1.13,
       "coteEquitable": 1.1619107190554523,
-      "edge": -0.01885748938891285,
+      "edge": -0.027464002639887353,
       "interessant": false,
       "source": "Unibet",
-      "edgeNon": -0.01885748938891285,
-      "edgeOui": -0.345061227957991
+      "edgeNon": -0.027464002639887353,
+      "edgeOui": -0.31719149297747995
      },
      "resultat": null,
      "fige": false,
@@ -42012,7 +42012,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:21.958Z"
+      "maj": "2026-11-08T08:02:09.659Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -42078,7 +42078,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:22.607Z"
+      "maj": "2026-11-08T08:02:10.184Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -42144,7 +42144,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:23.174Z"
+      "maj": "2026-11-08T08:02:10.595Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -42210,7 +42210,7 @@
         "lu": null
        }
       ],
-      "maj": "2026-11-08T06:58:23.764Z"
+      "maj": "2026-11-08T08:02:11.018Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
