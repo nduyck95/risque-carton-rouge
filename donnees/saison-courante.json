@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-15T12:51:49.566Z",
+ "misAJour": "2026-11-16T13:47:59.606Z",
  "ligues": [
   {
    "il": 0,
@@ -25652,7 +25652,7 @@
     },
     {
      "id": "401882786",
-     "date": "2026-12-06T20:00Z",
+     "date": "2026-12-04T20:00Z",
      "home": "Alavés",
      "away": "Espanyol",
      "homeCourt": "Alavés",
@@ -25692,8 +25692,213 @@
      "majArbitre": null
     },
     {
+     "id": "401882780",
+     "date": "2026-12-05T13:00Z",
+     "home": "Racing Santander",
+     "away": "Deportivo",
+     "homeCourt": "Racing",
+     "awayCourt": "Deportivo",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": null,
+     "awayEq": null,
+     "homePromu": true,
+     "awayPromu": true,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.7631544356165636,
+      "cote": 1.3103507669349854,
+      "coteRouge": 4.222160556830484,
+      "pBase": 0.7912280701754386,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 0.9721979104019743,
+       "classement": 1.1669129693345957,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 1
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
+     "id": "401882779",
+     "date": "2026-12-05T15:15Z",
+     "home": "Rayo Vallecano",
+     "away": "Levante",
+     "homeCourt": "Rayo",
+     "awayCourt": "Levante",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": "Rayo Vallecano",
+     "awayEq": "Levante",
+     "homePromu": false,
+     "awayPromu": false,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.763409744532949,
+      "cote": 1.309912543246086,
+      "coteRouge": 4.226716768304373,
+      "pBase": 0.7912280701754386,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 1.0249040779911909,
+       "classement": 1.1057107357541824,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 3
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
+     "id": "401882777",
+     "date": "2026-12-05T17:30Z",
+     "home": "Villarreal",
+     "away": "Real Sociedad",
+     "homeCourt": "Villarreal",
+     "awayCourt": "Real Sociedad",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": "Villarreal",
+     "awayEq": "Real Sociedad",
+     "homePromu": false,
+     "awayPromu": false,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.7639770923762532,
+      "cote": 1.3089397705494383,
+      "coteRouge": 4.236876878044985,
+      "pBase": 0.7912280701754386,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 1.022446338905132,
+       "classement": 1.1057107357541824,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 3
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
+     "id": "401882783",
+     "date": "2026-12-05T20:00Z",
+     "home": "Barcelona",
+     "away": "Celta Vigo",
+     "homeCourt": "Barcelona",
+     "awayCourt": "Celta Vigo",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": "Barcelona",
+     "awayEq": "Celta Vigo",
+     "homePromu": false,
+     "awayPromu": false,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.8319830503039828,
+      "cote": 1.2019475632762333,
+      "coteRouge": 5.951780471013423,
+      "pBase": 0.7912280701754386,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 0.8845549226569065,
+       "classement": 0.9098214812430289,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 10
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
+     "id": "401882781",
+     "date": "2026-12-06T13:00Z",
+     "home": "Osasuna",
+     "away": "Elche",
+     "homeCourt": "Osasuna",
+     "awayCourt": "Elche",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": "Osasuna",
+     "awayEq": "Elche",
+     "homePromu": false,
+     "awayPromu": false,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.7728875713999002,
+      "cote": 1.2938492440611256,
+      "coteRouge": 4.403105572706471,
+      "pBase": 0.7912280701754386,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 0.9575953922398037,
+       "classement": 1.1360220159079695,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 2
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
      "id": "401882785",
-     "date": "2026-12-06T20:00Z",
+     "date": "2026-12-06T15:15Z",
      "home": "Athletic Club",
      "away": "Real Madrid",
      "homeCourt": "Athletic",
@@ -25720,6 +25925,47 @@
       },
       "classementApplique": true,
       "gap": 5
+     },
+     "derby": {
+      "est": false,
+      "label": null,
+      "mult": 1
+     },
+     "cotes": null,
+     "valueBet": null,
+     "resultat": null,
+     "fige": false,
+     "majArbitre": null
+    },
+    {
+     "id": "401882782",
+     "date": "2026-12-06T17:30Z",
+     "home": "Getafe",
+     "away": "Valencia",
+     "homeCourt": "Getafe",
+     "awayCourt": "Valencia",
+     "statut": "a_venir",
+     "score": null,
+     "homeEq": "Getafe",
+     "awayEq": "Valence",
+     "homePromu": false,
+     "awayPromu": false,
+     "arbitre": null,
+     "arbitreConnu": false,
+     "arbitreActif": true,
+     "prediction": {
+      "pNo": 0.764920358095396,
+      "cote": 1.3073256443192827,
+      "coteRouge": 4.253877502526582,
+      "pBase": 0.7912280701754386,
+      "facteurs": {
+       "arbitre": 1,
+       "equipes": 1.0464978463009598,
+       "classement": 1.0759809340376505,
+       "derby": 1
+      },
+      "classementApplique": true,
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -25774,213 +26020,8 @@
      "majArbitre": null
     },
     {
-     "id": "401882783",
-     "date": "2026-12-06T20:00Z",
-     "home": "Barcelona",
-     "away": "Celta Vigo",
-     "homeCourt": "Barcelona",
-     "awayCourt": "Celta Vigo",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": "Barcelona",
-     "awayEq": "Celta Vigo",
-     "homePromu": false,
-     "awayPromu": false,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.8319830503039828,
-      "cote": 1.2019475632762333,
-      "coteRouge": 5.951780471013423,
-      "pBase": 0.7912280701754386,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 0.8845549226569065,
-       "classement": 0.9098214812430289,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 10
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
-     "id": "401882782",
-     "date": "2026-12-06T20:00Z",
-     "home": "Getafe",
-     "away": "Valencia",
-     "homeCourt": "Getafe",
-     "awayCourt": "Valencia",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": "Getafe",
-     "awayEq": "Valence",
-     "homePromu": false,
-     "awayPromu": false,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.764920358095396,
-      "cote": 1.3073256443192827,
-      "coteRouge": 4.253877502526582,
-      "pBase": 0.7912280701754386,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 1.0464978463009598,
-       "classement": 1.0759809340376505,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 4
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
-     "id": "401882781",
-     "date": "2026-12-06T20:00Z",
-     "home": "Osasuna",
-     "away": "Elche",
-     "homeCourt": "Osasuna",
-     "awayCourt": "Elche",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": "Osasuna",
-     "awayEq": "Elche",
-     "homePromu": false,
-     "awayPromu": false,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.7728875713999002,
-      "cote": 1.2938492440611256,
-      "coteRouge": 4.403105572706471,
-      "pBase": 0.7912280701754386,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 0.9575953922398037,
-       "classement": 1.1360220159079695,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 2
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
-     "id": "401882780",
-     "date": "2026-12-06T20:00Z",
-     "home": "Racing Santander",
-     "away": "Deportivo",
-     "homeCourt": "Racing",
-     "awayCourt": "Deportivo",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": null,
-     "awayEq": null,
-     "homePromu": true,
-     "awayPromu": true,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.7631544356165636,
-      "cote": 1.3103507669349854,
-      "coteRouge": 4.222160556830484,
-      "pBase": 0.7912280701754386,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 0.9721979104019743,
-       "classement": 1.1669129693345957,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 1
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
-     "id": "401882779",
-     "date": "2026-12-06T20:00Z",
-     "home": "Rayo Vallecano",
-     "away": "Levante",
-     "homeCourt": "Rayo",
-     "awayCourt": "Levante",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": "Rayo Vallecano",
-     "awayEq": "Levante",
-     "homePromu": false,
-     "awayPromu": false,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.763409744532949,
-      "cote": 1.309912543246086,
-      "coteRouge": 4.226716768304373,
-      "pBase": 0.7912280701754386,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 1.0249040779911909,
-       "classement": 1.1057107357541824,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 3
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
      "id": "401882778",
-     "date": "2026-12-06T20:00Z",
+     "date": "2026-12-07T20:00Z",
      "home": "Sevilla",
      "away": "Málaga",
      "homeCourt": "Sevilla",
@@ -26007,47 +26048,6 @@
       },
       "classementApplique": true,
       "gap": 14
-     },
-     "derby": {
-      "est": false,
-      "label": null,
-      "mult": 1
-     },
-     "cotes": null,
-     "valueBet": null,
-     "resultat": null,
-     "fige": false,
-     "majArbitre": null
-    },
-    {
-     "id": "401882777",
-     "date": "2026-12-06T20:00Z",
-     "home": "Villarreal",
-     "away": "Real Sociedad",
-     "homeCourt": "Villarreal",
-     "awayCourt": "Real Sociedad",
-     "statut": "a_venir",
-     "score": null,
-     "homeEq": "Villarreal",
-     "awayEq": "Real Sociedad",
-     "homePromu": false,
-     "awayPromu": false,
-     "arbitre": null,
-     "arbitreConnu": false,
-     "arbitreActif": true,
-     "prediction": {
-      "pNo": 0.7639770923762532,
-      "cote": 1.3089397705494383,
-      "coteRouge": 4.236876878044985,
-      "pBase": 0.7912280701754386,
-      "facteurs": {
-       "arbitre": 1,
-       "equipes": 1.022446338905132,
-       "classement": 1.1057107357541824,
-       "derby": 1
-      },
-      "classementApplique": true,
-      "gap": 3
      },
      "derby": {
       "est": false,
