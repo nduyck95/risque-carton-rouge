@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T14:10:04.425Z",
+ "maj": "2026-11-19T14:40:04.655Z",
  "ligues": {
   "0": [
    {
@@ -8,7 +8,7 @@
     "away": "Sunderland",
     "start": "2026-11-21T15:00:00.000Z",
     "coteNon": 1.16,
-    "coteOui": 3.85
+    "coteOui": 3.75
    },
    {
     "id": 72221394,
@@ -39,8 +39,8 @@
     "home": "Hull City",
     "away": "Brighton",
     "start": "2026-11-22T14:00:00.000Z",
-    "coteNon": 1.12,
-    "coteOui": 4.2
+    "coteNon": 1.11,
+    "coteOui": 4.4
    },
    {
     "id": 72221406,
