@@ -1,7 +1,32 @@
 {
- "maj": "2026-11-19T08:10:04.923Z",
+ "maj": "2026-11-19T08:40:04.100Z",
  "ligues": {
-  "0": [],
+  "0": [
+   {
+    "id": 72221392,
+    "home": "Aston Villa",
+    "away": "Sunderland",
+    "start": "2026-11-21T15:00:00.000Z",
+    "coteNon": 1.15,
+    "coteOui": 3.95
+   },
+   {
+    "id": 72221394,
+    "home": "Bournemouth",
+    "away": "Nottingham Forest",
+    "start": "2026-11-21T15:00:00.000Z",
+    "coteNon": 1.03,
+    "coteOui": 6.5
+   },
+   {
+    "id": 72221406,
+    "home": "Manchester City",
+    "away": "Fulham",
+    "start": "2026-11-21T12:30:00.000Z",
+    "coteNon": 1.03,
+    "coteOui": 6.5
+   }
+  ],
   "1": [],
   "2": []
  }
