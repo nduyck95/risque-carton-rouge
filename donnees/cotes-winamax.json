@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T08:40:04.100Z",
+ "maj": "2026-11-19T09:10:04.368Z",
  "ligues": {
   "0": [
    {
@@ -19,12 +19,44 @@
     "coteOui": 6.5
    },
    {
+    "id": 72221398,
+    "home": "Chelsea",
+    "away": "Leeds",
+    "start": "2026-11-21T15:00:00.000Z",
+    "coteNon": 1.08,
+    "coteOui": 5
+   },
+   {
+    "id": 72221400,
+    "home": "Coventry City",
+    "away": "Crystal Palace",
+    "start": "2026-11-21T15:00:00.000Z",
+    "coteNon": 1.02,
+    "coteOui": 6.75
+   },
+   {
     "id": 72221406,
     "home": "Manchester City",
     "away": "Fulham",
     "start": "2026-11-21T12:30:00.000Z",
     "coteNon": 1.03,
     "coteOui": 6.5
+   },
+   {
+    "id": 72221408,
+    "home": "Newcastle",
+    "away": "Arsenal",
+    "start": "2026-11-21T17:30:00.000Z",
+    "coteNon": 1.15,
+    "coteOui": 3.9
+   },
+   {
+    "id": 72221410,
+    "home": "Tottenham",
+    "away": "Ipswich",
+    "start": "2026-11-21T15:00:00.000Z",
+    "coteNon": 1.02,
+    "coteOui": 7
    }
   ],
   "1": [],
