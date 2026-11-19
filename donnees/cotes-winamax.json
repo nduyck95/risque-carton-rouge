@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T11:10:06.541Z",
+ "maj": "2026-11-19T11:40:05.427Z",
  "ligues": {
   "0": [
    {
@@ -31,7 +31,7 @@
     "home": "Coventry City",
     "away": "Crystal Palace",
     "start": "2026-11-21T15:00:00.000Z",
-    "coteNon": 1.05,
+    "coteNon": 1.04,
     "coteOui": 6
    },
    {
