@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T09:40:04.091Z",
+ "maj": "2026-11-19T10:10:03.974Z",
  "ligues": {
   "0": [
    {
@@ -7,8 +7,8 @@
     "home": "Aston Villa",
     "away": "Sunderland",
     "start": "2026-11-21T15:00:00.000Z",
-    "coteNon": 1.15,
-    "coteOui": 3.95
+    "coteNon": 1.16,
+    "coteOui": 3.85
    },
    {
     "id": 72221394,
@@ -47,8 +47,8 @@
     "home": "Newcastle",
     "away": "Arsenal",
     "start": "2026-11-21T17:30:00.000Z",
-    "coteNon": 1.15,
-    "coteOui": 3.9
+    "coteNon": 1.16,
+    "coteOui": 3.85
    },
    {
     "id": 72221410,
