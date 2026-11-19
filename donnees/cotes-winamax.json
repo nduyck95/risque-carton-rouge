@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T21:10:04.623Z",
+ "maj": "2026-11-19T21:40:04.572Z",
  "ligues": {
   "0": [
    {
@@ -23,8 +23,8 @@
     "home": "Chelsea",
     "away": "Leeds",
     "start": "2026-11-21T15:00:00.000Z",
-    "coteNon": 1.07,
-    "coteOui": 5.4
+    "coteNon": 1.06,
+    "coteOui": 5.5
    },
    {
     "id": 72221400,
@@ -86,6 +86,14 @@
    }
   ],
   "2": [
+   {
+    "id": 71945406,
+    "home": "Atalanta Bérgamo",
+    "away": "Inter Milán",
+    "start": "2026-11-22T19:45:00.000Z",
+    "coteNon": 1.16,
+    "coteOui": 3.85
+   },
    {
     "id": 71945408,
     "home": "Bolonia",
