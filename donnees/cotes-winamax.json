@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T16:10:08.191Z",
+ "maj": "2026-11-20T16:40:04.444Z",
  "ligues": {
   "0": [
    {
@@ -90,7 +90,7 @@
     "away": "Espanyol",
     "start": "2026-11-20T20:00:00.000Z",
     "coteNon": 1.16,
-    "coteOui": 4.2
+    "coteOui": 4.1
    },
    {
     "id": 72478720,
@@ -113,8 +113,8 @@
     "home": "Sevilla FC",
     "away": "Real Betis",
     "start": "2026-11-21T17:30:00.000Z",
-    "coteNon": 1.28,
-    "coteOui": 2.9
+    "coteNon": 1.29,
+    "coteOui": 2.85
    }
   ],
   "2": [
@@ -155,8 +155,8 @@
     "home": "Lazio",
     "away": "Lecce",
     "start": "2026-11-21T14:00:00.000Z",
-    "coteNon": 1.16,
-    "coteOui": 4.1
+    "coteNon": 1.14,
+    "coteOui": 4.4
    },
    {
     "id": 71945416,
