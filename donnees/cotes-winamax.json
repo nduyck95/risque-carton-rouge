@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T22:10:04.288Z",
+ "maj": "2026-11-20T22:40:04.197Z",
  "ligues": {
   "0": [
    {
@@ -98,7 +98,7 @@
     "away": "Atlético Madrid",
     "start": "2026-11-22T20:00:00.000Z",
     "coteNon": 1.21,
-    "coteOui": 3.35
+    "coteOui": 3.4
    },
    {
     "id": 72478716,
@@ -203,8 +203,8 @@
     "home": "Nápoles",
     "away": "Torino",
     "start": "2026-11-21T19:45:00.000Z",
-    "coteNon": 1.13,
-    "coteOui": 4.6
+    "coteNon": 1.15,
+    "coteOui": 4.3
    },
    {
     "id": 71945422,
