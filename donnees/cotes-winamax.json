@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-20T17:10:09.479Z",
+ "maj": "2026-11-20T17:40:04.142Z",
  "ligues": {
   "0": [
    {
@@ -81,8 +81,8 @@
     "home": "Alavés",
     "away": "Deportivo de A Coruña",
     "start": "2026-11-21T13:00:00.000Z",
-    "coteNon": 1.13,
-    "coteOui": 4.5
+    "coteNon": 1.11,
+    "coteOui": 4.8
    },
    {
     "id": 72478708,
@@ -147,8 +147,8 @@
     "home": "Juventus Turín",
     "away": "Venecia",
     "start": "2026-11-22T11:30:00.000Z",
-    "coteNon": 1.08,
-    "coteOui": 5
+    "coteNon": 1.09,
+    "coteOui": 4.7
    },
    {
     "id": 71945414,
