@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-19T21:40:04.572Z",
+ "maj": "2026-11-20T08:40:05.050Z",
  "ligues": {
   "0": [
    {
@@ -8,7 +8,7 @@
     "away": "Sunderland",
     "start": "2026-11-21T15:00:00.000Z",
     "coteNon": 1.16,
-    "coteOui": 3.75
+    "coteOui": 3.8
    },
    {
     "id": 72221394,
@@ -81,8 +81,8 @@
     "home": "Athletic Bilbao",
     "away": "Espanyol",
     "start": "2026-11-20T20:00:00.000Z",
-    "coteNon": 1.14,
-    "coteOui": 4
+    "coteNon": 1.16,
+    "coteOui": 4.1
    }
   ],
   "2": [
@@ -139,8 +139,8 @@
     "home": "Nápoles",
     "away": "Torino",
     "start": "2026-11-21T19:45:00.000Z",
-    "coteNon": 1.19,
-    "coteOui": 3.5
+    "coteNon": 1.15,
+    "coteOui": 3.9
    },
    {
     "id": 71945422,
