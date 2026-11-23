@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-23T03:03:39.009Z",
+ "misAJour": "2026-11-23T12:20:47.496Z",
  "ligues": [
   {
    "il": 0,
@@ -6828,31 +6828,37 @@
       "mult": 1
      },
      "cotes": {
-      "source": "Unibet",
-      "coteNon": 1.16,
+      "source": "Unibet + Winamax",
+      "coteNon": 1.17,
       "sourceNon": "Unibet",
-      "coteOui": 4.3,
-      "sourceOui": "Unibet",
-      "marge": 0.09462710505212524,
+      "coteOui": 6,
+      "sourceOui": "Winamax",
+      "marge": 0.021367521367521514,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.16,
-        "coteOui": 4.3,
+        "coteNon": 1.17,
+        "coteOui": 4.25,
         "lu": null
+       },
+       {
+        "source": "Winamax",
+        "coteNon": 1.06,
+        "coteOui": 6,
+        "lu": "2026-11-23T11:40:03.380Z"
        }
       ],
-      "maj": "2026-11-23T03:03:36.988Z"
+      "maj": "2026-11-23T12:20:45.078Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
-      "cote": 1.16,
+      "cote": 1.17,
       "coteEquitable": 1.1235957955452118,
-      "edge": 0.032399733604488334,
+      "edge": 0.04129973130797526,
       "interessant": true,
       "source": "Unibet",
-      "edgeNon": 0.032399733604488334,
-      "edgeOui": -0.5269990124993968
+      "edgeNon": 0.04129973130797526,
+      "edgeOui": -0.33999862209218157
      },
      "resultat": null,
      "fige": false,
@@ -25742,31 +25748,37 @@
       "mult": 1
      },
      "cotes": {
-      "source": "Unibet",
-      "coteNon": 1.19,
+      "source": "Unibet + Winamax",
+      "coteNon": 1.18,
       "sourceNon": "Unibet",
-      "coteOui": 3.95,
-      "sourceOui": "Unibet",
-      "marge": 0.09350069141580675,
+      "coteOui": 5.6,
+      "sourceOui": "Winamax",
+      "marge": 0.026029055690072633,
       "parSite": [
        {
         "source": "Unibet",
-        "coteNon": 1.19,
-        "coteOui": 3.95,
+        "coteNon": 1.18,
+        "coteOui": 4.1,
         "lu": null
+       },
+       {
+        "source": "Winamax",
+        "coteNon": 1.08,
+        "coteOui": 5.6,
+        "lu": "2026-11-23T11:40:03.380Z"
        }
       ],
-      "maj": "2026-11-23T03:03:37.765Z"
+      "maj": "2026-11-23T12:20:46.101Z"
      },
      "valueBet": {
       "mise": "Rouge",
-      "cote": 3.95,
+      "cote": 5.6,
       "coteEquitable": 4.291339045766228,
-      "edge": -0.07954138373265751,
-      "interessant": false,
-      "source": "Unibet",
-      "edgeNon": -0.08730272236914882,
-      "edgeOui": -0.07954138373265751
+      "edge": 0.3049539876195233,
+      "interessant": true,
+      "source": "Winamax",
+      "edgeNon": -0.09497244739125676,
+      "edgeOui": 0.3049539876195233
      },
      "resultat": null,
      "fige": false,
@@ -43608,31 +43620,37 @@
       "mult": 1
      },
      "cotes": {
-      "source": "Unibet",
+      "source": "Unibet + Winamax",
       "coteNon": 1.14,
       "sourceNon": "Unibet",
-      "coteOui": 4.6,
-      "sourceOui": "Unibet",
-      "marge": 0.09458428680396658,
+      "coteOui": 5.2,
+      "sourceOui": "Winamax",
+      "marge": 0.0695006747638327,
       "parSite": [
        {
         "source": "Unibet",
         "coteNon": 1.14,
-        "coteOui": 4.6,
+        "coteOui": 4.7,
         "lu": null
+       },
+       {
+        "source": "Winamax",
+        "coteNon": 1.1,
+        "coteOui": 5.2,
+        "lu": "2026-11-23T11:40:03.380Z"
        }
       ],
-      "maj": "2026-11-23T03:03:38.519Z"
+      "maj": "2026-11-23T12:20:47.375Z"
      },
      "valueBet": {
-      "mise": "Pas de rouge",
-      "cote": 1.14,
-      "coteEquitable": 1.241417648106599,
-      "edge": -0.08169502686004226,
+      "mise": "Rouge",
+      "cote": 5.2,
+      "coteEquitable": 5.142199246172946,
+      "edge": 0.01124047339668377,
       "interessant": false,
-      "source": "Unibet",
+      "source": "Winamax",
       "edgeNon": -0.08169502686004226,
-      "edgeOui": -0.1054411196875491
+      "edgeOui": 0.01124047339668377
      },
      "resultat": null,
      "fige": false,
