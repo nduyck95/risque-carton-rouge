@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-23T11:10:03.839Z",
+ "maj": "2026-11-23T11:40:03.380Z",
  "ligues": {
   "0": [
    {
@@ -27,8 +27,8 @@
     "home": "Monza",
     "away": "Fiorentina",
     "start": "2026-11-23T19:45:00.000Z",
-    "coteNon": 1.12,
-    "coteOui": 4.8
+    "coteNon": 1.1,
+    "coteOui": 5.2
    }
   ]
  }
