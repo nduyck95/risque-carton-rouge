@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-23T16:10:57.103Z",
+ "misAJour": "2026-11-24T00:18:10.053Z",
  "ligues": [
   {
    "il": 0,
@@ -6799,7 +6799,7 @@
      "away": "Everton",
      "homeCourt": "Brentford",
      "awayCourt": "Everton",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Brentford",
      "awayEq": "Everton",
@@ -6860,8 +6860,13 @@
       "edgeNon": 0.04129973130797526,
       "edgeOui": -0.33999862209218157
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": true,
+      "confirme": true,
+      "confirmeLe": "2026-11-24T00:18:08.869Z"
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -25719,7 +25724,7 @@
      "away": "Elche",
      "homeCourt": "Levante",
      "awayCourt": "Elche",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Levante",
      "awayEq": "Elche",
@@ -25729,18 +25734,18 @@
      "arbitreConnu": false,
      "arbitreActif": true,
      "prediction": {
-      "pNo": 0.7669725022107994,
-      "cote": 1.3038277084478238,
-      "coteRouge": 4.291339045766228,
+      "pNo": 0.7851312383042112,
+      "cote": 1.2736724145123552,
+      "coteRouge": 4.654003644400389,
       "pBase": 0.7912280701754386,
       "facteurs": {
        "arbitre": 1,
        "equipes": 0.9565256035367196,
-       "classement": 1.1669129693345957,
+       "classement": 1.0759809340376505,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 1
+      "gap": 4
      },
      "derby": {
       "est": false,
@@ -25773,15 +25778,20 @@
      "valueBet": {
       "mise": "Rouge",
       "cote": 5.6,
-      "coteEquitable": 4.291339045766228,
-      "edge": 0.3049539876195233,
+      "coteEquitable": 4.654003644400389,
+      "edge": 0.20326506549641743,
       "interessant": true,
       "source": "Winamax",
-      "edgeNon": -0.09497244739125676,
-      "edgeOui": 0.3049539876195233
+      "edgeNon": -0.07354513880103086,
+      "edgeOui": 0.20326506549641743
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": true,
+      "confirmeLe": "2026-11-24T00:18:09.453Z"
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
@@ -43591,7 +43601,7 @@
      "away": "Fiorentina",
      "homeCourt": "Monza",
      "awayCourt": "Fiorentina",
-     "statut": "a_venir",
+     "statut": "termine",
      "score": null,
      "homeEq": "Monza",
      "awayEq": "Fiorentina",
@@ -43601,18 +43611,18 @@
      "arbitreConnu": false,
      "arbitreActif": false,
      "prediction": {
-      "pNo": 0.8055306781929454,
-      "cote": 1.241417648106599,
-      "coteRouge": 5.142199246172946,
+      "pNo": 0.8002442737998715,
+      "cote": 1.2496184386944882,
+      "coteRouge": 5.006114312828929,
       "pBase": 0.8394736842105263,
       "facteurs": {
        "arbitre": 1,
        "equipes": 1.103364970378403,
-       "classement": 1.0979578532318366,
+       "classement": 1.1278044591890148,
        "derby": 1
       },
       "classementApplique": true,
-      "gap": 3
+      "gap": 2
      },
      "derby": {
       "est": false,
@@ -43645,15 +43655,20 @@
      "valueBet": {
       "mise": "Rouge",
       "cote": 5.2,
-      "coteEquitable": 5.142199246172946,
-      "edge": 0.01124047339668377,
-      "interessant": false,
+      "coteEquitable": 5.006114312828929,
+      "edge": 0.0387297762406682,
+      "interessant": true,
       "source": "Winamax",
-      "edgeNon": -0.07363972007811281,
-      "edgeOui": 0.01124047339668377
+      "edgeNon": -0.0797190851301478,
+      "edgeOui": 0.0387297762406682
      },
-     "resultat": null,
-     "fige": false,
+     "resultat": {
+      "termine": true,
+      "aRouge": false,
+      "confirme": true,
+      "confirmeLe": "2026-11-24T00:18:09.932Z"
+     },
+     "fige": true,
      "majArbitre": null
     },
     {
