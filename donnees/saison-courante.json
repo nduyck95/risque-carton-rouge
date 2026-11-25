@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-25T14:16:18.201Z",
+ "misAJour": "2026-11-25T23:16:35.413Z",
  "ligues": [
   {
    "il": 0,
@@ -6916,10 +6916,10 @@
         "source": "Winamax",
         "coteNon": 1.07,
         "coteOui": 5.3,
-        "lu": null
+        "lu": "2026-11-25T23:10:03.547Z"
        }
       ],
-      "maj": "2026-11-25T14:16:09.103Z"
+      "maj": "2026-11-25T23:16:26.827Z"
      },
      "valueBet": {
       "mise": "Pas de rouge",
@@ -6970,8 +6970,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Winamax",
+      "coteNon": 1.05,
+      "sourceNon": "Winamax",
+      "coteOui": 6,
+      "sourceOui": "Winamax",
+      "marge": 0.11904761904761907,
+      "parSite": [
+       {
+        "source": "Winamax",
+        "coteNon": 1.05,
+        "coteOui": 6,
+        "lu": "2026-11-25T23:10:03.547Z"
+       }
+      ],
+      "maj": "2026-11-25T23:16:27.390Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.05,
+      "coteEquitable": 1.1118823889330827,
+      "edge": -0.05565551676060132,
+      "interessant": false,
+      "source": "Winamax",
+      "edgeNon": -0.05565551676060132,
+      "edgeOui": -0.39625418993942096
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
@@ -7011,8 +7036,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Winamax",
+      "coteNon": 1.05,
+      "sourceNon": "Winamax",
+      "coteOui": 5.7,
+      "sourceOui": "Winamax",
+      "marge": 0.12781954887218028,
+      "parSite": [
+       {
+        "source": "Winamax",
+        "coteNon": 1.05,
+        "coteOui": 5.7,
+        "lu": "2026-11-25T23:10:03.547Z"
+       }
+      ],
+      "maj": "2026-11-25T23:16:27.938Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.05,
+      "coteEquitable": 1.1161253825541204,
+      "edge": -0.05924547867803198,
+      "interessant": false,
+      "source": "Winamax",
+      "edgeNon": -0.05924547867803198,
+      "edgeOui": -0.40695311574782644
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
