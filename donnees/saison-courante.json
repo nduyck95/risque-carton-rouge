@@ -1,6 +1,6 @@
 {
  "saison": "2026-2027",
- "misAJour": "2026-11-25T04:06:28.135Z",
+ "misAJour": "2026-11-25T14:16:18.201Z",
  "ligues": [
   {
    "il": 0,
@@ -6904,8 +6904,33 @@
       "label": null,
       "mult": 1
      },
-     "cotes": null,
-     "valueBet": null,
+     "cotes": {
+      "source": "Winamax",
+      "coteNon": 1.07,
+      "sourceNon": "Winamax",
+      "coteOui": 5.3,
+      "sourceOui": "Winamax",
+      "marge": 0.12325868453535538,
+      "parSite": [
+       {
+        "source": "Winamax",
+        "coteNon": 1.07,
+        "coteOui": 5.3,
+        "lu": null
+       }
+      ],
+      "maj": "2026-11-25T14:16:09.103Z"
+     },
+     "valueBet": {
+      "mise": "Pas de rouge",
+      "cote": 1.07,
+      "coteEquitable": 1.1477017697819727,
+      "edge": -0.06770205625520087,
+      "interessant": false,
+      "source": "Winamax",
+      "edgeNon": -0.06770205625520087,
+      "edgeOui": -0.31792439424993957
+     },
      "resultat": null,
      "fige": false,
      "majArbitre": null
