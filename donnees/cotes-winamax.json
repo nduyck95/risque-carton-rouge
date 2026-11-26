@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T19:40:04.323Z",
+ "maj": "2026-11-26T20:10:03.513Z",
  "ligues": {
   "0": [
    {
@@ -24,7 +24,7 @@
     "away": "Hull City",
     "start": "2026-11-29T14:05:00.000Z",
     "coteNon": 1.05,
-    "coteOui": 5.9
+    "coteOui": 5.7
    },
    {
     "id": 72221418,
@@ -147,8 +147,8 @@
     "home": "Venecia",
     "away": "Bolonia",
     "start": "2026-11-27T19:45:00.000Z",
-    "coteNon": 1.08,
-    "coteOui": 5
+    "coteNon": 1.1,
+    "coteOui": 5.1
    }
   ]
  }
