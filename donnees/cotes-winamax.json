@@ -1,7 +1,23 @@
 {
- "maj": "2026-11-26T14:10:04.297Z",
+ "maj": "2026-11-26T14:40:05.041Z",
  "ligues": {
   "0": [
+   {
+    "id": 72221414,
+    "home": "Brighton",
+    "away": "Newcastle",
+    "start": "2026-11-29T14:05:00.000Z",
+    "coteNon": 1.1,
+    "coteOui": 4.6
+   },
+   {
+    "id": 72221416,
+    "home": "Crystal Palace",
+    "away": "Hull City",
+    "start": "2026-11-29T14:05:00.000Z",
+    "coteNon": 1.04,
+    "coteOui": 6
+   },
    {
     "id": 72221418,
     "home": "Everton",
