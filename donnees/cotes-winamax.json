@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T13:10:04.056Z",
+ "maj": "2026-11-26T13:40:05.031Z",
  "ligues": {
   "0": [
    {
@@ -39,11 +39,20 @@
     "home": "Nottingham Forest",
     "away": "Chelsea",
     "start": "2026-11-27T20:00:00.000Z",
-    "coteNon": 1.07,
-    "coteOui": 5.2
+    "coteNon": 1.08,
+    "coteOui": 5
    }
   ],
-  "1": [],
+  "1": [
+   {
+    "id": 72478736,
+    "home": "Levante",
+    "away": "Racing De Santander",
+    "start": "2026-11-27T20:00:00.000Z",
+    "coteNon": 1.11,
+    "coteOui": 4.4
+   }
+  ],
   "2": []
  }
 }
