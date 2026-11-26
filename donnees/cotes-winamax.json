@@ -1,14 +1,22 @@
 {
- "maj": "2026-11-26T09:10:04.084Z",
+ "maj": "2026-11-26T09:40:05.632Z",
  "ligues": {
   "0": [
+   {
+    "id": 72221422,
+    "home": "Ipswich",
+    "away": "Aston Villa",
+    "start": "2026-11-28T17:30:00.000Z",
+    "coteNon": 1.07,
+    "coteOui": 5.2
+   },
    {
     "id": 72221424,
     "home": "Leeds",
     "away": "Coventry City",
     "start": "2026-11-28T15:00:00.000Z",
     "coteNon": 1.05,
-    "coteOui": 6
+    "coteOui": 5.7
    },
    {
     "id": 72221426,
@@ -16,7 +24,7 @@
     "away": "Brentford",
     "start": "2026-11-28T15:00:00.000Z",
     "coteNon": 1.05,
-    "coteOui": 5.7
+    "coteOui": 5.8
    },
    {
     "id": 72221428,
@@ -24,7 +32,7 @@
     "away": "Chelsea",
     "start": "2026-11-27T20:00:00.000Z",
     "coteNon": 1.07,
-    "coteOui": 5.3
+    "coteOui": 5.2
    }
   ],
   "1": [],
