@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T13:40:05.031Z",
+ "maj": "2026-11-26T14:10:04.297Z",
  "ligues": {
   "0": [
    {
@@ -49,8 +49,8 @@
     "home": "Levante",
     "away": "Racing De Santander",
     "start": "2026-11-27T20:00:00.000Z",
-    "coteNon": 1.11,
-    "coteOui": 4.4
+    "coteNon": 1.12,
+    "coteOui": 4.3
    }
   ],
   "2": []
