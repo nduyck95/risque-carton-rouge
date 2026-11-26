@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T15:40:04.741Z",
+ "maj": "2026-11-26T16:10:04.864Z",
  "ligues": {
   "0": [
    {
@@ -25,6 +25,14 @@
     "start": "2026-11-29T12:00:00.000Z",
     "coteNon": 1.09,
     "coteOui": 4.8
+   },
+   {
+    "id": 72221420,
+    "home": "Fulham",
+    "away": "Bournemouth",
+    "start": "2026-11-29T14:05:00.000Z",
+    "coteNon": 1.12,
+    "coteOui": 4.3
    },
    {
     "id": 72221422,
@@ -69,6 +77,55 @@
     "coteOui": 4.3
    }
   ],
-  "2": []
+  "2": [
+   {
+    "id": 71945430,
+    "home": "Frosinone",
+    "away": "Parma",
+    "start": "2026-11-28T14:00:00.000Z",
+    "coteNon": 1.09,
+    "coteOui": 4.9
+   },
+   {
+    "id": 71945432,
+    "home": "Inter Milán",
+    "away": "Génova",
+    "start": "2026-11-28T19:45:00.000Z",
+    "coteNon": 1.08,
+    "coteOui": 5.1
+   },
+   {
+    "id": 71945438,
+    "home": "Sassuolo",
+    "away": "Nápoles",
+    "start": "2026-11-29T14:00:00.000Z",
+    "coteNon": 1.1,
+    "coteOui": 4.6
+   },
+   {
+    "id": 71945440,
+    "home": "Torino",
+    "away": "Lazio",
+    "start": "2026-11-28T17:00:00.000Z",
+    "coteNon": 1.09,
+    "coteOui": 4.7
+   },
+   {
+    "id": 71945442,
+    "home": "Udinese",
+    "away": "Fiorentina",
+    "start": "2026-11-29T11:30:00.000Z",
+    "coteNon": 1.1,
+    "coteOui": 4.7
+   },
+   {
+    "id": 71945444,
+    "home": "Venecia",
+    "away": "Bolonia",
+    "start": "2026-11-27T19:45:00.000Z",
+    "coteNon": 1.09,
+    "coteOui": 4.8
+   }
+  ]
  }
 }
