@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T13:40:12.938Z",
+ "maj": "2026-11-27T14:10:04.917Z",
  "ligues": {
   "0": [
    {
@@ -107,7 +107,7 @@
     "home": "Frosinone",
     "away": "Parma",
     "start": "2026-11-28T14:00:00.000Z",
-    "coteNon": 1.05,
+    "coteNon": 1.06,
     "coteOui": 6
    },
    {
@@ -147,8 +147,8 @@
     "home": "Udinese",
     "away": "Fiorentina",
     "start": "2026-11-29T11:30:00.000Z",
-    "coteNon": 1.08,
-    "coteOui": 4.9
+    "coteNon": 1.09,
+    "coteOui": 4.8
    },
    {
     "id": 71945444,
