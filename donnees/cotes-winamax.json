@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T08:40:05.172Z",
+ "maj": "2026-11-27T09:10:04.510Z",
  "ligues": {
   "0": [
    {
@@ -90,7 +90,7 @@
     "away": "Racing De Santander",
     "start": "2026-11-27T20:00:00.000Z",
     "coteNon": 1.15,
-    "coteOui": 4.3
+    "coteOui": 4.2
    }
   ],
   "2": [
@@ -99,8 +99,8 @@
     "home": "Como",
     "away": "Juventus Turín",
     "start": "2026-11-29T19:45:00.000Z",
-    "coteNon": 1.11,
-    "coteOui": 4.4
+    "coteNon": 1.1,
+    "coteOui": 4.6
    },
    {
     "id": 71945430,
@@ -115,8 +115,8 @@
     "home": "Inter Milán",
     "away": "Génova",
     "start": "2026-11-28T19:45:00.000Z",
-    "coteNon": 1.08,
-    "coteOui": 5.1
+    "coteNon": 1.07,
+    "coteOui": 5.2
    },
    {
     "id": 71945436,
@@ -124,7 +124,7 @@
     "away": "Monza",
     "start": "2026-11-29T17:00:00.000Z",
     "coteNon": 1.06,
-    "coteOui": 5.6
+    "coteOui": 5.5
    },
    {
     "id": 71945438,
@@ -132,23 +132,23 @@
     "away": "Nápoles",
     "start": "2026-11-29T14:00:00.000Z",
     "coteNon": 1.07,
-    "coteOui": 5.2
+    "coteOui": 5.4
    },
    {
     "id": 71945440,
     "home": "Torino",
     "away": "Lazio",
     "start": "2026-11-28T17:00:00.000Z",
-    "coteNon": 1.08,
-    "coteOui": 5.1
+    "coteNon": 1.07,
+    "coteOui": 5.2
    },
    {
     "id": 71945442,
     "home": "Udinese",
     "away": "Fiorentina",
     "start": "2026-11-29T11:30:00.000Z",
-    "coteNon": 1.1,
-    "coteOui": 4.7
+    "coteNon": 1.08,
+    "coteOui": 4.9
    },
    {
     "id": 71945444,
