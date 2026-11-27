@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T21:10:04.487Z",
+ "maj": "2026-11-27T21:40:03.994Z",
  "ligues": {
   "0": [
    {
@@ -47,8 +47,8 @@
     "home": "Ipswich",
     "away": "Aston Villa",
     "start": "2026-11-28T17:30:00.000Z",
-    "coteNon": 1.07,
-    "coteOui": 5.2
+    "coteNon": 1.1,
+    "coteOui": 5.1
    },
    {
     "id": 72221424,
@@ -81,8 +81,8 @@
     "home": "Real Madrid",
     "away": "Alavés",
     "start": "2026-11-28T20:00:00.000Z",
-    "coteNon": 1.16,
-    "coteOui": 4.1
+    "coteNon": 1.18,
+    "coteOui": 3.95
    }
   ],
   "2": [
