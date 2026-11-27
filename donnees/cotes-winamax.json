@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T10:40:06.516Z",
+ "maj": "2026-11-27T11:10:04.687Z",
  "ligues": {
   "0": [
    {
@@ -23,8 +23,8 @@
     "home": "Crystal Palace",
     "away": "Hull City",
     "start": "2026-11-29T14:05:00.000Z",
-    "coteNon": 1.05,
-    "coteOui": 5.7
+    "coteNon": 1.04,
+    "coteOui": 6
    },
    {
     "id": 72221418,
@@ -123,8 +123,8 @@
     "home": "Roma",
     "away": "Monza",
     "start": "2026-11-29T17:00:00.000Z",
-    "coteNon": 1.05,
-    "coteOui": 5.7
+    "coteNon": 1.06,
+    "coteOui": 5.6
    },
    {
     "id": 71945438,
@@ -155,8 +155,8 @@
     "home": "Venecia",
     "away": "Bolonia",
     "start": "2026-11-27T19:45:00.000Z",
-    "coteNon": 1.09,
-    "coteOui": 5.3
+    "coteNon": 1.1,
+    "coteOui": 5.1
    }
   ]
  }
