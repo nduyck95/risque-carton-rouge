@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T16:40:03.595Z",
+ "maj": "2026-11-27T21:10:04.487Z",
  "ligues": {
   "0": [
    {
@@ -15,8 +15,8 @@
     "home": "Brighton",
     "away": "Newcastle",
     "start": "2026-11-29T14:05:00.000Z",
-    "coteNon": 1.09,
-    "coteOui": 4.9
+    "coteNon": 1.08,
+    "coteOui": 5
    },
    {
     "id": 72221416,
@@ -67,14 +67,6 @@
     "coteOui": 5.9
    },
    {
-    "id": 72221428,
-    "home": "Nottingham Forest",
-    "away": "Chelsea",
-    "start": "2026-11-27T20:00:00.000Z",
-    "coteNon": 1.1,
-    "coteOui": 5.1
-   },
-   {
     "id": 72221430,
     "home": "Sunderland",
     "away": "Tottenham",
@@ -85,23 +77,23 @@
   ],
   "1": [
    {
-    "id": 72478736,
-    "home": "Levante",
-    "away": "Racing De Santander",
-    "start": "2026-11-27T20:00:00.000Z",
-    "coteNon": 1.15,
-    "coteOui": 4.2
-   },
-   {
     "id": 72478740,
     "home": "Real Madrid",
     "away": "Alavés",
     "start": "2026-11-28T20:00:00.000Z",
-    "coteNon": 1.14,
+    "coteNon": 1.16,
     "coteOui": 4.1
    }
   ],
   "2": [
+   {
+    "id": 71945426,
+    "home": "Cagliari",
+    "away": "AC Milan",
+    "start": "2026-11-30T19:45:00.000Z",
+    "coteNon": 1.08,
+    "coteOui": 5
+   },
    {
     "id": 71945428,
     "home": "Como",
@@ -123,16 +115,24 @@
     "home": "Inter Milán",
     "away": "Génova",
     "start": "2026-11-28T19:45:00.000Z",
-    "coteNon": 1.09,
-    "coteOui": 4.9
+    "coteNon": 1.1,
+    "coteOui": 5.1
+   },
+   {
+    "id": 71945434,
+    "home": "Lecce",
+    "away": "Atalanta Bérgamo",
+    "start": "2026-11-30T17:30:00.000Z",
+    "coteNon": 1.08,
+    "coteOui": 5
    },
    {
     "id": 71945436,
     "home": "Roma",
     "away": "Monza",
     "start": "2026-11-29T17:00:00.000Z",
-    "coteNon": 1.06,
-    "coteOui": 5.6
+    "coteNon": 1.05,
+    "coteOui": 5.9
    },
    {
     "id": 71945438,
@@ -148,7 +148,7 @@
     "away": "Lazio",
     "start": "2026-11-28T17:00:00.000Z",
     "coteNon": 1.07,
-    "coteOui": 5.3
+    "coteOui": 6
    },
    {
     "id": 71945442,
@@ -157,14 +157,6 @@
     "start": "2026-11-29T11:30:00.000Z",
     "coteNon": 1.14,
     "coteOui": 4.1
-   },
-   {
-    "id": 71945444,
-    "home": "Venecia",
-    "away": "Bolonia",
-    "start": "2026-11-27T19:45:00.000Z",
-    "coteNon": 1.09,
-    "coteOui": 5.3
    }
   ]
  }
