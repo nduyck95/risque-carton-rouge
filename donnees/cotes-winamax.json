@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T14:40:04.725Z",
+ "maj": "2026-11-27T15:10:04.689Z",
  "ligues": {
   "0": [
    {
@@ -63,8 +63,8 @@
     "home": "Manchester United",
     "away": "Brentford",
     "start": "2026-11-28T15:00:00.000Z",
-    "coteNon": 1.05,
-    "coteOui": 5.8
+    "coteNon": 1.07,
+    "coteOui": 5.9
    },
    {
     "id": 72221428,
