@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-26T22:40:04.469Z",
+ "maj": "2026-11-27T08:40:05.172Z",
  "ligues": {
   "0": [
    {
@@ -89,8 +89,8 @@
     "home": "Levante",
     "away": "Racing De Santander",
     "start": "2026-11-27T20:00:00.000Z",
-    "coteNon": 1.14,
-    "coteOui": 4.4
+    "coteNon": 1.15,
+    "coteOui": 4.3
    }
   ],
   "2": [
@@ -155,8 +155,8 @@
     "home": "Venecia",
     "away": "Bolonia",
     "start": "2026-11-27T19:45:00.000Z",
-    "coteNon": 1.11,
-    "coteOui": 4.9
+    "coteNon": 1.09,
+    "coteOui": 5.3
    }
   ]
  }
