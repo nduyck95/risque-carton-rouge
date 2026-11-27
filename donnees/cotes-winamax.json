@@ -1,5 +1,5 @@
 {
- "maj": "2026-11-27T09:40:04.854Z",
+ "maj": "2026-11-27T10:10:04.621Z",
  "ligues": {
   "0": [
    {
@@ -71,8 +71,8 @@
     "home": "Nottingham Forest",
     "away": "Chelsea",
     "start": "2026-11-27T20:00:00.000Z",
-    "coteNon": 1.1,
-    "coteOui": 5.1
+    "coteNon": 1.09,
+    "coteOui": 5.3
    },
    {
     "id": 72221430,
